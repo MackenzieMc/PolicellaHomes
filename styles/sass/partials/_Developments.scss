@@ -1,0 +1,84 @@
+.developmentTitleTextContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .learnMoreDevelopmentsContainer {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ff7161;
+        
+        a {
+        color: #284646;
+        }
+    }
+}
+
+.recentDevelopmentTextContainer {
+    h2 {
+        margin-bottom: 5px; 
+    }
+    p {
+        margin-top: 0px; 
+    }
+}
+
+.developmentsCardsContainer {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .developmentCard {
+        width: calc((100% / 2) - 20px);
+        border: 1px solid #284646; 
+        border-radius: 10px; 
+        padding: 10px; 
+        .developmentImgContainer {
+            width: 100%; 
+        }
+    }
+    .developmentCard:nth-child(odd) {
+        margin-right: 20px; 
+    }
+    .developmentCard:nth-child(-n + 2) {
+        margin-bottom: 20px; 
+    }
+
+}
+
+.developmentTextContainer {
+    display: flex; 
+    justify-content: space-between;
+    .developmentLocationTextContainer {
+        display: flex; 
+        align-items: center;
+    }
+    .developmentLearnMoreContainer {
+        margin-left: 10px; 
+    }
+}
+
+.developmentHeader {
+    height: 30vh; 
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-image: url('../public/images/DevelopmentHeaderPhoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.developmentPageContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .developmentCard {
+        width: 100%;
+        border: 1px solid #284646;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 30px; 
+        .developmentTextContainer {
+            align-items: center;
+        }
+    }
+}

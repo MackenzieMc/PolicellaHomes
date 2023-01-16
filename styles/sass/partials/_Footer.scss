@@ -1,0 +1,40 @@
+footer {
+    .footerTextandLogoContainer {
+        display: flex;
+        width: 100%; 
+    }
+    .footerDesignCopywrightContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footerLinksContainer {
+        nav {
+            justify-content: flex-start;
+            padding: 0px; 
+            border-bottom: none;
+        }
+        .footerNavigationContainer {
+            display: flex;
+            list-style: none;
+            padding: 0px; 
+            li {
+                a {
+                    text-decoration: none;
+                    color: #4e4e4e;
+                    margin-right: 30px; 
+                }
+            }
+        }
+    }
+}
+
+.footerTextContainer {
+    padding: 5% 0 2% 0;  
+    width: 50%; 
+}
+
+.footerCertificationContainer {
+    padding: 5% 0 2% 0; 
+    width: 50%; 
+    text-align: right;
+}

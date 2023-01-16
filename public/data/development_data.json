@@ -1,0 +1,22 @@
+{
+    "developmentOne" : {
+        "name": "Valleyway Estates",
+        "location": "Welland, ON"
+    },
+    "developmentTwo" : {
+        "name": "Spearow Meadows Estates",
+        "location": "Welland, ON"
+    },
+    "developmentThree" : {
+        "name": "Lookout Landing",
+        "location": "Fonthill, ON"
+    },
+    "developmentFour": {
+        "name": "Blue River Estates",
+        "location": "Welland, ON"
+    },
+    "developmentFive": {
+        "name": "Forest Creek Estates",
+        "location": "Welland, ON"
+    }
+}

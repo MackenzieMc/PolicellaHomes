@@ -1,0 +1,24 @@
+.formContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 70%; 
+        input {
+            margin-bottom: 15px; 
+        }
+        .emailAndPhoneContainer {
+            display: flex;
+            justify-content: space-between;
+            .phoneContainer, .emailContainer {
+                width: 45%; 
+                input {
+                    width: 100%; 
+                }
+            }
+        }
+    }
+}

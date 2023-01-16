@@ -1,0 +1,184 @@
+.sectionBackground {
+    background-color: #F3F2EE;
+}
+
+.modelHomesTextContainer {
+    h2 {
+        margin-bottom: 5px; 
+    }
+}
+
+.modelHomesSubTextContainer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; 
+
+    .seeMoreContainer {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ff7161;
+        a {
+            color: #284646;
+        }
+
+    }
+    p {
+        margin-top: 0; 
+    }
+}
+
+.modelHomesContainer {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.modelHomesCard {
+    width: calc((100% / 3) - 30px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+
+    .modelHomesImgContainer {
+
+        position: relative;
+        width: 100%; 
+        height: 250px; 
+        object-fit: contain;
+
+    }
+
+    .modelHomesCardTextContainer {
+        padding: 15px; 
+        text-transform: uppercase;
+        h3 {
+            font-size: 16px;
+        }
+        h3, p {
+            margin-top: 0px; 
+        }
+
+        .modelHomeNameAndLocationContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .modelNameLocation {
+                justify-self: flex-end;
+            }
+            .modelNameLocation {
+                justify-self: flex-start;
+                margin-top: 0px; 
+            }
+        }
+    }
+    .modelInformationBar {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        .iconAndTextContainer {
+            margin-right: 5px; 
+            font-size: 14px;
+        }
+    }
+    .moreDetails {
+        text-align: center;
+        margin-bottom: 20px; 
+        a {
+            border: 1px solid #ff7161;
+            color: #ff7161;
+            padding: 8px 20px;
+            border-radius: 12px;
+            
+        }
+    }
+}
+
+.modelHomesCard:nth-child(2) {
+    margin: 0 30px; 
+}
+
+// Model Homes Page
+
+
+.modelHomesPageCard {
+            width: calc((100% / 3) - 30px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+            margin-bottom: 40px; 
+            
+                .modelHomesImgContainer {
+            
+                    position: relative;
+                    width: 100%;
+                    height: 250px;
+                    object-fit: contain;
+            
+                }
+            
+                .modelHomesCardTextContainer {
+                    padding: 15px;
+                    text-transform: uppercase;
+                    h3,
+                    p {
+                        margin-top: 0px;
+                    }
+            
+                    .modelHomeNameAndLocationContainer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+            
+                        .modelNameLocation {
+                            justify-self: flex-end;
+                        }
+            
+                        .modelNameLocation {
+                            justify-self: flex-start;
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            
+                .modelInformationBar {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 20px;
+            
+                    .iconAndTextContainer {
+                        margin-right: 5px;
+                        font-size: 14px;
+                    }
+                }
+            
+                .moreDetails {
+                    text-align: center;
+                    margin-bottom: 20px;
+            
+                    a {
+                        border: 1px solid #ff7161;
+                        color: #ff7161;
+                        padding: 8px 20px;
+                        border-radius: 12px;
+            
+                    }
+                }
+}
+
+.modelDevelopmentLink {
+    color: #ff7161;
+}
+
+.modelHomesHeader {
+    height: 30vh; 
+    display: flex;
+    align-items: center;
+    .developmentPageTextContainer {
+        text-align: center;
+    }
+}

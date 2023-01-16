@@ -1,0 +1,27 @@
+nav {
+    padding: 10px 15px;
+    border-bottom: 1px solid #F2F4F7;
+    position: sticky;
+    top: 0; 
+    display: flex; 
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #FFFF;
+    z-index: 5;
+    .logoContainer {
+        margin-right: auto;
+    }
+    .navigationContainer {
+        display: flex; 
+        background-color: white;
+        list-style: none;
+        li {
+            a {
+                color: #4e4e4e;
+                text-decoration: none;
+                margin-left: 30px; 
+            }
+        }
+    }
+
+}
