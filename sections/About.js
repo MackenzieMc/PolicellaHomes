@@ -8,7 +8,7 @@ function About () {
             <div className="wrapper">
                 <div className="aboutContainer">
                     <div className="aboutImgContainer">
-                        {/* <Image src={AboutUsImage} contain /> */}
+                        <Image src={AboutUsImage} fill contain />
                     </div>
                     <div className="aboutTextContainer">
                         <h3>Meet the Policellas</h3>

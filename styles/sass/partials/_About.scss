@@ -2,8 +2,26 @@
     display: flex;
     .aboutImgContainer {
         width: 50%; 
+        position: relative;
+        object-fit: "cover";
+        width: 45%; 
+        margin-right: 10px; 
     }
     .aboutTextContainer {
         width: 50%; 
+        p {
+            line-height: 1.5;
+        }
+    }
+}
+
+// About Page 
+.aboutUsTextAndImageContainer {
+    display: flex; 
+    .textContainer {
+        width: 50%; 
+        p {
+            line-height: 1.5;
+        }
     }
 }

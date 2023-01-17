@@ -257,6 +257,14 @@ hr {
   color: #e5e5e5;
 }
 
+.headerText {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .sectionTitleTextContainer h2 {
   margin-bottom: 5px;
 }
@@ -594,15 +602,6 @@ nav .navigationContainer li a {
   color: #ff7161;
 }
 
-.modelHomesHeader {
-  height: 30vh;
-  display: flex;
-  align-items: center;
-}
-.modelHomesHeader .developmentPageTextContainer {
-  text-align: center;
-}
-
 .developmentTitleTextContainer {
   display: flex;
   justify-content: space-between;
@@ -658,10 +657,6 @@ nav .navigationContainer li a {
 }
 
 .developmentHeader {
-  height: 30vh;
-  display: flex;
-  text-align: center;
-  align-items: center;
   background-image: url("../public/images/DevelopmentHeaderPhoto.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -688,9 +683,27 @@ nav .navigationContainer li a {
 }
 .aboutContainer .aboutImgContainer {
   width: 50%;
+  position: relative;
+  -o-object-fit: "cover";
+     object-fit: "cover";
+  width: 45%;
+  margin-right: 10px;
 }
 .aboutContainer .aboutTextContainer {
   width: 50%;
+}
+.aboutContainer .aboutTextContainer p {
+  line-height: 1.5;
+}
+
+.aboutUsTextAndImageContainer {
+  display: flex;
+}
+.aboutUsTextAndImageContainer .textContainer {
+  width: 50%;
+}
+.aboutUsTextAndImageContainer .textContainer p {
+  line-height: 1.5;
 }
 
 .formContainer {
@@ -706,6 +719,11 @@ nav .navigationContainer li a {
 }
 .formContainer form input {
   margin-bottom: 15px;
+  padding: 15px;
+}
+.formContainer form textarea {
+  margin-bottom: 15px;
+  padding: 15px;
 }
 .formContainer form .emailAndPhoneContainer {
   display: flex;
@@ -745,6 +763,9 @@ footer .footerLinksContainer .footerNavigationContainer li a {
 .footerTextContainer {
   padding: 5% 0 2% 0;
   width: 50%;
+}
+.footerTextContainer h4 {
+  margin: 16px 0px;
 }
 
 .footerCertificationContainer {

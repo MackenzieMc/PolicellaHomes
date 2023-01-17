@@ -4,11 +4,9 @@ import Link from 'next/link'
 function Developments () {
     return (
         <>
-            <header className='developmentHeader'>
-                <div className="wrapper">
+            <header className='headerText developmentHeader'>
                     <h3>Our Developments</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-                </div>
             </header>
             <section>
                 <div className="wrapper">

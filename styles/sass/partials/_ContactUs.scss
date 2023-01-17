@@ -1,3 +1,5 @@
+
+
 .formContainer {
     display: flex;
     align-items: center;
@@ -9,6 +11,11 @@
         width: 70%; 
         input {
             margin-bottom: 15px; 
+            padding: 15px;
+        }
+        textarea {
+            margin-bottom: 15px; 
+            padding: 15px; 
         }
         .emailAndPhoneContainer {
             display: flex;

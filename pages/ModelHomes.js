@@ -8,13 +8,9 @@ function ModelHomes () {
 
     return (
         <>
-            <header className='modelHomesHeader'>
-                <div className="wrapper">
-                    <div className="developmentPageTextContainer">
+            <header className='headerText'>
                         <h2>Model Homes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
-                </div>
             </header>
             <section>
                 <div className="wrapper">

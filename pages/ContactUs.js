@@ -3,7 +3,7 @@ function ContactUs () {
         <>
             <header>
                 <div className="wrapper">
-                    <div className="contactUsHeaderTextContainer">
+                    <div className="headerText">
                         <h2>Contact Us</h2>
                     </div>
                 </div>
