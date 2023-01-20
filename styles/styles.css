@@ -243,18 +243,31 @@ html {
 
 section {
   padding: 5% 0;
+  background-color: #f7f6f3;
 }
 
 h3 {
   font-family: "Lato", sans-serif;
+  font-size: 21px;
+}
+
+p {
+  font-size: 18px;
 }
 
 a {
   text-decoration: none;
+  color: #284646;
+  font-size: 18px;
 }
 
 hr {
   color: #e5e5e5;
+}
+
+svg {
+  vertical-align: middle;
+  padding-bottom: 2px;
 }
 
 .headerText {
@@ -312,6 +325,13 @@ nav .navigationContainer li a {
   margin-left: 30px;
 }
 
+.preambleTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .embla {
   --slide-spacing: 1rem;
   --slide-size: 100%;
@@ -347,8 +367,8 @@ nav .navigationContainer li a {
 }
 
 .embla__slide__number > span {
-  color: var(--brand-primary);
-  background-image: linear-gradient(45deg, var(--brand-primary), var(--brand-secondary));
+  color: white;
+  background-image: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -383,6 +403,7 @@ nav .navigationContainer li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .embla__dot {
@@ -395,7 +416,7 @@ nav .navigationContainer li a {
 }
 
 .embla__dot:after {
-  background: var(--background-site);
+  background: white;
   border-radius: 0.2rem;
   width: 100%;
   height: 0.3rem;
@@ -403,12 +424,12 @@ nav .navigationContainer li a {
 }
 
 .embla__dot--selected:after {
-  background: linear-gradient(45deg, var(--brand-primary), var(--brand-secondary));
+  background: #284646;
 }
 
 .embla__button {
   z-index: 1;
-  color: var(--background-site);
+  color: white;
   position: absolute;
   display: flex;
   align-items: center;
@@ -418,6 +439,7 @@ nav .navigationContainer li a {
   cursor: pointer;
   width: 4rem;
   height: 4rem;
+  fill: white;
 }
 
 .embla__button--prev {
@@ -426,6 +448,7 @@ nav .navigationContainer li a {
 
 .embla__button--next {
   right: 1.6rem;
+  color: white;
 }
 
 .embla__button:disabled {
@@ -435,6 +458,7 @@ nav .navigationContainer li a {
 .embla__button__svg {
   width: 65%;
   height: 65%;
+  color: white;
 }
 
 .slideOne {
@@ -449,10 +473,6 @@ nav .navigationContainer li a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.sectionBackground {
-  background-color: #F3F2EE;
 }
 
 .modelHomesTextContainer h2 {
@@ -514,10 +534,10 @@ nav .navigationContainer li a {
 }
 .modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation {
   justify-self: flex-end;
-}
-.modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation {
-  justify-self: flex-start;
   margin-top: 0px;
+}
+.modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
+  font-size: 14px;
 }
 .modelHomesCard .modelInformationBar {
   display: flex;
@@ -573,10 +593,10 @@ nav .navigationContainer li a {
 }
 .modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation {
   justify-self: flex-end;
-}
-.modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation {
-  justify-self: flex-start;
   margin-top: 0px;
+}
+.modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
+  font-size: 14px;
 }
 .modelHomesPageCard .modelInformationBar {
   display: flex;
@@ -680,20 +700,30 @@ nav .navigationContainer li a {
 
 .aboutContainer {
   display: flex;
+  justify-content: center;
 }
 .aboutContainer .aboutImgContainer {
-  width: 50%;
+  width: 30%;
   position: relative;
-  -o-object-fit: "cover";
-     object-fit: "cover";
-  width: 45%;
   margin-right: 10px;
+}
+.aboutContainer .aboutImgContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aboutContainer .aboutTextContainer {
   width: 50%;
 }
 .aboutContainer .aboutTextContainer p {
   line-height: 1.5;
+}
+
+.aboutUsLinkContainer {
+  border-bottom: 1px solid #ff7161;
+}
+
+.aboutUsWrapper {
+  width: 70%;
 }
 
 .aboutUsTextAndImageContainer {
@@ -706,24 +736,48 @@ nav .navigationContainer li a {
   line-height: 1.5;
 }
 
+.contactSection {
+  background-color: #f7f6f3;
+}
+
+.formAndTextContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.formAndTextContainer .contactTextContainer {
+  width: 30%;
+}
+
 .formContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 40%;
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px 20px 8px 25px;
+  background-color: white;
 }
 .formContainer form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
 }
 .formContainer form input {
-  margin-bottom: 15px;
-  padding: 15px;
+  margin: 15px 0px;
+  padding: 8px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #dadbde;
+  border-style: solid;
 }
 .formContainer form textarea {
-  margin-bottom: 15px;
-  padding: 15px;
+  margin: 15px 0px;
+  padding: 8px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #dadbde;
+  border-style: solid;
+  resize: none;
 }
 .formContainer form .emailAndPhoneContainer {
   display: flex;
@@ -734,6 +788,14 @@ nav .navigationContainer li a {
 }
 .formContainer form .emailAndPhoneContainer .phoneContainer input, .formContainer form .emailAndPhoneContainer .emailContainer input {
   width: 100%;
+}
+.formContainer form .buttonSubmit {
+  background-color: #284646;
+  cursor: pointer;
+  color: white;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
 footer .footerTextandLogoContainer {
@@ -760,6 +822,14 @@ footer .footerLinksContainer .footerNavigationContainer li a {
   margin-right: 30px;
 }
 
+.footerCopy {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+.footerCopy a {
+  font-size: 14px;
+}
+
 .footerTextContainer {
   padding: 5% 0 2% 0;
   width: 50%;
@@ -772,4 +842,7 @@ footer .footerLinksContainer .footerNavigationContainer li a {
   padding: 5% 0 2% 0;
   width: 50%;
   text-align: right;
+}
+.footerCertificationContainer p {
+  font-size: 16px;
 }

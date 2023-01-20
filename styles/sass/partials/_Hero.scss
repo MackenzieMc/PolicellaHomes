@@ -33,10 +33,8 @@
 }
 
 .embla__slide__number > span {
-    color: var(--brand-primary);
-    background-image: linear-gradient(45deg,
-            var(--brand-primary),
-            var(--brand-secondary));
+    color: #FFFF;
+    background-image: #FFFF;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -71,6 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFFF
 }
 
 .embla__dot {
@@ -83,7 +82,7 @@
 }
 
 .embla__dot:after {
-    background: var(--background-site);
+    background: #FFFF;
     border-radius: 0.2rem;
     width: 100%;
     height: 0.3rem;
@@ -91,14 +90,12 @@
 }
 
 .embla__dot--selected:after {
-    background: linear-gradient(45deg,
-            var(--brand-primary),
-            var(--brand-secondary));
+    background: #284646;
 }
 
 .embla__button {
     z-index: 1;
-    color: var(--background-site);
+    color: #FFFF;
     position: absolute;
     display: flex;
     align-items: center;
@@ -108,6 +105,7 @@
     cursor: pointer;
     width: 4rem;
     height: 4rem;
+    fill: #FFFF; 
 }
 
 .embla__button--prev {
@@ -116,6 +114,7 @@
 
 .embla__button--next {
     right: 1.6rem;
+    color: #FFFF;
 }
 
 .embla__button:disabled {
@@ -125,6 +124,7 @@
 .embla__button__svg {
     width: 65%;
     height: 65%;
+    color: #FFFF;
 }
 
 .slideOne {

@@ -1,17 +1,14 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import Navigation from '../components/Nav'
-import Hero from '../sections/Hero'
-import ModelHomes from '../sections/ModelHomes'
-import Developments from '../sections/Developments'
-import About from '../sections/About'
-import Footer from '../sections/Footer';
+import Hero from '../components/Hero'
+import Preamble from '../components/Preamble'
+import ModelHomes from '../components/ModelHomes'
+import Developments from '../components/Developments'
+import About from '../components/About'
+import homes from '../public/data/model_homes_data.json'
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -21,7 +18,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <Preamble />
       <ModelHomes />
+      <div className="wrapper">
+        <hr />
+      </div>
       <Developments />
       <About />
     </>

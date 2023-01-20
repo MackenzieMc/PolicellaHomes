@@ -21,18 +21,31 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 section {
     padding: 5% 0; 
+    background-color: #f7f6f3;
 }
 
 h3 {
     font-family: 'Lato', sans-serif;
+    font-size: 21px;
+}
+
+p {
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
+    color: #284646;
+    font-size: 18px;
 }
 
 hr {
     color: #e5e5e5;
+}
+
+svg {
+    vertical-align: middle;
+    padding-bottom: 2px;
 }
 
 .headerText {

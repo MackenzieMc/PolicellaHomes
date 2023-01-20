@@ -40,7 +40,7 @@ function Footer () {
                                 <p>Ontario New Home Warranty Program Certified.</p>
                             </div>
                             <div className="footerCertificationImage">
-                                <Image src={tarionLogo} height={50} width={50}/>
+                                <Image src={tarionLogo} height={50} width={50} alt="Test"/>
                             </div>
                         </div>
                     </div>
@@ -51,10 +51,10 @@ function Footer () {
 
                 <div className="footerDesignCopywrightContainer">
                     <div className="copyrightContainer">
-                        <p>&copy; Policella Homes 2023</p>
+                        <p className="footerCopy">&copy; Policella Homes 2023</p>
                     </div>
                     <div className="designContainer">
-                        <p>Designed and Developed by <Link href='/'>Mackenzie McClemont</Link></p>
+                        <p className="footerCopy">Designed and Developed by <Link href='/'>Mackenzie McClemont</Link></p>
                     </div>
                 </div>
             </div>

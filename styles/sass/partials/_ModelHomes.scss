@@ -1,6 +1,3 @@
-.sectionBackground {
-    background-color: #F3F2EE;
-}
 
 .modelHomesTextContainer {
     h2 {
@@ -68,10 +65,10 @@
             align-items: center;
             .modelNameLocation {
                 justify-self: flex-end;
-            }
-            .modelNameLocation {
-                justify-self: flex-start;
                 margin-top: 0px; 
+                span {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -136,11 +133,10 @@
             
                         .modelNameLocation {
                             justify-self: flex-end;
-                        }
-            
-                        .modelNameLocation {
-                            justify-self: flex-start;
                             margin-top: 0px;
+                            span {
+                                font-size: 14px; 
+                            }
                         }
                     }
                 }

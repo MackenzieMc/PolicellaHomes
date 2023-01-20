@@ -1,11 +1,13 @@
 .aboutContainer {
     display: flex;
+    justify-content: center;
     .aboutImgContainer {
-        width: 50%; 
+        width: 30%; 
         position: relative;
-        object-fit: "cover";
-        width: 45%; 
         margin-right: 10px; 
+        img {
+            object-fit: cover;
+        }
     }
     .aboutTextContainer {
         width: 50%; 
@@ -13,6 +15,14 @@
             line-height: 1.5;
         }
     }
+}
+
+.aboutUsLinkContainer {
+    border-bottom: 1px solid #ff7161;
+}
+
+.aboutUsWrapper {
+    width: 70%; 
 }
 
 // About Page 
