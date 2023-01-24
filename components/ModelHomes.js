@@ -5,9 +5,9 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 export default function ModelHomes(props) {
 
-    const modelHomes = props.objectData
+    console.log(props);
 
-    console.log(modelHomes);
+    const homes = props
     
     const basePath = '/images/'
     
@@ -27,9 +27,9 @@ export default function ModelHomes(props) {
                 </div>
 
                 <div className="modelHomesContainer">
-                {/* {
+                {
 
-                        modelHomes.map(data =>
+                        Object.values(homes).splice(0,3).map(data =>
                             <div className="modelHomesPageCard" key={data.id}>
                                 <Link href={{
                                     pathname: `/ModelHomes/${data.id}`, query: {
@@ -74,24 +74,9 @@ export default function ModelHomes(props) {
                                 </Link>
                             </div>
                         )
-                } */}
+                } 
                 </div>
             </div>
         </section>
     )
-}
-
-// Fetching data from the JSON file
-import fsPromises from 'fs/promises'
-import path from 'path'
-export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), 'public/data/model_homes_data.json');
-    
-    const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
-    console.log(objectData);
-
-    return {
-        props: objectData
-    }
 }

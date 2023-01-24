@@ -1,7 +1,7 @@
 function AboutUs () {
     return (
         <>
-            <header>
+            <header className="aboutUsHeader">
                 <div className="wrapper">
                     <div className="headerText">
                         <h2>About Us</h2>

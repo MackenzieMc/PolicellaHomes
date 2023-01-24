@@ -6,9 +6,9 @@ import Link from 'next/link'
 
 
 
-export default function ModelHomesPage() {
+export default function ModelHomesPage(props) {
 
-    console.log(modelHomes);
+    const modelHomes = props.modelHomes
 
 
     const basePath = '/images/'
@@ -30,10 +30,7 @@ export default function ModelHomesPage() {
 
                             modelHomes.map( data => 
                                     <div className="modelHomesPageCard" key={data.id}>
-                                            <Link href={{pathname: `/ModelHomes/${data.id}`, query: {
-                                                id: data.id
-                                                }
-                                            }}>
+                                            <Link href={`/ModelHomes/${data.id}`}>
                                             <div className="modelHomesImgContainer">
                                                 <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" />
                                             </div>
@@ -87,6 +84,7 @@ export async function getStaticProps() {
     const filePath = path.join(process.cwd(), '/public/data/model_homes_data.json');
     const jsonData = await fsPromises.readFile(filePath);
     const objectData = JSON.parse(jsonData);
+
 
     return {
         props: objectData

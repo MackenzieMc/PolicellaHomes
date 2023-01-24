@@ -22,6 +22,7 @@
     }
     p {
         margin-top: 0; 
+        font-size: 16px;
     }
 }
 
@@ -121,9 +122,12 @@
                 .modelHomesCardTextContainer {
                     padding: 15px;
                     text-transform: uppercase;
+                    background-color: #FFFF;
                     h3,
                     p {
                         margin-top: 0px;
+                        font-size: 14px;
+                        color: #0a0a0a;
                     }
             
                     .modelHomeNameAndLocationContainer {
@@ -135,7 +139,12 @@
                             justify-self: flex-end;
                             margin-top: 0px;
                             span {
-                                font-size: 14px; 
+                                font-size: 12px; 
+                                background-color: #284646;
+                                border-radius: 16px; 
+                                mix-blend-mode: multiply;
+                                padding: 2px 8px;
+                                color: #FFFF; 
                             }
                         }
                     }
@@ -145,6 +154,9 @@
                     display: flex;
                     justify-content: flex-start;
                     margin-bottom: 20px;
+                    p {
+                        margin-bottom: 0px; 
+                    }
             
                     .iconAndTextContainer {
                         margin-right: 5px;

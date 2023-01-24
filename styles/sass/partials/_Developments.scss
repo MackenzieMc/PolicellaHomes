@@ -29,10 +29,17 @@
     .developmentCard {
         width: calc((100% / 2) - 20px);
         border: 1px solid #284646; 
+        display: flex;
+        flex-direction: column;
         border-radius: 10px; 
         padding: 10px; 
         .developmentImgContainer {
             width: 100%; 
+            position: relative;
+            height: 250px;
+            object-fit: contain;
+            
+                
         }
     }
     .developmentCard:nth-child(odd) {

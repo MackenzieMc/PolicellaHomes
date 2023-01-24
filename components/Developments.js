@@ -1,8 +1,16 @@
 import Link from "next/link"
+import Image from "next/image";
 import developmentData from '../public/data/development_data.json';
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
-function Developments () {
+function Developments (props) {
+
+    const basePath = '/images/'
+
+    const developments = props
+
+    console.log(props);
+
     return (
         <section>
             <div className="wrapper">
@@ -19,13 +27,13 @@ function Developments () {
                 </div>
                 <div className="developmentsCardsContainer">
                     {
-                        Object.values(developmentData).splice(0, 4).map( (data) => {
+                        Object.values(developments).splice(0, 4).map( (data) => {
                             return (
                                 <div className="developmentCard" key={data.id}>
                                     <Link href={`/Developments`}>
                                         <div className="developmentImgContainer">
                                             <div className="sceneryPictureContainer">
-
+                                                <Image src={`${basePath}${data.imageOne}`} alt="" fill objectFit="cover" />
                                             </div>
                                         </div>
                                         <div className="developmentTextContainer">

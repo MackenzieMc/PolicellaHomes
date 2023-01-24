@@ -495,6 +495,7 @@ nav .navigationContainer li a {
 }
 .modelHomesSubTextContainer p {
   margin-top: 0;
+  font-size: 16px;
 }
 
 .modelHomesContainer {
@@ -581,10 +582,13 @@ nav .navigationContainer li a {
 .modelHomesPageCard .modelHomesCardTextContainer {
   padding: 15px;
   text-transform: uppercase;
+  background-color: white;
 }
 .modelHomesPageCard .modelHomesCardTextContainer h3,
 .modelHomesPageCard .modelHomesCardTextContainer p {
   margin-top: 0px;
+  font-size: 14px;
+  color: #0a0a0a;
 }
 .modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer {
   display: flex;
@@ -596,12 +600,20 @@ nav .navigationContainer li a {
   margin-top: 0px;
 }
 .modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
-  font-size: 14px;
+  font-size: 12px;
+  background-color: #284646;
+  border-radius: 16px;
+  mix-blend-mode: multiply;
+  padding: 2px 8px;
+  color: white;
 }
 .modelHomesPageCard .modelInformationBar {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
+}
+.modelHomesPageCard .modelInformationBar p {
+  margin-bottom: 0px;
 }
 .modelHomesPageCard .modelInformationBar .iconAndTextContainer {
   margin-right: 5px;
@@ -651,11 +663,17 @@ nav .navigationContainer li a {
 .developmentsCardsContainer .developmentCard {
   width: calc(50% - 20px);
   border: 1px solid #284646;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
   padding: 10px;
 }
 .developmentsCardsContainer .developmentCard .developmentImgContainer {
   width: 100%;
+  position: relative;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .developmentsCardsContainer .developmentCard:nth-child(odd) {
   margin-right: 20px;
@@ -696,6 +714,13 @@ nav .navigationContainer li a {
 }
 .developmentPageContainer .developmentCard .developmentTextContainer {
   align-items: center;
+}
+
+.aboutUsHeader {
+  background-image: url("../public/images/AboutUsHead.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .aboutContainer {

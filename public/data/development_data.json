@@ -1,28 +1,37 @@
 {
-    "developmentOne" : {
-        "id" : 1,
-        "name": "Valleyway Estates",
-        "location": "Welland, ON"
 
-    },
-    "developmentTwo" : {
-        "id": 2,
-        "name": "Spearow Meadows Estates",
-        "location": "Welland, ON"
-    },
-    "developmentThree" : {
-        "id": 3,
-        "name": "Lookout Landing",
-        "location": "Fonthill, ON"
-    },
-    "developmentFour": {
-        "id": 4,
-        "name": "Blue River Estates",
-        "location": "Welland, ON"
-    },
-    "developmentFive": {
-        "id": 5,
-        "name": "Forest Creek Estates",
-        "location": "Welland, ON"
-    }
+    "developments" : [
+
+        {
+            "id" : 1,
+            "name": "Valleyway Estates",
+            "location": "Welland, ON",
+            "imageOne": "development1.jpg"
+    
+        },
+        {
+            "id": 2,
+            "name": "Spearow Meadows Estates",
+            "location": "Welland, ON",
+            "imageOne": "development2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Lookout Landing",
+            "location": "Fonthill, ON",
+            "imageOne": "development1.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Blue River Estates",
+            "location": "Welland, ON",
+            "imageOne": "development2.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Forest Creek Estates",
+            "location": "Welland, ON",
+            "imageOne": "development2.jpg"
+        }
+    ]
 }
