@@ -8,12 +8,16 @@ export const getStaticPaths = async () => {
     const jsonData = await fsPromises.readFile(filePath);
     const objectData = JSON.parse(jsonData);
 
-    console.log(objectData);
+    const modelHouse = objectData.modelHomes
 
-    const paths = objectData.map(data => ({
-        params: { id: data.id.toString() },
-    }))
+    console.log(modelHouse);
 
+
+    const paths = modelHouse.map( data => {
+        return {
+            params: { id: data.id.toString()}
+        }
+    })
     return {
         paths,
         fallback: false

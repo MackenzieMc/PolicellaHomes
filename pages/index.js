@@ -21,13 +21,15 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <Preamble />
-      <ModelHomes {...homes}/>
-      <div className="wrapper">
-        <hr />
-      </div>
-      <Developments {...development}/>
-      <About />
+      <main>
+        <Preamble />
+        <ModelHomes {...homes}/>
+        <div className="wrapper">
+          <hr />
+        </div>
+        <Developments {...development}/>
+        <About />
+      </main>
     </>
   )
 }
