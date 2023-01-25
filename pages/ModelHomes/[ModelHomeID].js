@@ -1,4 +1,4 @@
-// import { modelData } from '../../public/data/model_homes_data.json'
+import { modelData } from '../../public/data/model_homes_data.json'
 // import fsPromises from 'fs/promises';
 // import path from 'path';
 
@@ -23,17 +23,17 @@
 //         fallback: false
 //     }
 // }
-// function ModelHomeDetail () {
+function ModelHomeDetail () {
     
-//     return (
-//         <section>
-//             <div className="wrapper">
-//                 <div className="modelNameTextContainer">
-//                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
+    return (
+        <section>
+            <div className="wrapper">
+                <div className="modelNameTextContainer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </section>
+    )
+}
 
-// export default ModelHomeDetail
+export default ModelHomeDetail
