@@ -1,7 +1,7 @@
 function AboutUs () {
     return (
         <>
-            <header className="aboutUsHeader">
+            <header className="aboutUsHeader brightnessImage">
                 <div className="wrapper">
                     <div className="headerText">
                         <h2>About Us</h2>
@@ -11,6 +11,9 @@ function AboutUs () {
             </header>
             <section>
                 <div className="wrapper">
+                    <div className="titleTextContainer">
+                        <h3>Our Story</h3>
+                    </div>
                     <div className="aboutUsTextAndImageContainer">
                         <div className="textContainer">
                             <p>Vince Policella Sr. was born in a small village in Italy and was trained as a skilled mason.  Shortly after immigrating to Canada in 1964, he began a family and started his own business. In 1984, after 15 successful years in masonry, Vince Sr. followed his dream and the business evolved into Policella Homes.  In 2001, Vince’s son completed an Honours Business degree from Brock University, joined the family business and a successful partnership was created. Vince Sr. and Vince Jr. have the ability to combine the old-world traditions of quality craftmanship and passion for excellence with new modern designs and stylish finishes.</p>

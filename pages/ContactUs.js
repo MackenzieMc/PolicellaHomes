@@ -10,6 +10,9 @@ function ContactUs () {
                         <p>We're here to answer any questions you may have.</p>
                     </div>
                     <div className="formAndTextContainer">
+                        <div className="contactAndMapContainer">
+                            
+                        </div>
                         <div className="contactTextContainer">
                             <p>Vince Policella Jr</p>
                             <p>945 South Pelham Road</p>

@@ -1,10 +1,13 @@
-import developmentData from '../public/data/development_data.json'
+import developments from '../../public/data/development_data.json'
 import Link from 'next/link'
 
-function Developments () {
+function Developments (props) {
+
+    const developments = props.developments
+
     return (
         <>
-            <header className='headerText developmentHeader'>
+            <header className='headerText developmentHeader brightnessImage'>
                     <h3>Our Developments</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </header>
@@ -15,7 +18,7 @@ function Developments () {
                     </div>
                     <div className="developmentPageContainer">
                         {
-                            Object.values(developmentData).map((data) => {
+                            developments.map( data => {
                                 return (
                                     <div className="developmentCard">
                                         <div className="developmentImgContainer">
@@ -49,3 +52,17 @@ function Developments () {
 }
 
 export default Developments
+
+// Fetching data from the JSON file
+import fsPromises from 'fs/promises'
+import path from 'path'
+export async function getStaticProps() {
+    const filePath = path.join(process.cwd(), '/public/data/development_data.json');
+    const jsonData = await fsPromises.readFile(filePath);
+    const objectData = JSON.parse(jsonData);
+
+
+    return {
+        props: objectData
+    }
+}

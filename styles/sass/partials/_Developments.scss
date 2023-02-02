@@ -64,7 +64,8 @@
 }
 
 .developmentHeader {
-    background-image: url('../public/images/DevelopmentHeaderPhoto.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    url('/images/DevelopmentHeaderPhoto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }

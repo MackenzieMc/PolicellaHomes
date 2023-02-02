@@ -1,5 +1,6 @@
 .aboutUsHeader {
-    background-image: url('../public/images/AboutUsHead.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    url('/images/AboutUsHead.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

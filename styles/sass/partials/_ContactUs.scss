@@ -6,9 +6,14 @@
 .formAndTextContainer {
     display: flex; 
     flex-direction: row-reverse;
+    justify-content: flex-end;
     gap: 20px; 
     .contactTextContainer {
         width: 30%; 
+        padding: 16px;
+        background-color: #FFFF;
+        box-shadow: 0 15px 35px 0 rgba(0, 0, 0, .1);
+        height: 40%;
     }
 }
 .formContainer {

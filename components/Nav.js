@@ -20,7 +20,7 @@ function NavigationBar() {
                     <Link href="/Gallery">Gallery</Link>
                 </li>
                 <li>
-                    <Link href="/ContactUs">Contact Us</Link>
+                    <Link href="/ContactUs" className="contactButton">Contact Us</Link>
                 </li>
             </ul>
         </nav>

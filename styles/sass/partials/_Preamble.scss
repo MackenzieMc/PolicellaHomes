@@ -1,6 +1,25 @@
+
+
 .preambleTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
+    h3 {
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+    p {
+        font-size: 21px;
+    }
+    a {
+        margin-top: 30px;
+        padding: 10px 16px;
+        border: 1px solid #284646;
+        background-color: #284646;
+        color: #FFFF; 
+        border-radius: 0.375rem;
+        
+    }
 }

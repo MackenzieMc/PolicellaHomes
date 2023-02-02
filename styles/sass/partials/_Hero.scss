@@ -128,15 +128,89 @@
 }
 
 .slideOne {
-    background-image: url('/images/hero2.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
+    url('/images/hero2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .heroMainText {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%; 
+        h1 {
+            font-size: 48px;
+        }
+    }
+}
+
+.slideTwo {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
+    url('/images/home1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.slideTwo {
-    background-image: url('/images/home1.jpg');
+.slideThree {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
+    url('/images/development2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.heroContainer {
+    height: 100%; 
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 0 0 5% 10%;
+    width: 50%; 
+    h2 {
+        color: #FFFF; 
+        font-size: 36px;
+        margin-bottom: 5px; 
+    }
+    p {
+        color: #e5e5e5;
+        font-size: 18px;
+    }
+    .buttonContainer {
+        display: flex; 
+        margin-top: 10px; 
+        .viewOne {
+            background-color: #fff;
+            border: 1px solid #d0d5dd;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+            color: #284646;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-right: 20px;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        .viewAll {
+            background: #284646;
+            border: 1px solid #284646;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+    }
+    
 }

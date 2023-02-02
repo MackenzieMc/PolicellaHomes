@@ -250,6 +250,10 @@ section {
   background-color: #f7f6f3;
 }
 
+h1 {
+  color: white;
+}
+
 h3 {
   font-family: "Lato", sans-serif;
   font-size: 21px;
@@ -275,12 +279,23 @@ svg {
   padding-bottom: 2px;
 }
 
+.brightnessImage {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
 .headerText {
   height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.headerText h2 {
+  color: white;
+}
+
+.oddBackground {
+  background-color: white;
 }
 
 .sectionTitleTextContainer h2 {
@@ -325,9 +340,17 @@ nav .navigationContainer {
   list-style: none;
 }
 nav .navigationContainer li a {
-  color: #4e4e4e;
+  color: black;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 50px;
+  font-size: 16px;
+}
+nav .navigationContainer li .contactButton {
+  border-radius: 0.375rem;
+  border: 1px solid #ff7161;
+  padding: 8px 16px;
+  color: #ff7161;
+  font-size: 16px;
 }
 
 .preambleTextContainer {
@@ -335,6 +358,22 @@ nav .navigationContainer li a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
+}
+.preambleTextContainer h3 {
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+.preambleTextContainer p {
+  font-size: 21px;
+}
+.preambleTextContainer a {
+  margin-top: 30px;
+  padding: 10px 16px;
+  border: 1px solid #284646;
+  background-color: #284646;
+  color: white;
+  border-radius: 0.375rem;
 }
 
 .embla {
@@ -467,17 +506,86 @@ nav .navigationContainer li a {
 }
 
 .slideOne {
-  background-image: url("/images/hero2.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/hero2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.slideOne .heroMainText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.slideOne .heroMainText h1 {
+  font-size: 48px;
+}
+
+.slideTwo {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/home1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.slideTwo {
-  background-image: url("/images/home1.jpg");
+.slideThree {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/development2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.heroContainer {
+  height: 100%;
+}
+
+.heroTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  padding: 0 0 5% 10%;
+  width: 50%;
+}
+.heroTextContainer h2 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.heroTextContainer p {
+  color: #e5e5e5;
+  font-size: 18px;
+}
+.heroTextContainer .buttonContainer {
+  display: flex;
+  margin-top: 10px;
+}
+.heroTextContainer .buttonContainer .viewOne {
+  background-color: #fff;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  color: #284646;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-right: 20px;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.heroTextContainer .buttonContainer .viewAll {
+  background: #284646;
+  border: 1px solid #284646;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 8px 16px;
+  text-decoration: none;
 }
 
 .modelHomesTextContainer h2 {
@@ -700,7 +808,7 @@ nav .navigationContainer li a {
 }
 
 .developmentHeader {
-  background-image: url("../public/images/DevelopmentHeaderPhoto.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/DevelopmentHeaderPhoto.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -722,7 +830,7 @@ nav .navigationContainer li a {
 }
 
 .aboutUsHeader {
-  background-image: url("../public/images/AboutUsHead.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/AboutUsHead.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -773,10 +881,15 @@ nav .navigationContainer li a {
 .formAndTextContainer {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-end;
   gap: 20px;
 }
 .formAndTextContainer .contactTextContainer {
   width: 30%;
+  padding: 16px;
+  background-color: white;
+  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  height: 40%;
 }
 
 .formContainer {
@@ -828,6 +941,10 @@ nav .navigationContainer li a {
   border-radius: 4px;
 }
 
+footer {
+  color: white;
+  background-color: #284646;
+}
 footer .footerTextandLogoContainer {
   display: flex;
   width: 100%;
@@ -840,6 +957,7 @@ footer .footerLinksContainer nav {
   justify-content: flex-start;
   padding: 0px;
   border-bottom: none;
+  background-color: #284646;
 }
 footer .footerLinksContainer .footerNavigationContainer {
   display: flex;
@@ -848,15 +966,16 @@ footer .footerLinksContainer .footerNavigationContainer {
 }
 footer .footerLinksContainer .footerNavigationContainer li a {
   text-decoration: none;
-  color: #4e4e4e;
+  color: #e5e5e5;
   margin-right: 30px;
 }
 
 .footerCopy {
   font-size: 14px;
-  color: #4e4e4e;
+  color: #e5e5e5;
 }
 .footerCopy a {
+  color: #e5e5e5;
   font-size: 14px;
 }
 

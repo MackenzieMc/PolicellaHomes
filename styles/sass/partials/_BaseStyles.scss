@@ -28,6 +28,10 @@ section {
     background-color: #f7f6f3;
 }
 
+h1 {
+    color: #FFFF; 
+}
+
 h3 {
     font-family: 'Lato', sans-serif;
     font-size: 21px;
@@ -53,12 +57,23 @@ svg {
     padding-bottom: 2px;
 }
 
+.brightnessImage {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70))
+}
+
 .headerText {
     height: 30vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    h2 {
+        color: #FFFF;
+    }
+}
+
+.oddBackground {
+    background-color: #FFFF;
 }
 
 .sectionTitleTextContainer {

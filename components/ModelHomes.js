@@ -9,6 +9,7 @@ export default function ModelHomes(props) {
 
     const homes = props
     
+    
     const basePath = '/images/'
     
     return (
