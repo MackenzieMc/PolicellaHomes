@@ -57,18 +57,27 @@ svg {
     padding-bottom: 2px;
 }
 
-.brightnessImage {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70))
-}
-
 .headerText {
-    height: 30vh;
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     h2 {
         color: #FFFF;
+        text-transform: uppercase;
+        font-size: 58px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: bold;
+        margin: 5px 0px;
+        letter-spacing: 2px;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        color: #FFFF;
+        margin-top: 0px; 
     }
 }
 

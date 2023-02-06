@@ -141,7 +141,6 @@
                             span {
                                 font-size: 12px; 
                                 background-color: #284646;
-                                border-radius: 16px; 
                                 mix-blend-mode: multiply;
                                 padding: 2px 8px;
                                 color: #FFFF; 
@@ -182,4 +181,11 @@
     color: #ff7161;
 }
 
+.modelHomesBackground {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url('/images/modelHomebackground.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
 

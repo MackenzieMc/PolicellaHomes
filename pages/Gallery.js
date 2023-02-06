@@ -2,7 +2,7 @@ function Gallery () {
     return (
         <>
             <header className='headerText galleryHeader'>
-                    <h3>Our Gallery</h3>
+                    <h2>Our Gallery</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </header>
             <section>

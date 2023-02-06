@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato:wght@300;400&family=Roboto:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -279,12 +279,8 @@ svg {
   padding-bottom: 2px;
 }
 
-.brightnessImage {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-}
-
 .headerText {
-  height: 30vh;
+  height: 55vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,6 +288,19 @@ svg {
 }
 .headerText h2 {
   color: white;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 5px 0px;
+  letter-spacing: 2px;
+}
+.headerText p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+  margin-top: 0px;
 }
 
 .oddBackground {
@@ -521,6 +530,9 @@ nav .navigationContainer li .contactButton {
 .slideOne .heroMainText h1 {
   font-size: 48px;
 }
+.slideOne .heroMainText h3 {
+  color: #e5e5e5;
+}
 
 .slideTwo {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/home1.jpg");
@@ -715,7 +727,6 @@ nav .navigationContainer li .contactButton {
 .modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
   font-size: 12px;
   background-color: #284646;
-  border-radius: 16px;
   mix-blend-mode: multiply;
   padding: 2px 8px;
   color: white;
@@ -747,6 +758,13 @@ nav .navigationContainer li .contactButton {
   color: #ff7161;
 }
 
+.modelHomesBackground {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/modelHomebackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .developmentTitleTextContainer {
   display: flex;
   justify-content: space-between;
@@ -771,28 +789,41 @@ nav .navigationContainer li .contactButton {
 .developmentsCardsContainer {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .developmentsCardsContainer .developmentCard {
-  width: calc(50% - 20px);
-  border: 1px solid #284646;
+  width: calc(33.3333333333% - 30px);
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
 }
 .developmentsCardsContainer .developmentCard .developmentImgContainer {
-  width: 100%;
   position: relative;
+  width: 100%;
   height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.developmentsCardsContainer .developmentCard:nth-child(odd) {
-  margin-right: 20px;
+.developmentsCardsContainer .developmentCard .developmentTextContainer {
+  padding: 15px;
+  text-transform: uppercase;
 }
-.developmentsCardsContainer .developmentCard:nth-child(-n+2) {
-  margin-bottom: 20px;
+.developmentsCardsContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
+  margin-top: 0px;
+  font-size: 14px;
+  color: #0a0a0a;
+}
+.developmentsCardsContainer .developmentCard .developmentTextContainer .developmentLocationTextContainer p {
+  font-size: 12px;
+  background-color: #284646;
+  mix-blend-mode: multiply;
+  padding: 2px 8px;
+  color: white;
+}
+.developmentsCardsContainer .developmentCard .developmentTextContainer h3,
+.developmentsCardsContainer .developmentCard .developmentTextContainer p {
+  margin-top: 0px;
 }
 
 .developmentTextContainer {
@@ -815,18 +846,26 @@ nav .navigationContainer li .contactButton {
 
 .developmentPageContainer {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
 }
 .developmentPageContainer .developmentCard {
-  width: 100%;
-  border: 1px solid #284646;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 30px;
+  width: calc(33.3333333333% - 40px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  margin-bottom: 40px;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer {
   align-items: center;
+}
+.developmentPageContainer .developmentCard .sceneryPictureContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .aboutUsHeader {
@@ -864,6 +903,32 @@ nav .navigationContainer li .contactButton {
   width: 70%;
 }
 
+.aboutSectionsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.aboutSectionsContainer .ourStoryContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer {
+  width: 40%;
+}
+.aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
+  width: 40%;
+}
+.aboutSectionsContainer .qualityContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.aboutSectionsContainer .qualityContainer .qualityTextContainer {
+  width: 40%;
+}
+.aboutSectionsContainer .qualityContainer .qualityImgContainer {
+  width: 40%;
+}
+
 .aboutUsTextAndImageContainer {
   display: flex;
 }
@@ -880,30 +945,33 @@ nav .navigationContainer li .contactButton {
 
 .formAndTextContainer {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 20px;
+  justify-content: center;
 }
-.formAndTextContainer .contactTextContainer {
-  width: 30%;
-  padding: 16px;
-  background-color: white;
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
-  height: 40%;
+
+.contactTitleContainer {
+  display: flex;
+  justify-content: center;
+}
+.contactTitleContainer p {
+  width: 80%;
+  text-align: center;
+  font-size: 22px;
 }
 
 .formContainer {
   display: flex;
-  align-items: center;
-  width: 40%;
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  width: 80%;
   padding: 30px 20px 8px 25px;
-  background-color: white;
 }
 .formContainer form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+}
+.formContainer form h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 30px;
 }
 .formContainer form input {
   margin: 15px 0px;
@@ -922,6 +990,15 @@ nav .navigationContainer li .contactButton {
   border-style: solid;
   resize: none;
 }
+.formContainer form .nameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.formContainer form .nameContainer .firstNameContainer, .formContainer form .nameContainer .lastNameContainer {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
 .formContainer form .emailAndPhoneContainer {
   display: flex;
   justify-content: space-between;
@@ -939,6 +1016,26 @@ nav .navigationContainer li .contactButton {
   padding: 10px 16px;
   font-weight: bold;
   border-radius: 4px;
+}
+.formContainer form .subjectInput {
+  width: 40%;
+}
+.formContainer form .buttonSubmit {
+  width: 30%;
+}
+
+.contactHeaderBackground {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/contactUsbackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.galleryHeader {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/galleryHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 footer {

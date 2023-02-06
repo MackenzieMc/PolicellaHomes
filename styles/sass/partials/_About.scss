@@ -34,6 +34,32 @@
 }
 
 // About Page 
+
+.aboutSectionsContainer {
+    display: flex;
+    flex-direction: column;
+    .ourStoryContainer {
+        display: flex;
+        justify-content: space-between;
+        .ourStoryTextContainer {
+            width: 40%; 
+        }
+        .ourStoryImgContainer {
+            width: 40%; 
+        }
+    }
+    .qualityContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        .qualityTextContainer {
+            width: 40%;
+        }
+        .qualityImgContainer {
+            width: 40%;
+        }
+    }
+}
 .aboutUsTextAndImageContainer {
     display: flex; 
     .textContainer {

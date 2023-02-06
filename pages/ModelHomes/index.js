@@ -19,7 +19,7 @@ export default function ModelHomesPage(props) {
 
     return (
         <>
-            <header className='headerText brightnessImage'>
+            <header className='headerText modelHomesBackground brightnessImage'>
                         <h2>Model Homes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </header>

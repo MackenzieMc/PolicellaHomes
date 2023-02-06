@@ -1,14 +1,17 @@
 import developments from '../../public/data/development_data.json'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function Developments (props) {
 
     const developments = props.developments
 
+    const basePath = '/images/'
+
     return (
         <>
-            <header className='headerText developmentHeader brightnessImage'>
-                    <h3>Our Developments</h3>
+            <header className='headerText developmentHeader'>
+                    <h2>Our Developments</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </header>
             <section>
@@ -23,10 +26,7 @@ function Developments (props) {
                                     <div className="developmentCard">
                                         <div className="developmentImgContainer">
                                             <div className="sceneryPictureContainer">
-
-                                            </div>
-                                            <div className="mapPictureContainer">
-
+                                                <Image src={`${basePath}${data.imageOne}`} alt="" fill objectFit="cover" />
                                             </div>
                                         </div>
                                         <div className="developmentTextContainer">
@@ -35,9 +35,6 @@ function Developments (props) {
                                             </div>
                                             <div className="developmentLocationTextContainer">
                                                 <p>{data.location}</p>
-                                            </div>
-                                            <div className="developmentLearnMoreContainer">
-                                                <Link href="/Developments">Learn More</Link>
                                             </div>
                                         </div>
                                     </div>
