@@ -1,28 +1,27 @@
 import { modelData } from '../../public/data/model_homes_data.json'
-// import fsPromises from 'fs/promises';
-// import path from 'path';
+import fsPromises from 'fs/promises';
+import path from 'path';
 
-// export const getStaticPaths = async () => {
+export const getStaticPaths = async () => {
 
-//     const filePath = path.join(process.cwd(), '/public/data/model_homes_data.json');
-//     const jsonData = await fsPromises.readFile(filePath);
-//     const objectData = JSON.parse(jsonData);
+    const filePath = path.join(process.cwd(), '/public/data/model_homes_data.json');
+    const jsonData = await fsPromises.readFile(filePath);
+    const objectData = JSON.parse(jsonData);
 
-//     const modelHouse = objectData.modelHomes
+    const modelHouse = objectData.modelHomes
 
-//     console.log(modelHouse);
-
-
-//     const paths = modelHouse.map( data => {
-//         return {
-//             params: { id: data.id.toString()}
-//         }
-//     })
-//     return {
-//         paths,
-//         fallback: false
-//     }
-// }
+    const res = (await import ('../../public/data/model_homes_data.json')).default
+    
+    const paths = res.map( data => {
+        return {
+            params: { id: data.id.toString()}
+        }
+    })
+    return {
+        paths,
+        fallback: false
+    }
+}
 function ModelHomeDetail () {
     
     return (

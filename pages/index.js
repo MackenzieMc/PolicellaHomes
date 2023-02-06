@@ -9,8 +9,10 @@ import homes from '../public/data/model_homes_data.json'
 
 export default function Home(props) {
 
+  
   const homes = props.objectData.modelHomes
   const development = props.objectDataTwo.developments
+  console.log(homes, development);
 
   return (
     <>

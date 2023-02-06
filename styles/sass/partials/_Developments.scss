@@ -25,31 +25,56 @@
 .developmentsCardsContainer {
     display: flex; 
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-bottom: 40px; 
     .developmentCard {
-        width: calc((100% / 2) - 20px);
-        border: 1px solid #284646; 
+        width: calc((100% / 3) - 30px);
         display: flex;
         flex-direction: column;
-        border-radius: 10px; 
-        padding: 10px; 
+        overflow: hidden;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
         .developmentImgContainer {
-            width: 100%; 
-            position: relative;
-            height: 250px;
-            object-fit: contain;
-            
-                
-        }
-    }
-    .developmentCard:nth-child(odd) {
-        margin-right: 20px; 
-    }
-    .developmentCard:nth-child(-n + 2) {
-        margin-bottom: 20px; 
-    }
+                position: relative;
+                width: 100%;
+                height: 250px;
+                object-fit: contain;
+        
+            }
+        
+        .developmentTextContainer {
+            padding: 15px;
+            text-transform: uppercase;
 
+            .developmentTitleTextContainer {
+
+                h3 {
+                    margin-top: 0px;
+                    font-size: 14px;
+                    color: #0a0a0a;
+                }
+            }
+            .developmentLocationTextContainer {
+                p {
+                    font-size: 12px;
+                    background-color: #284646;
+                    mix-blend-mode: multiply;
+                    padding: 2px 8px;
+                    color: white;
+
+                }
+            }
+        
+        
+                h3,
+                p {
+                    margin-top: 0px;
+                }
+            }
+    }
 }
+
+// .developmentCard:nth-child(2), .development:nth-child(5) {
+//     margin: 0 30px;
+// }
 
 .developmentTextContainer {
     display: flex; 
@@ -64,24 +89,59 @@
 }
 
 .developmentHeader {
-    background-image: url('../public/images/DevelopmentHeaderPhoto.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    url('/images/DevelopmentHeaderPhoto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .developmentPageContainer {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
 
     .developmentCard {
-        width: 100%;
-        border: 1px solid #284646;
-        border-radius: 10px;
-        padding: 10px;
-        margin-bottom: 30px; 
+        width: calc((100% / 3) - 40px);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+        margin-bottom: 40px;
         .developmentTextContainer {
-            align-items: center;
+            padding: 15px;
+            text-transform: uppercase;
+        
+                .developmentTitleTextContainer {
+        
+                    h3 {
+                        margin-top: 0px;
+                        font-size: 14px;
+                        color: #0a0a0a;
+                    }
+                }
+        
+                .developmentLocationTextContainer {
+                    p {
+                        font-size: 12px;
+                        background-color: #284646;
+                        mix-blend-mode: multiply;
+                        padding: 2px 8px;
+                        color: white;
+        
+                    }
+                }
+        
+        
+                h3,
+                p {
+                    margin-top: 0px;
+                }
+            }
+        .sceneryPictureContainer {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
         }
     }
 }

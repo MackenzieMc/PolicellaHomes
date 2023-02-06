@@ -8,14 +8,18 @@ import Link from 'next/link'
 
 export default function ModelHomesPage(props) {
 
+    console.log(props);
+
     const modelHomes = props.modelHomes
+
+    console.log(modelHomes);
 
 
     const basePath = '/images/'
 
     return (
         <>
-            <header className='headerText'>
+            <header className='headerText modelHomesBackground brightnessImage'>
                         <h2>Model Homes</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </header>

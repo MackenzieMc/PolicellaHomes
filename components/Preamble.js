@@ -1,7 +1,7 @@
 import Link from "next/link"
 function Preamble () {
     return (
-        <section className="preambleSection">
+        <section className="oddBackground">
             <div className="wrapper">
                 <div className="preambleTextContainer">
                     <h3>Serving the Niagara region since <span className="preambleText">1984</span></h3>

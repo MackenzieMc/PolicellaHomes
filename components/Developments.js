@@ -27,7 +27,7 @@ function Developments (props) {
                 </div>
                 <div className="developmentsCardsContainer">
                     {
-                        Object.values(developments).splice(0, 4).map( (data) => {
+                        Object.values(developments).splice(0, 3).map( (data) => {
                             return (
                                 <div className="developmentCard" key={data.id}>
                                     <Link href={`/Developments`}>
