@@ -360,6 +360,11 @@ nav .navigationContainer li .contactButton {
   padding: 8px 16px;
   color: #ff7161;
   font-size: 16px;
+  transition: all 0.2s ease-in;
+}
+nav .navigationContainer li .contactButton:hover {
+  background-color: #ff7161;
+  color: white;
 }
 
 .preambleTextContainer {
@@ -858,7 +863,24 @@ nav .navigationContainer li .contactButton {
   margin-bottom: 40px;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer {
-  align-items: center;
+  padding: 15px;
+  text-transform: uppercase;
+}
+.developmentPageContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
+  margin-top: 0px;
+  font-size: 14px;
+  color: #0a0a0a;
+}
+.developmentPageContainer .developmentCard .developmentTextContainer .developmentLocationTextContainer p {
+  font-size: 12px;
+  background-color: #284646;
+  mix-blend-mode: multiply;
+  padding: 2px 8px;
+  color: white;
+}
+.developmentPageContainer .developmentCard .developmentTextContainer h3,
+.developmentPageContainer .developmentCard .developmentTextContainer p {
+  margin-top: 0px;
 }
 .developmentPageContainer .developmentCard .sceneryPictureContainer {
   position: relative;
@@ -912,10 +934,11 @@ nav .navigationContainer li .contactButton {
   justify-content: space-between;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer {
-  width: 40%;
+  width: 45%;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
-  width: 40%;
+  width: 45%;
+  position: relative;
 }
 .aboutSectionsContainer .qualityContainer {
   display: flex;
@@ -923,10 +946,11 @@ nav .navigationContainer li .contactButton {
   justify-content: space-between;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer {
-  width: 40%;
+  width: 45%;
 }
 .aboutSectionsContainer .qualityContainer .qualityImgContainer {
-  width: 40%;
+  width: 45%;
+  position: relative;
 }
 
 .aboutUsTextAndImageContainer {

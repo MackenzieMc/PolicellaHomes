@@ -28,7 +28,12 @@ nav {
                 padding: 8px 16px;
                 color: #ff7161;
                 font-size: 16px;
+                transition: all .2s ease-in;
                 
+            }
+            .contactButton:hover {
+                background-color: #ff7161;
+                color: #FFFF; 
             }
         }
     }

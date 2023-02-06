@@ -42,10 +42,11 @@
         display: flex;
         justify-content: space-between;
         .ourStoryTextContainer {
-            width: 40%; 
+            width: 45%; 
         }
         .ourStoryImgContainer {
-            width: 40%; 
+            width: 45%; 
+            position: relative;
         }
     }
     .qualityContainer {
@@ -53,10 +54,11 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         .qualityTextContainer {
-            width: 40%;
+            width: 45%;
         }
         .qualityImgContainer {
-            width: 40%;
+            width: 45%;
+            position: relative;
         }
     }
 }

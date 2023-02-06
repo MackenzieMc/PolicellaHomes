@@ -4,7 +4,7 @@ function NavigationBar() {
     return (
         <nav>
             <div className="logoContainer">
-                <Link href="/">Policella Homes</Link>
+                <Link href="/">Policella Homes Logo</Link>
             </div>
             <ul className="navigationContainer">
                 <li>
