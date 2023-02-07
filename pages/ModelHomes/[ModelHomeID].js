@@ -22,17 +22,17 @@
 //         fallback: false
 //     }
 // }
-// function ModelHomeDetail () {
+function ModelHomeDetail () {
     
-//     return (
-//         <section>
-//             <div className="wrapper">
-//                 <div className="modelNameTextContainer">
-//                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
+    return (
+        <section>
+            <div className="wrapper">
+                <div className="modelNameTextContainer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </section>
+    )
+}
 
-// export default ModelHomeDetail
+export default ModelHomeDetail
