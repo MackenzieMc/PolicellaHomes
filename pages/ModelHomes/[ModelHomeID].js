@@ -22,15 +22,18 @@
 //         fallback: false
 //     }
 // }
+
 function ModelHomeDetail () {
+
+
     
     return (
-        <section>
-            <div className="wrapper">
-                <div className="modelNameTextContainer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+         <section>
+             <div className="wrapper">
+                 <div className="modelNameTextContainer">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
-            </div>
+             </div>
         </section>
     )
 }
