@@ -39,9 +39,9 @@ function Footer () {
                             <div className="footerCertificationText">
                                 <p>Ontario New Home Warranty Program Certified.</p>
                             </div>
-                            <div className="footerCertificationImage">
+                            <Link href={'https://www.tarion.com/'}className="footerCertificationImage">
                                 <Image src={tarionLogo} height={50} width={50} alt="Test"/>
-                            </div>
+                            </Link>
                         </div>
                     </div>
 
