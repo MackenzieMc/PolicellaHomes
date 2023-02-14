@@ -38,7 +38,7 @@ export default function ModelHomes(props) {
                                     }
                                 }}>
                                     <div className="modelHomesImgContainer">
-                                        <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" />
+                                        <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" priority/>
                                     </div>
                                     <div className="modelHomesCardTextContainer">
                                         <div className="modelHomeNameAndLocationContainer">

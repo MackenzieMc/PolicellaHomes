@@ -33,7 +33,7 @@ function Developments (props) {
                                     <Link href={`/Developments`}>
                                         <div className="developmentImgContainer">
                                             <div className="sceneryPictureContainer">
-                                                <Image src={`${basePath}${data.imageOne}`} alt="" fill objectFit="cover" />
+                                                <Image src={`${basePath}${data.imageOne}`} alt="" fill objectFit="cover" priority/>
                                             </div>
                                         </div>
                                         <div className="developmentTextContainer">

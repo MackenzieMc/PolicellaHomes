@@ -10,7 +10,7 @@ function About () {
             <div className="wrapper aboutUsWrapper">
                 <div className="aboutContainer">
                     <div className="aboutImgContainer">
-                        <Image src={AboutUsImage} fill contain="true" alt="Test"/>
+                        <Image src={AboutUsImage} fill contain="true" alt="Test" priority/>
                     </div>
                     <div className="aboutTextContainer">
                         <h3>Meet the Policellas</h3>

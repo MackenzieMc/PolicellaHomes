@@ -7,6 +7,7 @@ import {
 } from '../components/HeroButtons'
 
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Hero = (props) => {
     const { slides, options } = props
@@ -48,6 +49,7 @@ const Hero = (props) => {
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">
                         <div className="embla__slide slideOne">
+                            <Image />
                             <div className="heroMainText">
                                 <h1>Policella Homes</h1>
                                 <h3>Where old world craftsmanship meets modern day design</h3>
