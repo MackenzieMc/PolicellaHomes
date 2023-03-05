@@ -34,7 +34,7 @@
             "bathroom": 3
         },
        {
-            "image": "hero1.jpg",
+            "image": "591Gaiser.jpg",
             "id": 4, 
             "address": "591 Gaiser Road",
             "city": "Welland, ON",
@@ -42,6 +42,16 @@
             "square": 1300,
             "garage": 1,
             "bathroom": 3
-        }    
+        },
+        {
+            "image": "44Austin.jpg",
+            "id": 5,
+            "address": "44 Austin Road",
+            "city": "Welland, ON",
+            "bedroom": 2,
+            "square": 1300,
+            "garage": 1,
+            "bathroom": 3
+        }
     ]
 }

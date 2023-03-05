@@ -635,11 +635,12 @@ nav .navigationContainer li .contactButton:hover {
 }
 
 .modelHomesCard {
-  width: calc(33.3333333333% - 30px);
+  width: calc(25% - 30px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+  margin-bottom: 40px;
 }
 .modelHomesCard .modelHomesImgContainer {
   position: relative;
@@ -651,12 +652,13 @@ nav .navigationContainer li .contactButton:hover {
 .modelHomesCard .modelHomesCardTextContainer {
   padding: 15px;
   text-transform: uppercase;
+  background-color: white;
 }
-.modelHomesCard .modelHomesCardTextContainer h3 {
-  font-size: 16px;
-}
-.modelHomesCard .modelHomesCardTextContainer h3, .modelHomesCard .modelHomesCardTextContainer p {
+.modelHomesCard .modelHomesCardTextContainer h3,
+.modelHomesCard .modelHomesCardTextContainer p {
   margin-top: 0px;
+  font-size: 14px;
+  color: #0a0a0a;
 }
 .modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer {
   display: flex;
@@ -668,12 +670,19 @@ nav .navigationContainer li .contactButton:hover {
   margin-top: 0px;
 }
 .modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
-  font-size: 14px;
+  font-size: 12px;
+  background-color: #284646;
+  mix-blend-mode: multiply;
+  padding: 2px 8px;
+  color: white;
 }
 .modelHomesCard .modelInformationBar {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
+}
+.modelHomesCard .modelInformationBar p {
+  margin-bottom: 0px;
 }
 .modelHomesCard .modelInformationBar .iconAndTextContainer {
   margin-right: 5px;
@@ -690,8 +699,10 @@ nav .navigationContainer li .contactButton:hover {
   border-radius: 12px;
 }
 
-.modelHomesCard:nth-child(2) {
-  margin: 0 30px;
+.modelHomesPageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .modelHomesPageCard {
@@ -965,6 +976,7 @@ nav .navigationContainer li .contactButton:hover {
 
 .contactSection {
   background-color: #f7f6f3;
+  padding-bottom: 0;
 }
 
 .formAndTextContainer {
@@ -1053,6 +1065,27 @@ nav .navigationContainer li .contactButton:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.mapAndContactInfoContainer {
+  display: flex;
+}
+.mapAndContactInfoContainer .mapContainer {
+  width: 50%;
+}
+.mapAndContactInfoContainer .contactInfoContainer {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mapAndContactInfoContainer .contactInfoContainer .addressContainer, .mapAndContactInfoContainer .contactInfoContainer .phoneContainer, .mapAndContactInfoContainer .contactInfoContainer .emailContainer {
+  display: flex;
+  align-items: center;
+}
+.mapAndContactInfoContainer .contactInfoContainer .addressContainer .iconContainer, .mapAndContactInfoContainer .contactInfoContainer .phoneContainer .iconContainer, .mapAndContactInfoContainer .contactInfoContainer .emailContainer .iconContainer {
+  margin-right: 20px;
+  font-size: 24px;
 }
 
 .galleryHeader {

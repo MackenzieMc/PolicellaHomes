@@ -30,8 +30,8 @@ export default function ModelHomes(props) {
                 <div className="modelHomesContainer">
                 {
 
-                        Object.values(homes).splice(0,3).map(data =>
-                            <div className="modelHomesPageCard" key={data.id}>
+                        Object.values(homes).splice(0,4).map(data =>
+                            <div className="modelHomesCard" key={data.id}>
                                 <Link href={{
                                     pathname: `/ModelHomes/${data.id}`, query: {
                                         id: data.id

@@ -29,14 +29,14 @@ export default function ModelHomesPage(props) {
                         <h2>Model Homes</h2>
                     </div>
 
-                    <div className="modelHomesContainer">
+                    <div className="modelHomesPageContainer">
                         {
 
                             modelHomes.map( data => 
                                     <div className="modelHomesPageCard" key={data.id}>
                                             <Link href={`/ModelHomes/${data.id}`}>
                                             <div className="modelHomesImgContainer">
-                                                <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" />
+                                                <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" priority/>
                                             </div>
                                             <div className="modelHomesCardTextContainer">
                                                 <div className="modelHomeNameAndLocationContainer">

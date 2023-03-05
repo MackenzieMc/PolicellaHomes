@@ -1,6 +1,7 @@
 
 .contactSection {
     background-color: #f7f6f3;
+    padding-bottom: 0;
 }
 
 .formAndTextContainer {
@@ -93,3 +94,25 @@
         background-size: cover;
         background-position: center center;
 }
+
+.mapAndContactInfoContainer {
+    display: flex;
+    .mapContainer {
+        width: 50%
+    }
+    .contactInfoContainer {
+        width: 50%; 
+        padding: 20px; 
+        display: flex;
+        flex-direction: column;
+        .addressContainer, .phoneContainer, .emailContainer {
+            display: flex;
+            align-items: center;
+            .iconContainer {
+                margin-right: 20px; 
+                font-size: 24px; 
+            }
+        }
+    }
+}
+

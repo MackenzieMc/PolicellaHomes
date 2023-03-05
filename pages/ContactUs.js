@@ -1,6 +1,30 @@
 // import "friendly-challenge/widget";
+import { BsFillTelephoneFill } from 'react-icons/bs'
+import { MdEmail } from 'react-icons/md'
+import { FaHome } from 'react-icons/fa'
+import mapboxgl from '!mapbox-gl'; 
+import { useEffect, useState, useRef } from 'react'
 
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFja2VuemllbWNjIiwiYSI6ImNsZXJxc3Z1cDB2NGYzb3B2YzhqcjV2cXIifQ.iy5bG1cZQhPDKsrivRCqjg';
 function ContactUs () {
+
+    const mapContainer = useRef(null);
+    const map = useRef(null);
+    const [lng, setLng] = useState(-70.9);
+    const [lat, setLat] = useState(42.35);
+    const [zoom, setZoom] = useState(9);
+
+    useEffect(() => {
+        if (map.current) return; // initialize map only once
+        map.current = new mapboxgl.Map({
+            container: mapContainer.current,
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [lng, lat],
+            zoom: zoom,
+            attributionControl: false,
+        });
+    });
+
     return (
         <>
             <header className='headerText contactHeaderBackground'>
@@ -46,10 +70,43 @@ function ContactUs () {
                                 <label htmlFor="message">Message</label>
                                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
-                                <div class="frc-captcha" data-sitekey="<FCMON3HCAL59VK3O>"></div>
+                                <div className="frc-captcha" data-sitekey="<FCMON3HCAL59VK3O>"></div>
 
                                 <input type="submit" value="Submit" className="buttonSubmit"/>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div className="mapAndContactInfoContainer">
+
+                    <div className="mapContainer">
+                        <div ref={mapContainer} />
+                    </div>
+
+                    <div className="contactInfoContainer">
+                        <div className="addressContainer">
+                            <div className="iconContainer">
+                                <FaHome />
+                            </div>
+                            <div className="locationTextContainer">
+                                <p>945 South Pelham Rd <br />Welland, Ontario</p>
+                            </div>
+                        </div>
+                        <div className="phoneContainer">
+                            <div className="iconContainer">
+                                <BsFillTelephoneFill />
+                            </div>
+                            <div className="phoneTextContainer">
+                                <p>905-892-9897</p>
+                            </div>
+                        </div>
+                        <div className="emailContainer">
+                            <div className="iconContainer">
+                                <MdEmail />
+                            </div>
+                            <div className="emailTextContainer">
+                                <p>vincepolicella@cogeco</p>
+                            </div>
                         </div>
                     </div>
                 </div>
