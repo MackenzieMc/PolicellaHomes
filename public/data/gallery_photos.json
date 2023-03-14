@@ -1,0 +1,68 @@
+{
+    "galleryImages" : [
+        {
+            "imagePath": "bath1.jpeg", 
+            "altText": "bathroom"
+        },
+        {
+            "imagePath": "exterior1.jpeg",
+            "altText": "exterior"
+        },
+        {
+            "imagePath": "interior1.jpeg",
+            "altText": "interior"
+        },
+        {
+            "imagePath": "kitchen1.jpeg",
+            "altText": "kitchen"
+        },
+        {
+            "imagePath": "exterior2.jpeg",
+            "altText": "exterior"
+        },
+        {
+            "imagePath": "bath2.jpeg",
+            "altText": "bathroom"
+        },
+        {
+            "imagePath": "kitchen2.jpeg",
+            "altText": "kitchen"
+        },
+        {
+            "imagePath": "interior2.jpeg",
+            "altText": "interior"
+        },
+        {
+            "imagePath": "bath3.jpeg",
+            "altText": "bathroom"
+        },
+        {
+            "imagePath": "kitchen3.jpeg",
+            "altText": "kitchen"
+        },
+        {
+            "imagePath": "interior3.jpeg",
+            "altText": "interior"
+        },
+        {
+            "imagePath": "exterior3.jpeg",
+            "altText": "exterior"
+        },
+        {
+            "imagePath": "exterior4.jpeg",
+            "altText": "exterior"
+        },
+        {
+            "imagePath": "bath4.png",
+            "altText": "bathroom"
+        },
+        {
+            "imagePath": "kitchen4.jpeg",
+            "altText": "kitchen"
+        },
+        {
+            "imagePath": "interior4.jpeg",
+            "altText": "interior"
+        }
+    ]
+}

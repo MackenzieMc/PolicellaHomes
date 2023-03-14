@@ -5,3 +5,32 @@
     background-size: cover;
     background-position: center center;
 }
+
+.tabsMainContainer {
+    display: flex;
+    justify-content: center;
+}
+.tabsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%; 
+
+    .galleryButton {
+        border-radius: 8px;
+        border: 2px solid #284646;
+        background-color: transparent;
+        padding: 8px 4px;
+        min-width: 10%;
+        cursor: pointer;
+    
+    }
+}
+
+.galleryItemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    .galleryImageContainer {
+        width: calc(100% / 4);
+        position: relative;
+    }
+}
