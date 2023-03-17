@@ -1,55 +1,55 @@
 {
     "galleryImages" : [
         {
-            "imagePath": "bath1.jpeg", 
+            "imagePath": "bath1.jpg", 
             "altText": "bathroom"
         },
         {
-            "imagePath": "exterior1.jpeg",
+            "imagePath": "exterior1.jpg",
             "altText": "exterior"
         },
         {
-            "imagePath": "interior1.jpeg",
+            "imagePath": "interior1.jpg",
             "altText": "interior"
         },
         {
-            "imagePath": "kitchen1.jpeg",
+            "imagePath": "kitchen1.jpg",
             "altText": "kitchen"
         },
         {
-            "imagePath": "exterior2.jpeg",
+            "imagePath": "exterior2.jpg",
             "altText": "exterior"
         },
         {
-            "imagePath": "bath2.jpeg",
+            "imagePath": "bath2.jpg",
             "altText": "bathroom"
         },
         {
-            "imagePath": "kitchen2.jpeg",
+            "imagePath": "kitchen2.jpg",
             "altText": "kitchen"
         },
         {
-            "imagePath": "interior2.jpeg",
+            "imagePath": "interior2.jpg",
             "altText": "interior"
         },
         {
-            "imagePath": "bath3.jpeg",
+            "imagePath": "bath3.jpg",
             "altText": "bathroom"
         },
         {
-            "imagePath": "kitchen3.jpeg",
+            "imagePath": "kitchen3.jpg",
             "altText": "kitchen"
         },
         {
-            "imagePath": "interior3.jpeg",
+            "imagePath": "interior3.jpg",
             "altText": "interior"
         },
         {
-            "imagePath": "exterior3.jpeg",
+            "imagePath": "exterior3.jpg",
             "altText": "exterior"
         },
         {
-            "imagePath": "exterior4.jpeg",
+            "imagePath": "exterior4.jpg",
             "altText": "exterior"
         },
         {
@@ -57,11 +57,11 @@
             "altText": "bathroom"
         },
         {
-            "imagePath": "kitchen4.jpeg",
+            "imagePath": "kitchen4.jpg",
             "altText": "kitchen"
         },
         {
-            "imagePath": "interior4.jpeg",
+            "imagePath": "interior4.jpg",
             "altText": "interior"
         }
     ]

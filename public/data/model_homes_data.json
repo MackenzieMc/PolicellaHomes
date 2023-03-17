@@ -1,25 +1,24 @@
 {
-
+    
     "modelHomes" : [
         
         {
-            "image": "hero1.jpg",
+            "image": "sycamore4.jpg",
             "id": 1,
-            "address": "711 Gaiser Road",
+            "address": "Lot 4 Sycamore",
             "city": "Welland, ON",
             "bedroom": 2,
-            "square": 1400,
+            "square": 1320,
             "garage": 1,
-            "bathroom": 3
-        },
-    
+            "bathroom": 2
+        },    
         {
-            "image": "home3.jpg",
-            "id": 2,
-            "address": "158 Julia Drive",
+            "image": "44Austin.jpg",
+            "id": 5,
+            "address": "44 Austin Road",
             "city": "Welland, ON",
             "bedroom": 2,
-            "square": 1510,
+            "square": 1300,
             "garage": 1,
             "bathroom": 3
         },
@@ -37,16 +36,6 @@
             "image": "591Gaiser.jpg",
             "id": 4, 
             "address": "591 Gaiser Road",
-            "city": "Welland, ON",
-            "bedroom": 2,
-            "square": 1300,
-            "garage": 1,
-            "bathroom": 3
-        },
-        {
-            "image": "44Austin.jpg",
-            "id": 5,
-            "address": "44 Austin Road",
             "city": "Welland, ON",
             "bedroom": 2,
             "square": 1300,

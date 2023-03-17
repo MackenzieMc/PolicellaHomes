@@ -1104,6 +1104,7 @@ nav .navigationContainer li .contactButton:hover {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
+  margin-bottom: 50px;
 }
 .tabsContainer .galleryButton {
   border-radius: 8px;
@@ -1118,9 +1119,18 @@ nav .navigationContainer li .contactButton:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.galleryItemsContainer .galleryImageContainer {
-  width: 25%;
+
+.galleryImageContainer {
+  width: calc(25% - 30px);
   position: relative;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0px 30px 30px 0px;
+}
+
+.galleryImageContainer:nth-child(4n) {
+  margin-right: 0px;
 }
 
 footer {

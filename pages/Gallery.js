@@ -15,25 +15,27 @@ function Gallery (props) {
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </header>
             <section>
-                <div className="tabsMainContainer">
-                    <div className="tabsContainer">
-                        <button className="galleryButton">All</button>
-                        <button className="galleryButton">Exterior</button>
-                        <button className="galleryButton">Interior</button>
-                        <button className="galleryButton">Kitchen</button>
-                        <button className="galleryButton">Bathroom</button>
-                    </div>
-                </div>
-
-            <div className="galleryItemsContainer">
-            {
-                galleryPhoto.map( data => 
-                        <div className="galleryImageContainer">
-                            <Image src={`${basePath}${data.imagePath}`} alt="" fill objectFit="cover" priority />
+                <div className="wrapper">
+                        <div className="tabsMainContainer">
+                            <div className="tabsContainer">
+                                <button className="galleryButton">All</button>
+                                <button className="galleryButton">Exterior</button>
+                                <button className="galleryButton">Interior</button>
+                                <button className="galleryButton">Kitchen</button>
+                                <button className="galleryButton">Bathroom</button>
+                            </div>
                         </div>
-                )
-            }
-            </div>   
+
+                    <div className="galleryItemsContainer">
+                    {
+                        galleryPhoto.map( data => 
+                                <div className="galleryImageContainer">
+                                    <Image src={`${basePath}${data.imagePath}`} alt="" fill objectFit="cover" priority />
+                                </div>
+                        )
+                    }
+                    </div>   
+                </div>
             </section>
         </>
     )
