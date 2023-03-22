@@ -533,10 +533,20 @@ nav .navigationContainer li .contactButton:hover {
   height: 100%;
 }
 .slideOne .heroMainText h1 {
-  font-size: 48px;
+  font-size: 16px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .slideOne .heroMainText h3 {
-  color: #e5e5e5;
+  color: white;
+  text-transform: uppercase;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.slideOne .heroMainText h3 br {
+  margin: 10px 0px;
 }
 
 .slideTwo {
@@ -971,7 +981,7 @@ nav .navigationContainer li .contactButton:hover {
   width: 50%;
 }
 .aboutUsTextAndImageContainer .textContainer p {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 .contactSection {

@@ -51,8 +51,8 @@ const Hero = (props) => {
                         <div className="embla__slide slideOne">
                             <Image />
                             <div className="heroMainText">
-                                <h1>Policella Homes</h1>
-                                <h3>Where old world craftsmanship meets modern day design</h3>
+                                <h1>Policella Homes: Niagara's trusted home builder</h1>
+                                <h3>old world craftsmanship<br></br>meets<br></br>modern day design<br></br></h3>
                             </div>
                         </div>
                         <div className="embla__slide slideTwo">

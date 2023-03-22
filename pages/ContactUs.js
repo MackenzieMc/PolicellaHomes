@@ -10,9 +10,9 @@ function ContactUs () {
 
     const mapContainer = useRef(null);
     const map = useRef(null);
-    const [lng, setLng] = useState(-70.9);
-    const [lat, setLat] = useState(42.35);
-    const [zoom, setZoom] = useState(9);
+    const [lng, setLng] = useState(-79.284660);
+    const [lat, setLat] = useState(43.018180);
+    const [zoom, setZoom] = useState(12);
 
     useEffect(() => {
         if (map.current) return; // initialize map only once
