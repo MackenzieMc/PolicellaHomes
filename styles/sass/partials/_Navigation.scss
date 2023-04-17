@@ -1,39 +1,29 @@
 nav {
     padding: 10px 15px;
-    border-bottom: 1px solid #F2F4F7;
-    position: sticky;
+    position: absolute;
     top: 0; 
+    width: 100%; 
     display: flex; 
     align-items: center;
     justify-content: flex-end;
-    background-color: #FFFF;
+    background-color: transparent;
     z-index: 5;
     .logoContainer {
         margin-right: auto;
     }
     .navigationContainer {
         display: flex; 
-        background-color: white;
         list-style: none;
         li {
             a {
-                color: black;
+                font-family: 'Heebo', sans-serif;
+                color: #fff;
                 text-decoration: none;
                 margin-left: 50px; 
-                font-size: 16px;
-            }
-            .contactButton {
-                border-radius: .375rem;
-                border: 1px solid #ff7161;
-                padding: 8px 16px;
-                color: #ff7161;
-                font-size: 16px;
-                transition: all .2s ease-in;
-                
-            }
-            .contactButton:hover {
-                background-color: #ff7161;
-                color: #FFFF; 
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 2.6px;
+                line-height: 13px;
             }
         }
     }

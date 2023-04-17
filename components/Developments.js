@@ -15,11 +15,11 @@ function Developments (props) {
         <section>
             <div className="wrapper">
                 <div className="sectionTitleTextContainer">
-                    <h2>Our Developments</h2>
+                    <div className="mainTitleTextContainer">
+                        <p>Check out our recent developments</p>
+                        <h2>Our Developments</h2>
+                    </div>
                     <div className="subTextContainer">
-                        <div className="findContainer">
-                            <p>Check out our recent developments!</p>
-                        </div>
                         <div className="seeMoreContainer">
                             <Link href="/Developments">View a complete list of developments <span className="modelDevelopmentLink"><AiOutlineArrowRight /></span></Link>
                         </div>
@@ -30,7 +30,9 @@ function Developments (props) {
                         Object.values(developments).splice(0, 3).map( (data) => {
                             return (
                                 <div className="developmentCard" key={data.id}>
-                                    <Link href={`/Developments`}>
+                                    <Link href={{
+                                        pathname: `/Developments/${data.id}`
+                                    }}>
                                         <div className="developmentImgContainer">
                                             <div className="sceneryPictureContainer">
                                                 <Image src={`${basePath}${data.imageOne}`} alt="" fill objectFit="cover" priority/>

@@ -4,25 +4,19 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 
 export default function ModelHomes(props) {
-
-    console.log(props);
-
     const homes = props
-    
-    
     const basePath = '/images/'
-    
     return (
         <section className="sectionBackground">
             <div className="wrapper">
                 <div className="sectionTitleTextContainer">
-                    <h2>Model Homes</h2>
+                    <div className="mainTitleTextContainer">
+                        <p>Find the right home for you</p>
+                        <h2>Model Homes</h2>
+                    </div>
                     <div className="subTextContainer">
-                        <div className="findContainer">
-                            <p>Find the right model for you!</p>
-                        </div>
                         <div className="seeMoreContainer">
-                            <Link href="/ModelHomes">View more Model Homes <span className="modelDevelopmentLink"><AiOutlineArrowRight /></span></Link>
+                            <Link href="/Model-Homes">View more Model Homes <span className="modelDevelopmentLink"><AiOutlineArrowRight /></span></Link>
                         </div>
                     </div>
                 </div>
@@ -33,9 +27,7 @@ export default function ModelHomes(props) {
                         Object.values(homes).splice(0,4).map(data =>
                             <div className="modelHomesCard" key={data.id}>
                                 <Link href={{
-                                    pathname: `/ModelHomes/${data.id}`, query: {
-                                        id: data.id
-                                    }
+                                    pathname: `/Model-Homes/${data.id}`
                                 }}>
                                     <div className="modelHomesImgContainer">
                                         <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" priority/>

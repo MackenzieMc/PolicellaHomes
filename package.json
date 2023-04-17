@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
     "@next/font": "13.1.1",
     "embla-carousel-react": "^7.0.5",
     "friendly-challenge": "^0.9.9",
     "mapbox-gl": "^2.13.0",
     "maplibre-gl": "^2.4.0",
     "next": "13.1.1",
+    "nextjs-breadcrumbs2": "^2.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",

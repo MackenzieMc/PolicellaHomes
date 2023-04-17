@@ -14,7 +14,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 main {
-    background-color: #f7f6f3;
+    background-color: #f7f4e8;
 }
 
 .wrapper {
@@ -25,7 +25,7 @@ main {
 
 section {
     padding: 5% 0; 
-    background-color: #f7f6f3;
+    background-color: #f7f4e8;
 }
 
 h1 {
@@ -48,13 +48,18 @@ a {
 }
 
 hr {
-    color: #e5e5e5;
-    background-color: #f7f6f3;
+    color: #424242;
+    opacity: 0.1;
+    background-color: #f7f4e8;
 }
 
 svg {
     vertical-align: middle;
     padding-bottom: 2px;
+}
+
+.oddSection {
+    padding: 0;
 }
 
 .headerText {
@@ -110,4 +115,68 @@ svg {
             margin: 0px; 
         }
     }
+}
+
+// Breadcrumb
+
+.breadSection {
+    margin: 0px;
+    padding: 0;
+}
+
+.breadContainer {
+    position: static;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5% 0 0 0;
+    .breadList {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0px;
+        display: flex;
+        position: relative;
+        li {
+            margin-right: 10px; 
+            a {
+                font-family: 'Heebo', serif;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 16px;
+            }
+        }
+        li::after {
+            content: '/';
+            margin-left: 10px;  
+        }
+        li:nth-child(3)::after {
+            content: ''
+        }
+    } 
+}
+
+.modelBreadList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px;
+    display: flex;
+    position: relative;
+    
+    li {
+        margin-right: 10px;
+        a {
+            font-family: 'Heebo', serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 16px;
+            }
+    }
+    
+    li::after {
+        content: '/';
+        margin-left: 10px;
+    }
+    
+        li:nth-child(2)::after {
+            content: ''
+        }
 }

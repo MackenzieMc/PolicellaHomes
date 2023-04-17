@@ -3,15 +3,18 @@ import Link from "next/link"
 function NavigationBar() {
     return (
         <nav>
-            <div className="logoContainer">
+            {/* <div className="logoContainer">
                 <Link href="/">Policella Homes Logo</Link>
-            </div>
+            </div> */}
             <ul className="navigationContainer">
+                <li>
+                    <Link href="/">Home</Link>
+                </li>
                 <li>
                     <Link href="/AboutUs">About Us</Link>
                 </li>
                 <li>
-                    <Link href="/ModelHomes">Model Homes</Link>
+                    <Link href="/Model-Homes">Model Homes</Link>
                 </li>
                 <li>
                     <Link href="/Developments">Developments</Link>

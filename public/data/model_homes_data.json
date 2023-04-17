@@ -4,7 +4,7 @@
         
         {
             "image": "sycamore4.jpg",
-            "id": 1,
+            "id": "4-Sycamore-Road",
             "address": "Lot 4 Sycamore",
             "city": "Welland, ON",
             "bedroom": 2,
@@ -14,7 +14,7 @@
         },    
         {
             "image": "44Austin.jpg",
-            "id": 5,
+            "id": "44-Austin",
             "address": "44 Austin Road",
             "city": "Welland, ON",
             "bedroom": 2,
@@ -24,7 +24,7 @@
         },
        { 
             "image": "hero3.jpg",
-            "id": 3,
+            "id": "701-Gaiser-Road",
             "address": "701 Gaiser Road",
             "city": "Welland, ON",
             "bedroom": 2,
@@ -34,7 +34,7 @@
         },
        {
             "image": "591Gaiser.jpg",
-            "id": 4, 
+            "id": "591-Gaiser-Road", 
             "address": "591 Gaiser Road",
             "city": "Welland, ON",
             "bedroom": 2,

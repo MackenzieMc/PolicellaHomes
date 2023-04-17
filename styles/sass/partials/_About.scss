@@ -20,7 +20,11 @@
     .aboutTextContainer {
         width: 50%; 
         p {
-            line-height: 1.5;
+            font-family: 'Lora', serif;
+            font-size: 17px;
+            letter-spacing: 0.50px;
+            line-height: 30px; 
+            color: #424242;
         }
     }
 }
@@ -37,28 +41,43 @@
 
 .aboutSectionsContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     .ourStoryContainer {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         .ourStoryTextContainer {
-            width: 45%; 
+            width: 90%; 
+            p {
+                font-family: 'Lora', serif;
+                font-size: 17px;
+                letter-spacing: 0.50px;
+                line-height: 30px; 
+                color: #424242;
+            }
         }
-        .ourStoryImgContainer {
-            width: 45%; 
+        .ourStoryImgContainer { 
             position: relative;
+            height: 50vh;
+            width: 90%;
         }
     }
     .qualityContainer {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        flex-direction: column-reverse;
         .qualityTextContainer {
-            width: 45%;
+            width: 90%;
+            p {
+                font-family: 'Lora', serif;
+                font-size: 17px;
+                letter-spacing: 0.50px;
+                line-height: 30px; 
+                color: #424242;
+            }
         }
         .qualityImgContainer {
-            width: 45%;
+            height: 50vh;
             position: relative;
+            width: 90%;
         }
     }
 }

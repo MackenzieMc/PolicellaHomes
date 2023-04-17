@@ -5,19 +5,40 @@
     }
 }
 
-.modelHomesSubTextContainer {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px; 
-
-    .seeMoreContainer {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #ff7161;
-        a {
+.sectionTitleTextContainer {
+    // display: flex; 
+    // align-items: center;
+    // justify-content: flex-end;
+    // margin-bottom: 30px; 
+    // width: 100%; 
+    .mainTitleTextContainer {
+        text-align: center;
+        h2 {
+            font-family: "Laro", serif;
+            font-size: 42px;
+            letter-spacing: 1px;
             color: #284646;
+            margin: 10px 0px 20px 0px; 
+            text-transform: uppercase;
         }
+        p {
+            font-family: "Heebo", sans-serif;
+            color: #424242;
+            letter-spacing: 1px
+        }
+    }
+    .subTextContainer {
+        justify-content: flex-end;
+        .seeMoreContainer {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom: 1px solid #ff7161;
+            a {
+                color: #284646;
+            }
+    }
+
 
     }
     p {
@@ -206,3 +227,91 @@
         background-position: center center;
 }
 
+
+// ID Page
+
+.modelHomeContainer {
+    display: flex;
+    margin-top: 30px; 
+    .modelHomeNameAndFeaturesContainer {
+        width: 30%; 
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px; 
+        h2 {
+            font-family: "Lora", sans-serif;
+            text-transform: uppercase;
+            margin-top: 0;
+            color: #424242;
+            letter-spacing: 1.5px;
+            font-size: 32px; 
+            
+        }
+        p {
+            font-family: 'Lora', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.50px;
+            line-height: 30px;
+            color: #424242;
+               
+        }
+        .featuresListAndLocationContainer {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #424242;
+            border-bottom: 1px solid #424242;
+            padding: 5% 0; 
+            h3 {
+                font-family: "Heebo", serif;
+                font-size: 12px; 
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+            p {
+                font-family: "Heebo", serif;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+            ul {
+                li {
+                    font-family: "Heebo", serif;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    letter-spacing: 1.5px;
+                }
+                li::marker {
+                    font-size: 10px;
+                }
+            }
+            .locationContainer {
+                margin-right: 30px; 
+                p {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    
+                }
+                .cityLocation {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+.modelHomeFeaturesContainer {
+    width: 30%; 
+    margin-right: 30px; 
+}
+
+.modelHomeImageContainer {
+    width: 70%; 
+    position: relative;
+    height: 500px; 
+}
+
+.modelHomeSection {
+    padding-top: 0;
+}

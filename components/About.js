@@ -6,7 +6,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai'
 
 function About () {
     return (
-        <section className="oddBackground">
+        <section>
             <div className="wrapper aboutUsWrapper">
                 <div className="aboutContainer">
                     <div className="aboutImgContainer">

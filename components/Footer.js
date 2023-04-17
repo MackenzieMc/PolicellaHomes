@@ -12,6 +12,19 @@ function Footer () {
 
                         </div>
                         <h4>Where old world craftsmanship meets modern day design.</h4>
+
+                        <address>
+                            <p>
+                                <a href="https://www.google.com/maps/place/Policella+Homes/@43.0184264,-79.2871268,17z/data=!3m1!4b1!4m6!3m5!1s0x89d349861cdaa609:0x210eff36c5c69052!8m2!3d43.0184264!4d-79.2849381!16s%2Fg%2F1tfrc4v4" className="streetAddress">
+                                    <span>945 South Pelham Rd</span>
+                                    <br />
+                                    <span>Welland, Ontario L3C 3E2</span>
+                                </a>
+                            </p>
+                            <p>Phone: <a href="tel: +1(905)-892-9897">905-892-9897</a></p>
+                            <p>E-mail: <a href="mailto:vincepolicella@cogeco.ca">vincepolicella@cogeco.ca</a></p>
+                        </address>
+                    </div>
                         <div className="footerLinksContainer">
                             <nav>
                                 <ul className="footerNavigationContainer">
@@ -33,7 +46,6 @@ function Footer () {
                                 </ul>
                             </nav>
                         </div>
-                    </div>
                     <div className="footerCertificationContainer">
                         <div className="footerCertification">
                             <div className="footerCertificationText">

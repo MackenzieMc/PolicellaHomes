@@ -1,4 +1,5 @@
 footer {
+    font-family: 'Didact Gothic', sans-serif;
     color: #FFFF; 
     background-color: #284646;
     .footerTextandLogoContainer {
@@ -10,7 +11,9 @@ footer {
         justify-content: space-between;
     }
     .footerLinksContainer {
+        padding: 5% 0 2% 0; 
         nav {
+            position: static;
             justify-content: flex-start;
             padding: 0px; 
             border-bottom: none;
@@ -18,13 +21,17 @@ footer {
         }
         .footerNavigationContainer {
             display: flex;
+            flex-direction: column;
             list-style: none;
             padding: 0px; 
             li {
+                margin-bottom: 16px; 
                 a {
                     text-decoration: none;
                     color: #e5e5e5;
                     margin-right: 30px; 
+                    text-decoration: underline;
+                    text-underline-offset: 7px;
                 }
             }
         }
@@ -34,7 +41,7 @@ footer {
 .footerCopy {
     font-size: 14px; 
     color: #e5e5e5;
-    a{
+    a {
         color: #e5e5e5;
         font-size: 14px;
     }
@@ -54,5 +61,16 @@ footer {
     text-align: right;
     p {
         font-size: 16px;
+    }
+}
+
+address {
+    font-style: normal;
+    p {
+        font-size: 16px;
+        a {
+            color: #fff; 
+            font-size: 16px;
+        }
     }
 }

@@ -1,0 +1,125 @@
+@media screen and (max-width: 480px) {
+
+    // Base Styles 
+    .headerText {
+        text-align: center;
+        h2 {
+            font-size: 38px; 
+        }
+        p {
+            font-size: 16px; 
+        }
+    }
+
+    // Preamble Component
+    .preambleTextContainer {
+        flex-direction: column;
+        .preambleMainTextContainer {
+            width: 100%;
+            p {
+                font-size: 17px;
+            }
+        }
+        .checkOutContainer {
+            .checkOutImageContainer {
+                width: 100%; 
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    // Model Home Component
+    .modelHomesContainer {
+        flex-direction: column;
+        .modelHomesCard {
+            width: 100%;
+        }
+    }
+
+    // Model Home Page
+    .modelHomesPageContainer {
+        flex-direction: column;
+        gap: 0px; 
+        .modelHomesPageCard {
+            width: 100%; 
+        }
+    }
+
+    // Model Home [ID] Page
+    .modelHomeContainer {
+        flex-direction: column;
+        .modelHomeNameAndFeaturesContainer {
+            width: 100%;
+        }
+        .modelHomeImageContainer {
+            width: 100%; 
+            object-fit: contain;
+            height: 300px; 
+            margin-top: 30px; 
+            img {
+                height: auto; 
+            }
+        }
+    }
+
+    // Development Component 
+    .developmentsCardsContainer {
+        flex-direction: column;
+        .developmentCard {
+            width: 100%; 
+            margin-bottom: 40px; 
+        }
+    }
+
+    // Development Page
+    .developmentPageContainer {
+        flex-direction: column;
+        gap: 0px; 
+        .developmentCard {
+            width: 100%; 
+        }
+    }
+
+    // About Component 
+    .aboutContainer {
+        flex-direction: column;
+        .aboutImgContainer {
+            height: 400px; 
+            width: 100%;
+        }
+        .aboutTextContainer {
+            width: 100%;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    // Contact Page
+    .formAndTextContainer {
+        flex-direction: column;
+        .formContainer {
+            width: 100%; 
+        }
+    }
+
+    // Footer
+    footer {
+        .footerTextandLogoContainer {
+            flex-direction: column;
+            .footerTextContainer {
+                width: 100%; 
+            }
+            .footerCertificationContainer {
+                width: 100%; 
+                text-align: left;
+            }
+        }
+        .designContainer {
+            display: none;
+        }
+        .footerDesignCopywrightContainer {
+            justify-content: center;
+        }
+    } 
+}
