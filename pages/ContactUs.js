@@ -1,10 +1,24 @@
 import { useEffect, useState, useRef } from 'react'
-import { Wrapper } from "@googlemaps/react-wrapper";
-import Map from '../components/GoogleMap';
+import { Loader } from "@googlemaps/js-api-loader"
 import Head from 'next/head';
 
 // mapboxgl.accessToken = 'pk.eyJ1IjoibWFja2VuemllbWNjIiwiYSI6ImNsZXJxc3Z1cDB2NGYzb3B2YzhqcjV2cXIifQ.iy5bG1cZQhPDKsrivRCqjg';
 function ContactUs () {
+
+
+    const loader = new Loader({
+        apiKey: "AIzaSyDeU74dpqR3GvijtMv1wbfJolyn_mHiE38",
+        version: "weekly",
+    });
+
+    loader.load().then(async () => {
+        const { Map } = await google.maps.importLibrary("maps");
+
+        map = new Map(document.getElementById("map"), {
+            center: { lat: -34.397, lng: 150.644 },
+            zoom: 8,
+        });
+    });
 
     // const mapContainer = useRef(null);
     // const map = useRef(null);
@@ -79,9 +93,9 @@ function ContactUs () {
                                 <input type="submit" value="Submit" className="buttonSubmit"/>
                             </form>
                         </div>
-                        <Wrapper apiKey={'AIzaSyChNMT_SQVNE1LFPSfhEdxsRHOcxGGrJPM'}>
-                            <Map />
-                        </Wrapper> 
+                        <div className="mapContainer">
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </div>
             </section>
