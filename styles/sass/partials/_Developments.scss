@@ -147,3 +147,92 @@
         }
     }
 }
+
+// ID Page
+// ID Page
+
+.IDContentContainer {
+    display: flex;
+    margin-top: 30px;
+
+    .IDInfoContainer {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+
+        h2 {
+            font-family: "Lora", sans-serif;
+            text-transform: uppercase;
+            margin-top: 0;
+            color: #424242;
+            letter-spacing: 1.5px;
+            font-size: 32px;
+
+        }
+
+        p {
+            font-family: 'Lora', sans-serif;
+            font-size: 16px;
+            letter-spacing: 0.50px;
+            line-height: 30px;
+            color: #424242;
+
+        }
+
+        .featuresListAndLocationContainer {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #424242;
+            border-bottom: 1px solid #424242;
+            padding: 5% 0;
+
+            h3 {
+                font-family: "Heebo", serif;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+
+            p {
+                font-family: "Heebo", serif;
+                font-size: 12px;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+
+            ul {
+                li {
+                    font-family: "Heebo", serif;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    letter-spacing: 1.5px;
+                }
+
+                li::marker {
+                    font-size: 10px;
+                }
+            }
+
+        }
+    }
+    .IDMapContainer {
+        margin-right: 30px;
+        width: 70%; 
+        .mapContainer {
+            width: 100%;
+            height: 500px; 
+        }
+
+        p {
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+        }
+
+        .cityLocation {
+            margin-top: 5px;
+        }
+    }
+}

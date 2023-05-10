@@ -12,6 +12,7 @@
     "@googlemaps/js-api-loader": "^1.15.1",
     "@googlemaps/react-wrapper": "^1.1.35",
     "@next/font": "13.1.1",
+    "@react-google-maps/api": "^2.18.1",
     "embla-carousel-react": "^7.0.5",
     "friendly-challenge": "^0.9.9",
     "mapbox-gl": "^2.13.0",

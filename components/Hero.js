@@ -61,8 +61,8 @@ const Hero = (props) => {
                                     <h2>711 Gaiser Road</h2>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit molestias corrupti reprehenderit molestiae eius ad a itaque excepturi? Atque?</p>
                                     <div className="buttonContainer">
-                                        <Link className="viewOne" href={'/ModelHomes'}>View Home</Link>
-                                        <Link className="viewAll" href={'/ModelHomes'}>View All Homes</Link>
+                                        <Link className="viewOne" href={'/Model-Homes'}>View Home</Link>
+                                        <Link className="viewAll" href={'/Model-Homes'}>View All Homes</Link>
                                     </div>
                                 </div>
                             </div>
@@ -73,8 +73,8 @@ const Hero = (props) => {
                                     <h2>Valleyway Estates</h2>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos qui repudiandae a consectetur doloremque excepturi nostrum dolores expedita sed sunt.</p>
                                     <div className="buttonContainer">
-                                        <Link className="viewOne" href={'/ModelHomes'}>View Development</Link>
-                                        <Link className="viewAll" href={'/ModelHomes'}>View All Developments</Link>
+                                        <Link className="viewOne" href={'/Developments'}>View Development</Link>
+                                        <Link className="viewAll" href={'/Developments'}>View All Developments</Link>
                                     </div>
                                 </div>
                             </div>

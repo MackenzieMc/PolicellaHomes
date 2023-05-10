@@ -14,7 +14,7 @@ function About () {
                     </div>
                     <div className="aboutTextContainer">
                         <h3>Meet the Policellas</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias eaque delectus deleniti enim rerum a unde fuga, odio corporis libero magnam. Quas qui consectetur ad assumenda obcaecati praesentium voluptas tempore saepe amet illum, facere placeat dolore earum ab quo possimus necessitatibus libero beatae consequuntur deserunt eos maxime sed itaque sapiente!</p>
+                        <p>Vince Policella Sr., a skilled mason from Italy, founded Policella Homes in Canada in 1984. His son, Vince Jr., joined the family business in 2001. Policella Homes is known for its honest and quality custom builds, with over 400 homes constructed. We work closely with our clients to design and build homes that meet their individual needs and personal style.</p>
                         <div>
                             <Link className="aboutUsLinkContainer" href='/AboutUs'>Learn more about us! <AiOutlineArrowRight /></Link>
                         </div>

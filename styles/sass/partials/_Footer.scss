@@ -1,5 +1,5 @@
 footer {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: 'Lora', serif;
     color: #FFFF; 
     background-color: #284646;
     .footerTextandLogoContainer {
@@ -27,11 +27,14 @@ footer {
             li {
                 margin-bottom: 16px; 
                 a {
+                    font-family: "Heebo", sans-serif;
                     text-decoration: none;
                     color: #e5e5e5;
                     margin-right: 30px; 
                     text-decoration: underline;
                     text-underline-offset: 7px;
+                    text-transform: uppercase;
+                    font-size: 14px;
                 }
             }
         }
@@ -51,6 +54,9 @@ footer {
     padding: 5% 0 2% 0;  
     width: 50%; 
     h4 {
+        font-family: "Lora", serif;
+        font-weight: 400;
+        letter-spacing: 1px;
         margin: 16px 0px; 
     }
 }
@@ -60,17 +66,19 @@ footer {
     width: 50%; 
     text-align: right;
     p {
-        font-size: 16px;
+        font-family: "Heebo", sans-serif;
+        color: #e5e5e5;
+        text-transform: uppercase;
+        font-size: 14px;
     }
 }
 
 address {
     font-style: normal;
-    p {
-        font-size: 16px;
-        a {
-            color: #fff; 
-            font-size: 16px;
-        }
+    p, a, span {
+        font-family: "Lora", sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #e5e5e5;
     }
 }

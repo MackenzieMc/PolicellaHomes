@@ -7,8 +7,8 @@ function Preamble () {
             <div className="wrapper">
                 <div className="preambleTextContainer">
                     <div className="preambleMainTextContainer">
-                        <h3>Serving the Niagara region since <span className="preambleText">1984</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti est esse recusandae rerum numquam blanditiis officiis quis dolorem sunt quae, ducimus temporibus molestias tenetur mollitia. Porro similique dolor animi recusandae!</p>
+                        <h3>Building custom homes and lots in the Niagara region since 1984.</h3>
+                        <p>Policella Homes, founded by Vince Policella Sr. in 1984, is a family business known for delivering honest and quality custom builds. With over 400 homes constructed, we collaborate with clients to design and construct homes that are practical and reflect your personal style, delivered on time and within budget.</p>
                     </div>
                     <div className="checkOutContainer">
                         <div className="checkOutImageContainer">

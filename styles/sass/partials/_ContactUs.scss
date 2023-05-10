@@ -1,7 +1,6 @@
 
 .contactSection {
     background-color: #f7f6f3;
-    padding-bottom: 0;
 }
 
 .formAndTextContainer {
@@ -19,8 +18,12 @@
 }
 
 .mapContainer {
+    position: relative;
     width: 50%; 
-    border: 1px solid black
+}
+
+#map {
+    height: 100%; 
 }
 
 
@@ -83,7 +86,7 @@
         }
 
         .subjectInput {
-            width: 40%;
+            width: 45%;
         }
         .buttonSubmit {
             width: 30%;

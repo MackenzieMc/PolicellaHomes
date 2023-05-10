@@ -1,3 +1,88 @@
+@media screen and (max-width: 768px) {
+    // About Component 
+    .aboutContainer {
+        flex-direction: column;
+        .aboutImgContainer {
+            height: 400px; 
+            width: 100%;
+        }
+        .aboutTextContainer {
+            width: 100%;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+    // About Page 
+    .aboutSectionsContainer {
+        flex-direction: column;
+        .ourStoryContainer {
+            .ourStoryTextContainer, .ourStoryImgContainer {
+                width: 100%; 
+            }
+        }
+        .qualityContainer {
+            flex-direction: column;
+            .qualityTextContainer, .qualityImgContainer {
+                width: 100%;
+            }
+        }
+    }
+
+    // Development Page
+    .developmentPageContainer {
+        gap: 40px; 
+        .developmentCard {
+            width: calc((100% / 2) - 40px); 
+        }
+    }
+
+    // Model Home Component
+    .modelHomesContainer {
+        .modelHomesCard {
+            width: calc(50% - 30px)
+        }
+    }
+
+    // Model Home Page
+    .modelHomesPageContainer {
+        gap: 40px; 
+        .modelHomesPageCard {
+            width: calc((100% / 2) - 40px);
+        }
+    }
+
+    // Model Home [ID] Page
+    .modelHomeContainer {
+        flex-direction: column;
+        .modelHomeNameAndFeaturesContainer {
+            width: 100%;
+        }
+        .modelHomeImageContainer {
+            width: 100%; 
+            object-fit: contain;
+            height: 400px; 
+            margin-top: 30px; 
+            img {
+                height: auto; 
+            }
+        }
+    }
+
+    // Contact Page
+    .formAndTextContainer {
+        flex-direction: column;
+        .formContainer {
+            width: 100%; 
+        }
+    }
+    .mapContainer {
+        width: 100%;
+        height: 400px; 
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     // Base Styles 
@@ -95,12 +180,32 @@
             }
         }
     }
+
+    // About Page 
+    .aboutSectionsContainer {
+        flex-direction: column;
+        .ourStoryContainer {
+            .ourStoryTextContainer, .ourStoryImgContainer {
+                width: 100%; 
+            }
+        }
+        .qualityContainer {
+            flex-direction: column;
+            .qualityTextContainer, .qualityImgContainer {
+                width: 100%;
+            }
+        }
+    }
     // Contact Page
     .formAndTextContainer {
         flex-direction: column;
         .formContainer {
             width: 100%; 
         }
+    }
+    .mapContainer {
+        width: 100%;
+        height: 400px; 
     }
 
     // Footer

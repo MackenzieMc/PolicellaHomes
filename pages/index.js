@@ -7,15 +7,12 @@ import About from '../components/About'
 import DivOne from '../components/DivOne'
 import DivTwo from '../components/DivTwo'
 import homes from '../public/data/model_homes_data.json'
-import 'mapbox-gl/dist/mapbox-gl.css';
 
 
 export default function Home(props) {
-
   
   const homes = props.objectData.modelHomes
   const development = props.objectDataTwo.developments
-  console.log(homes, development);
 
   return (
     <>

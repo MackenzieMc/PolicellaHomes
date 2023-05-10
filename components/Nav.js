@@ -1,6 +1,8 @@
 import Link from "next/link"
 
 function NavigationBar() {
+
+    
     return (
         <nav>
             {/* <div className="logoContainer">

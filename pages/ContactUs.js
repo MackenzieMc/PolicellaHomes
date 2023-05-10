@@ -1,42 +1,21 @@
 import { useEffect, useState, useRef } from 'react'
-import { Loader } from "@googlemaps/js-api-loader"
+import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 import Head from 'next/head';
 
-// mapboxgl.accessToken = 'pk.eyJ1IjoibWFja2VuemllbWNjIiwiYSI6ImNsZXJxc3Z1cDB2NGYzb3B2YzhqcjV2cXIifQ.iy5bG1cZQhPDKsrivRCqjg';
-function ContactUs () {
 
 
-    const loader = new Loader({
-        apiKey: "AIzaSyDeU74dpqR3GvijtMv1wbfJolyn_mHiE38",
-        version: "weekly",
-    });
+// function Map() {
+//     return <GoogleMap zoom={15} center={{ lat: 43.018944116352955, lng: -79.28283524817378 }} mapContainerClassName="mapContainer"></GoogleMap>
+// }
 
-    loader.load().then(async () => {
-        const { Map } = await google.maps.importLibrary("maps");
+export default function ContactUs () {
+    
+    // const { isLoaded } = useLoadScript({ 
+    //     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    // })
 
-        map = new Map(document.getElementById("map"), {
-            center: { lat: -34.397, lng: 150.644 },
-            zoom: 8,
-        });
-    });
 
-    // const mapContainer = useRef(null);
-    // const map = useRef(null);
-    // const [lng, setLng] = useState(-79.284660);
-    // const [lat, setLat] = useState(43.018180);
-    // const [zoom, setZoom] = useState(12);
-
-    // useEffect(() => {
-    //     if (map.current) return; // initialize map only once
-    //     map.current = new mapboxgl.Map({
-    //         container: mapContainer.current,
-    //         style: 'mapbox://styles/mapbox/streets-v12',
-    //         center: [lng, lat],
-    //         zoom: zoom,
-    //         attributionControl: false,
-    //     });
-    // });
-
+    // if(!isLoaded) return <div>Loading..</div>;
     return (
         <>
             <Head>
@@ -94,7 +73,13 @@ function ContactUs () {
                             </form>
                         </div>
                         <div className="mapContainer">
-                            <div id="map"></div>
+                            <iframe title="Google Maps"
+                            style={{ width: "100%", height: "100%", border: "none" }}
+                            width="500"
+                            height="500"
+                            id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Policella%Homes%20&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -103,4 +88,3 @@ function ContactUs () {
     )
 }
 
-export default ContactUs 

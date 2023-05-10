@@ -1,20 +1,8 @@
+import { GoogleMap } from '@react-google-maps/api';
 
-import { useEffect, useRef } from "react";
+function Map({ DevelopmentsData }) {
 
-function MyMapComponent() {
-
-    const center = {lat: -74, lng: 40.7}
-    const zoom = 9
-    const ref = useRef();
-
-    useEffect(() => {
-        new window.google.maps.Map(ref.current, {
-            center,
-            zoom,
-        });
-    });
-
-    return <div ref={ref} id="map" />;
+    return <GoogleMap zoom={15} center={{lat: DevelopmentsData.lat, lng: DevelopmentsData.lng}}mapContainerClassName="mapContainer"></GoogleMap>
 }
 
-export default MyMapComponent
+export default Map

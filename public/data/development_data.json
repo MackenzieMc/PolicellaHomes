@@ -1,37 +1,48 @@
 {
-
     "developments" : [
-
         {
             "id" : "Valleyway-Estates",
             "name": "Valleyway Estates",
             "location": "Welland, ON",
-            "imageOne": "development1.jpg"
+            "imageOne": "development1.jpg",
+            "description": "This community features a range of single-family homes and townhouses, with a mix of modern and traditional architectural styles. The homes are built on large lots with plenty of green space and tree-lined streets, providing residents with a peaceful and picturesque setting. Valleyway Estates is situated close to a variety of amenities, including schools, parks, shopping centers, and restaurants.",
+            "lat": 43.0062576,
+            "long": -79.2822452
     
         },
         {
             "id": "Spearow-Meadows-Estates",
             "name": "Spearow Meadows Estates",
             "location": "Welland, ON",
-            "imageOne": "development2.jpg"
+            "imageOne": "development2.jpg",
+            "lat": 42.984702621327244,
+            "long": -79.28763252515836
         },
         {
             "id": "Lookout-Landing",
             "name": "Lookout Landing",
             "location": "Fonthill, ON",
-            "imageOne": "development1.jpg"
+            "imageOne": "development1.jpg",
+            "description": "Lookout Landing is a community of single-family homes and townhouses located on a scenic hilltop in the heart of Niagara's wine country. This development features a mix of modern and traditional architectural styles and offers residents access to a range of amenities, including parks, trails, and nearby shopping and dining options.",
+            "lat": 43.0456382,
+            "long": -79.2963444
         },
         {
             "id": "Blue-River-Estates",
             "name": "Blue River Estates",
             "location": "Welland, ON",
-            "imageOne": "development2.jpg"
+            "imageOne": "development2.jpg",
+            "description": "This community offers a range of housing options, including single-family homes and townhouses with a mix of modern and traditional designs. The homes are built on generously sized lots and feature contemporary amenities such as open-concept layouts, high ceilings, and energy-efficient appliances.Additionally, this development is located close to the Welland Recreational Canal, which offers opportunities for boating, kayaking, and cycling.",
+            "lat": 42.985547,
+            "long": -79.275552
         },
         {
             "id": "Forest-Creek-Estates",
             "name": "Forest Creek Estates",
             "location": "Welland, ON",
-            "imageOne": "development2.jpg"
+            "imageOne": "development2.jpg",
+            "lat": 43.010641,
+            "long": -79.287182
         }
     ]
 }
