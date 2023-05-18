@@ -8,7 +8,7 @@ import {
 
 import Link from 'next/link'
 import Image from 'next/image'
-import HeroImageOne from '../public/images/Hero2.jpg'
+import HeroImageOne from '../public/images/hero2.jpg'
 import HeroImageTwo from '../public/images/home1.jpg'
 import HeroImageThree from '../public/images/development2.jpg'
 
