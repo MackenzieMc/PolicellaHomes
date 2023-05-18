@@ -48,9 +48,11 @@
             .developmentTitleTextContainer {
 
                 h3 {
+                    font-family: "Heebo", sans-serif;
                     margin-top: 0px;
                     font-size: 14px;
                     color: #0a0a0a;
+                    letter-spacing: 1px;
                 }
             }
             .developmentLocationTextContainer {
@@ -116,9 +118,11 @@
                 .developmentTitleTextContainer {
         
                     h3 {
+                        font-family: "Heebo", sans-serif;
                         margin-top: 0px;
                         font-size: 14px;
                         color: #0a0a0a;
+                        letter-spacing: 1px;
                     }
                 }
         
@@ -149,8 +153,6 @@
 }
 
 // ID Page
-// ID Page
-
 .IDContentContainer {
     display: flex;
     margin-top: 30px;

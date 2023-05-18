@@ -22,11 +22,6 @@
     width: 50%; 
 }
 
-#map {
-    height: 100%; 
-}
-
-
 .formContainer {
     display: flex;
     flex-direction: column;
@@ -39,6 +34,10 @@
             text-transform: uppercase;
             font-size: 18px;
             margin-bottom: 30px;
+        }
+        label {
+            font-family: "Lora", sans-serif;
+            color:#424242;
         }
         input {
             margin: 15px 0px; 
@@ -124,12 +123,5 @@
             }
         }
     }
-}
-
-.mapboxgl-map {
-    position: absolute;
-    top: 0;
-    bottom: 0; 
-    width: 100%; 
 }
 

@@ -53,6 +53,7 @@
         flex-direction: column;
         .ourStoryTextContainer {
             width: 90%; 
+            padding: 5%; 
             h3 {
                 font-family: "Heebo", sans-serif;
                 font-size: 18px;
@@ -69,7 +70,7 @@
         }
         .ourStoryImgContainer { 
             position: relative;
-            height: 50vh;
+            height: 400px;
             width: 90%;
         }
     }
@@ -78,6 +79,7 @@
         flex-direction: column-reverse;
         .qualityTextContainer {
             width: 90%;
+            padding: 5%; 
             h3 {
                 font-family: "Heebo", sans-serif;
                 font-size: 18px;
@@ -93,7 +95,7 @@
             }
         }
         .qualityImgContainer {
-            height: 50vh;
+            height: 400px;
             position: relative;
             width: 90%;
         }

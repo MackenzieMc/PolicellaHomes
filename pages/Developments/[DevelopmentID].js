@@ -6,7 +6,7 @@ import Breadcrumbs from 'nextjs-breadcrumbs2';
 import Head from 'next/head';
 import Map from '../../components/GoogleMap'
 import { useMemo } from 'react';
-import { GoogleMap, useLoadScript } from '@react-google-maps/api';
+import { GoogleMap, GroundOverlay, useLoadScript } from '@react-google-maps/api';
 
 export const getStaticPaths = async () => {
 
@@ -33,8 +33,21 @@ function DevelopmentDetail({ DevelopmentsData }) {
             googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
         })
 
+        console.log(DevelopmentsData);
+
 
         if(!isLoaded) return <div>Loading..</div>;
+
+        const basePath = '/images/'
+
+        console.log(DevelopmentsData[0].south);
+
+        const bounds = {
+            north: DevelopmentsData[0].north,
+            south: DevelopmentsData[0].south,
+            east: DevelopmentsData[0].east,
+            west: DevelopmentsData[0].west
+        }
 
     return (
         <>
@@ -66,7 +79,18 @@ function DevelopmentDetail({ DevelopmentsData }) {
                                     </div>
                                 </div>
                                 <div className="IDMapContainer">
-                                    <GoogleMap zoom={17} center={{lat: data.lat, lng: data.long}}mapContainerClassName="mapContainer" mapTypeId='hybrid'></GoogleMap>
+                                    <GoogleMap 
+                                        zoom={17}
+                                        center={{lat: data.lat, lng: data.long}}
+                                        mapContainerClassName="mapContainer" 
+                                        mapTypeId='hybrid'>
+                                            <GroundOverlay 
+                                            url={`${basePath}${data.imageMap}`}
+                                            bounds={bounds}
+                                            
+                                            />
+
+                                    </GoogleMap>
                                 </div>
                             </div>
                         </div>

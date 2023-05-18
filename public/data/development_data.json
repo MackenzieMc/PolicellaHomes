@@ -5,44 +5,68 @@
             "name": "Valleyway Estates",
             "location": "Welland, ON",
             "imageOne": "development1.jpg",
+            "imageMap": "valleywaymap.png",
             "description": "This community features a range of single-family homes and townhouses, with a mix of modern and traditional architectural styles. The homes are built on large lots with plenty of green space and tree-lined streets, providing residents with a peaceful and picturesque setting. Valleyway Estates is situated close to a variety of amenities, including schools, parks, shopping centers, and restaurants.",
             "lat": 43.0062576,
-            "long": -79.2822452
-    
+            "long": -79.2822452,
+            "north": 43.0074981,
+            "east": -79.2809011,
+            "south": 43.005555,
+            "west": -79.282802
         },
         {
             "id": "Spearow-Meadows-Estates",
             "name": "Spearow Meadows Estates",
             "location": "Welland, ON",
             "imageOne": "development2.jpg",
+            "imageMap": "sparrowmap.png",
             "lat": 42.984702621327244,
-            "long": -79.28763252515836
+            "long": -79.28763252515836,
+            "north": 42.9864476,
+            "east": -79.2828413,
+            "south": 42.982995,
+            "west": -79.2902422
         },
         {
             "id": "Lookout-Landing",
             "name": "Lookout Landing",
             "location": "Fonthill, ON",
             "imageOne": "development1.jpg",
+            "imageMap": "lookoutmap.png",
             "description": "Lookout Landing is a community of single-family homes and townhouses located on a scenic hilltop in the heart of Niagara's wine country. This development features a mix of modern and traditional architectural styles and offers residents access to a range of amenities, including parks, trails, and nearby shopping and dining options.",
             "lat": 43.0456382,
-            "long": -79.2963444
+            "long": -79.2963444,
+            "north": 43.04721122000555,
+            "east": -79.29510000000647,
+            "south": 43.04353116888276,
+            "west": -79.29849999587341
         },
         {
             "id": "Blue-River-Estates",
             "name": "Blue River Estates",
             "location": "Welland, ON",
             "imageOne": "development2.jpg",
+            "imageMap": "bluerivermap.png",
             "description": "This community offers a range of housing options, including single-family homes and townhouses with a mix of modern and traditional designs. The homes are built on generously sized lots and feature contemporary amenities such as open-concept layouts, high ceilings, and energy-efficient appliances.Additionally, this development is located close to the Welland Recreational Canal, which offers opportunities for boating, kayaking, and cycling.",
             "lat": 42.985547,
-            "long": -79.275552
+            "long": -79.275552,
+            "north": 42.986673,
+            "east": -79.273852,
+            "south": 42.983263,
+            "west": -79.278097
         },
         {
             "id": "Forest-Creek-Estates",
             "name": "Forest Creek Estates",
             "location": "Welland, ON",
             "imageOne": "development2.jpg",
+            "imageMap": "forestmap.png",
             "lat": 43.010641,
-            "long": -79.287182
+            "long": -79.287182,
+            "north": 43.012151,
+            "east": -79.285321,
+            "south": 43.010304,
+            "west": -79.288926
         }
     ]
 }

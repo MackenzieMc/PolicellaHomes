@@ -21,7 +21,6 @@ function Developments (props) {
             </Head>
             <header className='headerText developmentHeader'>
                     <h2>Our Developments</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </header>
             <section className='breadSection'>
                 <div className="wrapper">

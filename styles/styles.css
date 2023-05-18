@@ -231,238 +231,6 @@ html {
   overflow: hidden;
 }
 
-html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-article, aside, footer, header, nav, section {
-  display: block;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-figcaption, figure, main {
-  display: block;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-b, strong {
-  font-weight: inherit;
-}
-
-b, strong {
-  font-weight: bolder;
-}
-
-code, kbd, samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-dfn {
-  font-style: italic;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-audio, video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-img {
-  border-style: none;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-button, input, optgroup, select, textarea {
-  font-family: sans-serif;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-}
-
-button, input {
-  overflow: visible;
-}
-
-button, select {
-  text-transform: none;
-}
-
-button, html [type=button], [type=reset], [type=submit] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-legend {
-  box-sizing: border-box;
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
-}
-
-progress {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-textarea {
-  overflow: auto;
-}
-
-[type=checkbox], [type=radio] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-details, menu {
-  display: block;
-}
-
-summary {
-  display: list-item;
-}
-
-canvas {
-  display: inline-block;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 * {
   font-family: "Didact Gothic", sans-serif;
 }
@@ -589,7 +357,7 @@ svg {
 .breadContainer .breadList li a {
   font-family: "Heebo", serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   font-size: 16px;
 }
 .breadContainer .breadList li::after {
@@ -631,7 +399,40 @@ svg {
   padding: 20px 0px;
 }
 
-nav {
+.errorContainer {
+  display: flex;
+  justify-content: center;
+}
+.errorContainer .errorPageTextContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.errorContainer .errorPageTextContainer h3 {
+  font-family: "Laro", sans-serif;
+  color: #284646;
+  letter-spacing: 1px;
+  font-size: 72px;
+  margin-bottom: 0px;
+}
+.errorContainer .errorPageTextContainer p {
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  color: #284646;
+  margin-bottom: 60px;
+}
+.errorContainer .errorPageTextContainer a {
+  padding: 10px 30px;
+  background-color: #284646;
+  color: #FFF;
+  align-items: center;
+  margin-top: 30px;
+  margin: auto;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.navAbs {
   padding: 10px 15px;
   position: absolute;
   top: 0;
@@ -641,15 +442,16 @@ nav {
   justify-content: flex-end;
   background-color: transparent;
   z-index: 5;
+  transition: all 0.4s ease-in-out;
 }
-nav .logoContainer {
+.navAbs .logoContainer {
   margin-right: auto;
 }
-nav .navigationContainer {
+.navAbs .navigationContainer {
   display: flex;
   list-style: none;
 }
-nav .navigationContainer li a {
+.navAbs .navigationContainer li a {
   font-family: "Heebo", sans-serif;
   color: #fff;
   text-decoration: none;
@@ -658,6 +460,15 @@ nav .navigationContainer li a {
   text-transform: uppercase;
   letter-spacing: 2.6px;
   line-height: 13px;
+}
+
+.fixedBar {
+  position: fixed;
+  background-color: #284646;
+  padding-top: 10px;
+}
+.fixedBar .navigationContainer li a {
+  color: #FFF;
 }
 
 .preambleTextContainer {
@@ -775,8 +586,8 @@ nav .navigationContainer li a {
 
 .embla__dot,
 .embla__button {
-  -webkit-appearance: none;
   background-color: transparent;
+  -webkit-appearance: none;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -854,10 +665,9 @@ nav .navigationContainer li a {
 }
 
 .slideOne {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/hero2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  position: relative;
+  z-index: -10;
 }
 .slideOne .heroMainText {
   display: flex;
@@ -865,6 +675,8 @@ nav .navigationContainer li a {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
+  z-index: 100;
 }
 .slideOne .heroMainText h1 {
   font-size: 16px;
@@ -886,17 +698,31 @@ nav .navigationContainer li a {
 }
 
 .slideTwo {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/home1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  position: relative;
+  z-index: -10;
+}
+.slideTwo .heroContainer {
+  position: relative;
+  z-index: 100;
 }
 
 .slideThree {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/images/development2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  position: relative;
+  z-index: -10;
+}
+.slideThree .heroContainer {
+  position: relative;
+  z-index: 100;
+}
+
+.opacityCover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  position: absolute;
+  z-index: 50;
+  height: 100%;
+  width: 100%;
 }
 
 .heroContainer {
@@ -949,6 +775,18 @@ nav .navigationContainer li a {
   line-height: 24px;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+.heroTextContainer h2 {
+  font-family: "Heebo", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.heroTextContainer p {
+  font-family: "Lora", serif;
+  color: white;
+  letter-spacing: 0.5px;
+  line-height: 30px;
 }
 
 .modelHomesTextContainer h2 {
@@ -1014,7 +852,13 @@ nav .navigationContainer li a {
   text-transform: uppercase;
   background-color: white;
 }
-.modelHomesCard .modelHomesCardTextContainer h3,
+.modelHomesCard .modelHomesCardTextContainer h3 {
+  font-family: "Heebo", sans-serif;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #0a0a0a;
+  letter-spacing: 1px;
+}
 .modelHomesCard .modelHomesCardTextContainer p {
   margin-top: 0px;
   font-size: 14px;
@@ -1085,7 +929,13 @@ nav .navigationContainer li a {
   text-transform: uppercase;
   background-color: white;
 }
-.modelHomesPageCard .modelHomesCardTextContainer h3,
+.modelHomesPageCard .modelHomesCardTextContainer h3 {
+  font-family: "Heebo", sans-serif;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #0a0a0a;
+  letter-spacing: 1px;
+}
 .modelHomesPageCard .modelHomesCardTextContainer p {
   margin-top: 0px;
   font-size: 14px;
@@ -1206,6 +1056,26 @@ nav .navigationContainer li a {
   margin-top: 5px;
 }
 
+.contactTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.contactTextContainer a {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+  cursor: pointer;
+  padding: 10px 30px;
+  background-color: #284646;
+  color: #FFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
 .modelHomeFeaturesContainer {
   width: 30%;
   margin-right: 30px;
@@ -1267,9 +1137,11 @@ nav .navigationContainer li a {
   text-transform: uppercase;
 }
 .developmentsCardsContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
+  font-family: "Heebo", sans-serif;
   margin-top: 0px;
   font-size: 14px;
   color: #0a0a0a;
+  letter-spacing: 1px;
 }
 .developmentsCardsContainer .developmentCard .developmentTextContainer .developmentLocationTextContainer p {
   font-size: 12px;
@@ -1320,9 +1192,11 @@ nav .navigationContainer li a {
   text-transform: uppercase;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
+  font-family: "Heebo", sans-serif;
   margin-top: 0px;
   font-size: 14px;
   color: #0a0a0a;
+  letter-spacing: 1px;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer .developmentLocationTextContainer p {
   font-size: 12px;
@@ -1468,6 +1342,7 @@ nav .navigationContainer li a {
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer {
   width: 90%;
+  padding: 5%;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer h3 {
   font-family: "Heebo", sans-serif;
@@ -1484,7 +1359,7 @@ nav .navigationContainer li a {
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
   position: relative;
-  height: 50vh;
+  height: 400px;
   width: 90%;
 }
 .aboutSectionsContainer .qualityContainer {
@@ -1493,6 +1368,7 @@ nav .navigationContainer li a {
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer {
   width: 90%;
+  padding: 5%;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer h3 {
   font-family: "Heebo", sans-serif;
@@ -1508,7 +1384,7 @@ nav .navigationContainer li a {
   color: #424242;
 }
 .aboutSectionsContainer .qualityContainer .qualityImgContainer {
-  height: 50vh;
+  height: 400px;
   position: relative;
   width: 90%;
 }
@@ -1544,10 +1420,6 @@ nav .navigationContainer li a {
   width: 50%;
 }
 
-#map {
-  height: 100%;
-}
-
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -1562,6 +1434,10 @@ nav .navigationContainer li a {
   text-transform: uppercase;
   font-size: 18px;
   margin-bottom: 30px;
+}
+.formContainer form label {
+  font-family: "Lora", sans-serif;
+  color: #424242;
 }
 .formContainer form input {
   margin: 15px 0px;
@@ -1642,13 +1518,6 @@ nav .navigationContainer li a {
 .mapAndContactInfoContainer .contactInfoContainer .addressContainer .iconContainer, .mapAndContactInfoContainer .contactInfoContainer .phoneContainer .iconContainer, .mapAndContactInfoContainer .contactInfoContainer .emailContainer .iconContainer {
   margin-right: 20px;
   font-size: 24px;
-}
-
-.mapboxgl-map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .galleryHeader {
@@ -1816,6 +1685,16 @@ address p, address a, address span {
   .developmentPageContainer .developmentCard {
     width: calc(50% - 40px);
   }
+  .IDContentContainer {
+    flex-direction: column;
+  }
+  .IDContentContainer .IDInfoContainer {
+    width: 100%;
+  }
+  .IDContentContainer .IDMapContainer {
+    width: 100%;
+    margin-top: 26px;
+  }
   .modelHomesContainer .modelHomesCard {
     width: calc(50% - 30px);
   }
@@ -1920,6 +1799,16 @@ address p, address a, address span {
   }
   .developmentPageContainer .developmentCard {
     width: 100%;
+  }
+  .IDContentContainer {
+    flex-direction: column;
+  }
+  .IDContentContainer .IDInfoContainer {
+    width: 100%;
+  }
+  .IDContentContainer .IDMapContainer {
+    width: 100%;
+    margin-top: 26px;
   }
   .aboutContainer {
     flex-direction: column;

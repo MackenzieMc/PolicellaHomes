@@ -81,7 +81,10 @@ function ModelHomeDetail ({ ModelHome }) {
                                                 <p className='cityLocation'>{data.city}</p>
                                             </div>
                                         </div>
-
+                                        
+                                            <div className="contactTextContainer">
+                                                <Link href="/ContactUs">Book a Viewing / General Inquiry</Link>
+                                            </div>
                                     </div>                    
                                     <div className="modelHomeImageContainer">
                                         <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" priority />
@@ -90,24 +93,6 @@ function ModelHomeDetail ({ ModelHome }) {
                                 )
                             }
 
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div className="wrapper">
-                        <div className="contactTextContainer">
-                            {
-                                ModelHome.map(data => 
-                                    <>
-                                        <p>
-                                            Interested in {data.address}?
-                                        </p>
-                                        <Link href="/ContactUs">Contact Us</Link>
-                                    </>
-                                    
-                                    )
-                            }
                         </div>
                     </div>
                 </section>

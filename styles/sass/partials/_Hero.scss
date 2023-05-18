@@ -49,8 +49,8 @@
 
 .embla__dot,
 .embla__button {
-    -webkit-appearance: none;
     background-color: transparent;
+    -webkit-appearance: none;
     touch-action: manipulation;
     display: inline-flex;
     text-decoration: none;
@@ -128,18 +128,18 @@
 }
 
 .slideOne {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
-    url('/images/hero2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
+    position: relative;
+    z-index: -10;
 
     .heroMainText {
         display: flex; 
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%; 
+        height: 100%;
+        position: relative;
+        z-index: 100; 
         h1 {
             font-size: 16px;
             margin-bottom: 0px; 
@@ -164,19 +164,31 @@
 }
 
 .slideTwo {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
-    url('/images/home1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.70));
+    position: relative;
+    z-index: -10;
+    .heroContainer {
+        position: relative;
+        z-index: 100;
+    }
 }
 
 .slideThree {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)),
-    url('/images/development2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
+    position: relative;
+    z-index: -10;
+    .heroContainer {
+        position: relative;
+        z-index: 100;
+    }
+}
+
+.opacityCover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
+    position: absolute;
+    z-index: 50;
+    height: 100%;
+    width: 100%; 
 }
 
 .heroContainer {
@@ -230,4 +242,18 @@
         }
     }
     
+}
+
+.heroTextContainer {
+    h2 {
+        font-family: "Heebo", sans-serif;
+        font-weight:400;
+        letter-spacing: 1px;
+    }
+    p {
+        font-family: "Lora", serif;
+        color: #FFFF; 
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
 }

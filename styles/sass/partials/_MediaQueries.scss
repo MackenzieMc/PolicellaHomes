@@ -38,6 +38,18 @@
         }
     }
 
+    // Development ID Page
+    .IDContentContainer {
+        flex-direction: column;
+        .IDInfoContainer {
+            width: 100%;
+        }
+        .IDMapContainer {
+            width: 100%; 
+            margin-top: 26px;
+        }
+    }
+
     // Model Home Component
     .modelHomesContainer {
         .modelHomesCard {
@@ -163,6 +175,18 @@
         gap: 0px; 
         .developmentCard {
             width: 100%; 
+        }
+    }
+
+    // Development ID Page
+    .IDContentContainer {
+        flex-direction: column;
+        .IDInfoContainer {
+            width: 100%;
+        }
+        .IDMapContainer {
+            width: 100%; 
+            margin-top: 26px;
         }
     }
 

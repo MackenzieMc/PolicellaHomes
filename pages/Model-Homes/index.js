@@ -26,7 +26,6 @@ export default function ModelHomesPage(props) {
             </Head>
             <header className='headerText modelHomesBackground brightnessImage'>
                         <h2>Model Homes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </header>
             <main>
                 <section className='breadSection'>

@@ -39,11 +39,11 @@ export default function ContactUs () {
                                 <h3>Contact Information</h3>
                                 <div className="nameContainer">
                                     <div className="firstNameContainer">
-                                        <label htmlFor="Name">First Name</label>
+                                        <label htmlFor="Name">First Name:</label>
                                         <input type="text" id="firstName"/>
                                     </div>
                                     <div className="lastNameContainer">
-                                        <label htmlFor="Name">Last Name</label>
+                                        <label htmlFor="Name">Last Name:</label>
                                         <input type="text" id="lastName" />
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@ export default function ContactUs () {
                                 <label htmlFor="Subject">How can we help you?</label>
                                 <input type="text" className="subjectInput"/>
 
-                                <label htmlFor="message">Message</label>
+                                <label htmlFor="message">Message:</label>
                                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
                                 <div className="frc-captcha" data-sitekey="<FCMON3HCAL59VK3O>"></div>

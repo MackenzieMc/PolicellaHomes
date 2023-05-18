@@ -1,10 +1,31 @@
 import Link from "next/link"
+import { useState, useEffect } from "react"
 
 function NavigationBar() {
 
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        function handleScroll() {
+            const isTop = window.scrollY < 50;
+            setScrolled(!isTop);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+    
+
+    
+
     
     return (
-        <nav>
+        <nav className={`navAbs ${scrolled ? 'fixedBar' : 'navAbs'}`}>
             {/* <div className="logoContainer">
                 <Link href="/">Policella Homes Logo</Link>
             </div> */}
@@ -28,6 +49,9 @@ function NavigationBar() {
                     <Link href="/ContactUs" className="contactButton">Contact Us</Link>
                 </li>
             </ul>
+            <div className="mobileMenuContainer">
+
+            </div>
         </nav>
     )
 }
