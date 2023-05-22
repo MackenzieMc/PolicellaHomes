@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: flex-end;
     background-color: transparent;
-    z-index: 5;
+    z-index: 1000;
     transition: all 0.4s ease-in-out;
     .logoContainer {
         margin-right: auto;
@@ -28,7 +28,6 @@
             }
         }
     }
-
 }
 
 .fixedBar {
@@ -40,6 +39,69 @@
             a {
                 color: #FFF;
             }
+        }
+    }
+}
+
+.mobileMenuContainer, .mobile {
+    display: none;
+}
+
+.mobileNavContainer {
+    display: none;
+}
+
+.open {
+    left: 0;
+    /* Slide-in menu position */
+}
+
+.navAbs {
+    .mobileNavContainer {
+        display: inline;
+        position: fixed;
+        top: 0px;
+        left: -300px;
+        /* Off-canvas initially hidden position */
+        width: 40vw;
+        height: 100vh;
+        margin-top: 0px;
+        padding-top: 10%; 
+        padding-left: 20px;
+        background-color: #284646;
+        transition: left 0.3s ease-in-out;
+        li {
+            list-style: none;
+            margin-top: 30px;
+            a {
+                color: #FFF;
+                font-family: "Heebo";
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+}
+
+.mobileMenuContainer {
+    font-size: 32px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-right: auto;
+    position: relative;
+    z-index: 5000;
+
+    .iconButton {
+        background-color: transparent;
+        border: none;
+        color: #FFF;
+
+        svg {
+            path {
+                stroke: #FFF;
+            }
+
         }
     }
 }

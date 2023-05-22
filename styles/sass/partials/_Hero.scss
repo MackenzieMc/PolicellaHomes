@@ -128,7 +128,6 @@
 }
 
 .slideOne {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
     position: relative;
     z-index: -10;
 
@@ -164,7 +163,6 @@
 }
 
 .slideTwo {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.70));
     position: relative;
     z-index: -10;
     .heroContainer {
@@ -174,7 +172,6 @@
 }
 
 .slideThree {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
     position: relative;
     z-index: -10;
     .heroContainer {
@@ -184,7 +181,7 @@
 }
 
 .opacityCover {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10));
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90));
     position: absolute;
     z-index: 50;
     height: 100%;

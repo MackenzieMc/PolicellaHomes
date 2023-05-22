@@ -1,21 +1,8 @@
-import { useEffect, useState, useRef } from 'react'
-import { GoogleMap, useLoadScript } from '@react-google-maps/api';
 import Head from 'next/head';
-
-
-
-// function Map() {
-//     return <GoogleMap zoom={15} center={{ lat: 43.018944116352955, lng: -79.28283524817378 }} mapContainerClassName="mapContainer"></GoogleMap>
-// }
+import Image from 'next/image';
+import ContactImageHeader from '../public/images/contactUsbackground.jpg'
 
 export default function ContactUs () {
-    
-    // const { isLoaded } = useLoadScript({ 
-    //     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-    // })
-
-
-    // if(!isLoaded) return <div>Loading..</div>;
     return (
         <>
             <Head>
@@ -25,8 +12,15 @@ export default function ContactUs () {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText contactHeaderBackground'>
+                <div className="headerImageContainer">
+                    <Image
+                        src={ContactImageHeader}
+                        fill
+                        loading='eager'
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
+                    />
+                </div>
                 <h2>General Inquiries</h2>
-                <p>Ask a question or leave feedback.</p>
             </header>
             <section className="contactSection">
                 <div className="wrapper">

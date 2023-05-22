@@ -1,19 +1,13 @@
-import modelHomes from '../../public/data/model_homes_data.json'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react';
 import Breadcrumbs from 'nextjs-breadcrumbs2';
 import Head from 'next/head';
+import ModelHomeCover from '../../public/images/modelHomebackground.jpg'
 
 export default function ModelHomesPage(props) {
-
-    console.log(props);
-
+    
     const modelHomes = props.modelHomes
-
-    console.log(modelHomes);
-
-
     const basePath = '/images/'
 
     return (
@@ -24,8 +18,15 @@ export default function ModelHomesPage(props) {
                 <meta name="description" content="Check out our completed and in progress Model Homes!" />
                 <meta name="viewport" content="width=device-width" />
             </Head>
-            <header className='headerText modelHomesBackground brightnessImage'>
-                        <h2>Model Homes</h2>
+            <header className='headerText modelHomesBackground'>
+                <div className="headerImageContainer">
+                    <Image src={ModelHomeCover}
+                        fill={true}
+                        priority={true}
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}  
+                        />
+                </div>
+                <h2>Model Homes</h2>
             </header>
             <main>
                 <section className='breadSection'>
@@ -41,7 +42,10 @@ export default function ModelHomesPage(props) {
                                         <div className="modelHomesPageCard" key={data.id}>
                                                 <Link href={`/Model-Homes/${data.id}`}>
                                                 <div className="modelHomesImgContainer">
-                                                    <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" priority/>
+                                                    <Image src={`${basePath}${data.image}`} 
+                                                    alt="" 
+                                                    fill  
+                                                    priority/>
                                                 </div>
                                                 <div className="modelHomesCardTextContainer">
                                                     <div className="modelHomeNameAndLocationContainer">

@@ -94,11 +94,16 @@
 }
 
 .contactHeaderBackground {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
-        url('/images/contactUsbackground.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        .headerImageContainer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        h2{
+            position: absolute;
+            z-index: 50;
+        }
 }
 
 .mapAndContactInfoContainer {

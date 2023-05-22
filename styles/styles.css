@@ -432,6 +432,12 @@ svg {
   font-weight: bold;
 }
 
+.imageHeader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .navAbs {
   padding: 10px 15px;
   position: absolute;
@@ -441,7 +447,7 @@ svg {
   align-items: center;
   justify-content: flex-end;
   background-color: transparent;
-  z-index: 5;
+  z-index: 1000;
   transition: all 0.4s ease-in-out;
 }
 .navAbs .logoContainer {
@@ -469,6 +475,61 @@ svg {
 }
 .fixedBar .navigationContainer li a {
   color: #FFF;
+}
+
+.mobileMenuContainer, .mobile {
+  display: none;
+}
+
+.mobileNavContainer {
+  display: none;
+}
+
+.open {
+  left: 0;
+  /* Slide-in menu position */
+}
+
+.navAbs .mobileNavContainer {
+  display: inline;
+  position: fixed;
+  top: 0px;
+  left: -300px;
+  /* Off-canvas initially hidden position */
+  width: 40vw;
+  height: 100vh;
+  margin-top: 0px;
+  padding-top: 10%;
+  padding-left: 20px;
+  background-color: #284646;
+  transition: left 0.3s ease-in-out;
+}
+.navAbs .mobileNavContainer li {
+  list-style: none;
+  margin-top: 30px;
+}
+.navAbs .mobileNavContainer li a {
+  color: #FFF;
+  font-family: "Heebo";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mobileMenuContainer {
+  font-size: 32px;
+  padding: 5px 0;
+  cursor: pointer;
+  margin-right: auto;
+  position: relative;
+  z-index: 5000;
+}
+.mobileMenuContainer .iconButton {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+.mobileMenuContainer .iconButton svg path {
+  stroke: #FFF;
 }
 
 .preambleTextContainer {
@@ -665,7 +726,6 @@ svg {
 }
 
 .slideOne {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   position: relative;
   z-index: -10;
 }
@@ -698,7 +758,6 @@ svg {
 }
 
 .slideTwo {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
   position: relative;
   z-index: -10;
 }
@@ -708,7 +767,6 @@ svg {
 }
 
 .slideThree {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   position: relative;
   z-index: -10;
 }
@@ -718,7 +776,7 @@ svg {
 }
 
 .opacityCover {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   position: absolute;
   z-index: 50;
   height: 100%;
@@ -984,11 +1042,14 @@ svg {
   color: #ff7161;
 }
 
-.modelHomesBackground {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/modelHomebackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.modelHomesBackground .headerImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.modelHomesBackground h2 {
+  position: absolute;
+  z-index: 50;
 }
 
 .modelHomeContainer {
@@ -1167,10 +1228,14 @@ svg {
   margin-left: 10px;
 }
 
-.developmentHeader {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/DevelopmentHeaderPhoto.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.developmentHeader .headerImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.developmentHeader h2 {
+  position: absolute;
+  z-index: 50;
 }
 
 .developmentPageContainer {
@@ -1287,11 +1352,14 @@ svg {
   margin-top: 5px;
 }
 
-.aboutUsHeader {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/AboutUsHead.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.aboutUsHeader .headerImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.aboutUsHeader h2 {
+  position: absolute;
+  z-index: 50;
 }
 
 .aboutContainer {
@@ -1334,21 +1402,23 @@ svg {
 
 .aboutSectionsContainer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .aboutSectionsContainer .ourStoryContainer {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 30px;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer {
   width: 90%;
-  padding: 5%;
+  padding: 2% 0% 2% 0%;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer h3 {
   font-family: "Heebo", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  margin-top: 0px;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer p {
   font-family: "Lora", serif;
@@ -1356,6 +1426,7 @@ svg {
   letter-spacing: 0.5px;
   line-height: 30px;
   color: #424242;
+  padding-right: 4%;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
   position: relative;
@@ -1364,17 +1435,20 @@ svg {
 }
 .aboutSectionsContainer .qualityContainer {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
+  margin-top: 30px;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer {
   width: 90%;
-  padding: 5%;
+  padding: 2% 0% 2% 0%;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer h3 {
   font-family: "Heebo", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
+  padding-left: 4%;
+  margin-top: 0px;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer p {
   font-family: "Lora", serif;
@@ -1382,6 +1456,7 @@ svg {
   letter-spacing: 0.5px;
   line-height: 30px;
   color: #424242;
+  padding-left: 4%;
 }
 .aboutSectionsContainer .qualityContainer .qualityImgContainer {
   height: 400px;
@@ -1490,11 +1565,14 @@ svg {
   width: 30%;
 }
 
-.contactHeaderBackground {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/contactUsbackground.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.contactHeaderBackground .headerImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contactHeaderBackground h2 {
+  position: absolute;
+  z-index: 50;
 }
 
 .mapAndContactInfoContainer {
@@ -1520,11 +1598,14 @@ svg {
   font-size: 24px;
 }
 
-.galleryHeader {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/images/galleryHeader.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+.galleryHeader .headerImageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.galleryHeader h2 {
+  position: absolute;
+  z-index: 50;
 }
 
 .tabsMainContainer {
@@ -1639,7 +1720,7 @@ footer .footerLinksContainer .footerNavigationContainer li a {
 .footerCertificationContainer p {
   font-family: "Heebo", sans-serif;
   color: #e5e5e5;
-  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 14px;
 }
 
@@ -1654,6 +1735,12 @@ address p, address a, address span {
 }
 
 @media screen and (max-width: 768px) {
+  .mobileMenuContainer {
+    display: inline;
+  }
+  .navAbs .navigationContainer {
+    display: none;
+  }
   .aboutContainer {
     flex-direction: column;
   }
@@ -1668,6 +1755,9 @@ address p, address a, address span {
     text-align: center;
   }
   .aboutSectionsContainer {
+    flex-direction: column;
+  }
+  .aboutSectionsContainer .ourStoryContainer {
     flex-direction: column;
   }
   .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer, .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
@@ -1732,6 +1822,12 @@ address p, address a, address span {
   }
 }
 @media screen and (max-width: 480px) {
+  .navAbs .navigationContainer {
+    display: none;
+  }
+  .navAbs .mobileNavContainer {
+    width: 60vw;
+  }
   .headerText {
     text-align: center;
   }
@@ -1740,6 +1836,12 @@ address p, address a, address span {
   }
   .headerText p {
     font-size: 16px;
+  }
+  .sectionTitleTextContainer .mainTitleTextContainer h2 {
+    font-size: 34px;
+  }
+  .sectionTitleTextContainer .mainTitleTextContainer p {
+    font-size: 14px;
   }
   .preambleTextContainer {
     flex-direction: column;
@@ -1769,6 +1871,9 @@ address p, address a, address span {
   }
   .modelHomesPageContainer .modelHomesPageCard {
     width: 100%;
+  }
+  .modelHomeMain .breadSection {
+    padding-top: 50px;
   }
   .modelHomeContainer {
     flex-direction: column;
@@ -1800,6 +1905,9 @@ address p, address a, address span {
   .developmentPageContainer .developmentCard {
     width: 100%;
   }
+  .developmentMain .breadSection {
+    padding-top: 50px;
+  }
   .IDContentContainer {
     flex-direction: column;
   }
@@ -1809,6 +1917,9 @@ address p, address a, address span {
   .IDContentContainer .IDMapContainer {
     width: 100%;
     margin-top: 26px;
+  }
+  .aboutUsWrapper {
+    width: 90%;
   }
   .aboutContainer {
     flex-direction: column;
@@ -1829,16 +1940,37 @@ address p, address a, address span {
   .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer, .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
     width: 100%;
   }
+  .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer img, .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .aboutSectionsContainer .qualityContainer {
     flex-direction: column;
   }
   .aboutSectionsContainer .qualityContainer .qualityTextContainer, .aboutSectionsContainer .qualityContainer .qualityImgContainer {
     width: 100%;
   }
+  .aboutSectionsContainer .qualityContainer .qualityTextContainer img, .aboutSectionsContainer .qualityContainer .qualityImgContainer img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .formAndTextContainer {
     flex-direction: column;
   }
   .formAndTextContainer .formContainer {
+    width: 100%;
+  }
+  .formAndTextContainer .formContainer .nameContainer, .formAndTextContainer .formContainer .emailAndPhoneContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .formAndTextContainer .formContainer .nameContainer .firstNameContainer, .formAndTextContainer .formContainer .nameContainer .lastNameContainer, .formAndTextContainer .formContainer .nameContainer .emailContainer, .formAndTextContainer .formContainer .nameContainer .phoneContainer, .formAndTextContainer .formContainer .emailAndPhoneContainer .firstNameContainer, .formAndTextContainer .formContainer .emailAndPhoneContainer .lastNameContainer, .formAndTextContainer .formContainer .emailAndPhoneContainer .emailContainer, .formAndTextContainer .formContainer .emailAndPhoneContainer .phoneContainer {
+    width: 100%;
+  }
+  .formAndTextContainer .formContainer .subjectInput {
+    width: 100%;
+  }
+  .formAndTextContainer .formContainer .buttonSubmit {
     width: 100%;
   }
   .mapContainer {

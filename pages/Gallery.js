@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import GalleryHeaderImage from '../public/images/galleryHeader.jpg'
 
 function Gallery (props) {
 
@@ -18,8 +19,15 @@ function Gallery (props) {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText galleryHeader'>
+                    <div className="headerImageContainer">
+                        <Image 
+                            src={GalleryHeaderImage}
+                            fill
+                            loading='eager'
+                            style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
+                        />
+                    </div>
                     <h2>Our Gallery</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
             </header>
             <main>
                 <section>

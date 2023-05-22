@@ -2,6 +2,7 @@ import Image from "next/image"
 import Head from "next/head"
 import aboutOne from '../public/images/aboutOne.jpg'
 import aboutQuality from '../public/images/AboutQuality.jpg'
+import AboutHeaderImage from '../public/images/AboutUsHead.jpg'
 
 function AboutUs () {
 
@@ -13,13 +14,17 @@ function AboutUs () {
                 <meta name="description" content="Learn more about who we are here at Policella Homes!" />
                 <meta name="viewport" content="width=device-width" />
             </Head>
-            <header className="aboutUsHeader brightnessImage">
-                <div className="wrapper">
-                    <div className="headerText">
-                        <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                    </div>
+            <header className="aboutUsHeader headerText brightnessImage">
+                <div className="headerImageContainer">
+
+                    <Image 
+                        src={AboutHeaderImage}
+                        fill
+                        loading='eager'
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
+                    />
                 </div>
+                <h2>About Us</h2>
             </header>
             <section>
                 <div className="wrapper">

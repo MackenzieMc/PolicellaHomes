@@ -1,4 +1,18 @@
 @media screen and (max-width: 768px) {
+
+    // Navigation
+
+    .mobileMenuContainer {
+        display: inline;
+    }
+
+    .navAbs {
+        .navigationContainer {
+            display: none;
+        }
+        
+    }
+
     // About Component 
     .aboutContainer {
         flex-direction: column;
@@ -18,6 +32,7 @@
     .aboutSectionsContainer {
         flex-direction: column;
         .ourStoryContainer {
+            flex-direction: column;
             .ourStoryTextContainer, .ourStoryImgContainer {
                 width: 100%; 
             }
@@ -97,6 +112,19 @@
 
 @media screen and (max-width: 480px) {
 
+
+    // Navigation
+
+    .navAbs {
+        .navigationContainer {
+            display: none;
+        }
+        .mobileNavContainer {
+            width: 60vw; 
+        }
+        
+    }
+
     // Base Styles 
     .headerText {
         text-align: center;
@@ -105,6 +133,17 @@
         }
         p {
             font-size: 16px; 
+        }
+    }
+
+    .sectionTitleTextContainer {
+        .mainTitleTextContainer {
+            h2 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 14px;
+            }
         }
     }
 
@@ -144,6 +183,11 @@
     }
 
     // Model Home [ID] Page
+    .modelHomeMain {
+        .breadSection {
+            padding-top: 50px; 
+        }
+    }
     .modelHomeContainer {
         flex-direction: column;
         .modelHomeNameAndFeaturesContainer {
@@ -179,6 +223,11 @@
     }
 
     // Development ID Page
+    .developmentMain {
+        .breadSection {
+            padding-top: 50px; 
+        }
+    }
     .IDContentContainer {
         flex-direction: column;
         .IDInfoContainer {
@@ -191,6 +240,9 @@
     }
 
     // About Component 
+    .aboutUsWrapper {
+        width: 90%;
+    }
     .aboutContainer {
         flex-direction: column;
         .aboutImgContainer {
@@ -211,12 +263,18 @@
         .ourStoryContainer {
             .ourStoryTextContainer, .ourStoryImgContainer {
                 width: 100%; 
+                img {
+                        object-fit: cover;
+                    }
             }
         }
         .qualityContainer {
             flex-direction: column;
             .qualityTextContainer, .qualityImgContainer {
                 width: 100%;
+                img {
+                        object-fit: cover;
+                    }
             }
         }
     }
@@ -225,6 +283,19 @@
         flex-direction: column;
         .formContainer {
             width: 100%; 
+            .nameContainer, .emailAndPhoneContainer {
+                flex-direction: column;
+                width: 100%;
+                .firstNameContainer, .lastNameContainer, .emailContainer, .phoneContainer {
+                    width: 100%;
+                }
+            }
+            .subjectInput {
+                width: 100%; 
+            }
+            .buttonSubmit {
+                width: 100%; 
+            }
         }
     }
     .mapContainer {

@@ -60,7 +60,7 @@ function DevelopmentDetail({ DevelopmentsData }) {
                     <meta name="description" content={`Check out our development, ${data.name}!`}/>
                     <meta name="viewport" content="width=device-width" />
                 </Head>
-                <main>
+                <main className='developmentMain'>
                     <section className='breadSection'>
                         <div className="wrapper">
                             <Breadcrumbs containerClassName='breadContainer' listClassName='breadList' rootLabel="Home" />

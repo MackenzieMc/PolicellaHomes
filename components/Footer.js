@@ -29,6 +29,9 @@ function Footer () {
                             <nav>
                                 <ul className="footerNavigationContainer">
                                     <li>
+                                        <Link href="/">Home</Link>
+                                    </li>
+                                    <li>
                                         <Link href="/AboutUs">About Us</Link>
                                     </li>
                                     <li>

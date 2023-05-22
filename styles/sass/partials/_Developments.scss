@@ -92,10 +92,15 @@
 }
 
 .developmentHeader {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
-    url('/images/DevelopmentHeaderPhoto.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    .headerImageContainer {
+        position: relative;
+        width: 100%;
+        height: 100%; 
+    }
+    h2 {
+            position: absolute;
+            z-index: 50;
+        }
 }
 
 .developmentPageContainer {

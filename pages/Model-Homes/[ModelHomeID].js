@@ -42,7 +42,7 @@ function ModelHomeDetail ({ ModelHome }) {
                 
                 )
         }
-            <main>
+            <main className='modelHomeMain'>
                 <section className='breadSection'>
                     <div className="wrapper">
                         <Breadcrumbs containerClassName='breadContainer' listClassName='breadList' rootLabel="Home" />
@@ -57,7 +57,7 @@ function ModelHomeDetail ({ ModelHome }) {
                                     <div className="modelHomeNameAndFeaturesContainer">
                                         <div className="modelNameTextContainer">
                                             <h2>{data.address}</h2>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint fuga asperiores corrupti modi accusamus praesentium placeat saepe voluptas, magni consequuntur quasi ea consectetur ratione cum, explicabo a corporis veritatis?</p>
+                                            <p>{data.description}</p>
                                         </div>
                                         <div className="featuresListAndLocationContainer">
                                             <div className="featuresList">

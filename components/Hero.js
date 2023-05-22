@@ -53,11 +53,10 @@ const Hero = (props) => {
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">
                         <div className="embla__slide slideOne">
-                            <div className="opacityCover"></div>
                             <Image src={HeroImageOne}
-                                fill={true} 
-                                priority={true} 
-                                style={{ objectFit: "cover"}} 
+                                loading='eager'
+                                priority
+                                style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(90%)", position: "absolute"}} 
                             />
                             <div className="heroMainText">
                                 <h1>Policella Homes: Niagara's trusted home builder</h1>
@@ -65,16 +64,15 @@ const Hero = (props) => {
                             </div>
                         </div>
                         <div className="embla__slide slideTwo">
-                            <div className="opacityCover"></div>
                             <Image src={HeroImageTwo}
+                                loading='eager'
                                 fill={true}
-                                priority={true}
-                                style={{ objectFit: "cover" }} 
+                                style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(90%)", position: "absolute" }}
                             />
                             <div className="heroContainer">
                                 <div className="heroTextContainer">
-                                    <h2>711 Gaiser Road</h2>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio fugit molestias corrupti reprehenderit molestiae eius ad a itaque excepturi? Atque?</p>
+                                    <h2>591 Gaiser Road</h2>
+                                    <p>Embrace the allure of this charming 2-bedroom bungalow, this exquisite home offers timeless elegance and comfort.</p>
                                     <div className="buttonContainer">
                                         <Link className="viewOne"href={'/Model-Homes'}>View Home</Link>
                                         <Link className="viewAll" href={'/Model-Homes'}>View All Homes</Link>
@@ -83,11 +81,10 @@ const Hero = (props) => {
                             </div>
                         </div>
                         <div className="embla__slide slideThree">
-                            <div className="opacityCover"></div>
                             <Image src={HeroImageThree}
                                 fill={true}
                                 priority={true}
-                                style={{ objectFit: "cover" }} 
+                                style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(90%)", position: "absolute" }} 
                             />
                             <div className="heroContainer">
                                 <div className="heroTextContainer">

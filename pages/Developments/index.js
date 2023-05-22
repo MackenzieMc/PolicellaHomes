@@ -1,8 +1,8 @@
-import developments from '../../public/data/development_data.json'
 import Link from 'next/link'
 import Image from 'next/image'
 import Breadcrumbs from 'nextjs-breadcrumbs2';
 import Head from 'next/head';
+import DevelopmentHeaderCover from '../../public/images/DevelopmentHeaderPhoto.jpg'
 
 
 function Developments (props) {
@@ -20,7 +20,14 @@ function Developments (props) {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText developmentHeader'>
-                    <h2>Our Developments</h2>
+                <div className="headerImageContainer">
+                    <Image
+                        src={DevelopmentHeaderCover}
+                        fill
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
+                    />
+                </div>
+                <h2>Our Developments</h2>
             </header>
             <section className='breadSection'>
                 <div className="wrapper">
@@ -37,7 +44,7 @@ function Developments (props) {
                                         <Link href={`/Developments/${data.id}`}>
                                             <div className="developmentImgContainer">
                                                 <div className="sceneryPictureContainer">
-                                                    <Image src={`${basePath}${data.imageOne}`} alt="" fill objectFit="cover" priority/>
+                                                    <Image src={`${basePath}${data.imageOne}`} alt="" fill />
                                                 </div>
                                             </div>
                                             <div className="developmentTextContainer">
