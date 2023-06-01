@@ -49,7 +49,28 @@ const Hero = (props) => {
 
     return (
         <>
-            <div className="embla">
+        <div className="heroText">
+                <div className="headerTextContainer">
+                    <div className="fontContainer">
+                        <p>Niagaras trusted home builder.</p>
+                        <h1>Where old world craftsmanship meets modern day design</h1>
+                        <p>Over 400 homes crafted with care, bringing your unique vision to life.</p>
+                        <div className="linkContainer">
+                            <Link href='/Model-Homes'>Find a home</Link>
+                            <Link href='/AboutUs'>Our history</Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="headerImageContainer">
+                    <Image
+                        src={HeroImageOne}
+                        fill
+                        loading='eager'
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}
+                    />
+                </div>
+        </div>
+            {/* <div className="embla">
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container">
                         <div className="embla__slide slideOne">
@@ -111,7 +132,7 @@ const Hero = (props) => {
                         onClick={() => scrollTo(index)}
                     />
                 ))}
-            </div>
+            </div> */}
         </>
     )
 }

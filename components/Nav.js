@@ -1,12 +1,18 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
+import { useRouter } from "next/router";
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { GrClose } from 'react-icons/gr'
+
+
+
 
 function NavigationBar() {
 
     const [open, setOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false);
+
+    const router = useRouter()
     
     useEffect(() => {
         function handleScroll() {
@@ -25,29 +31,43 @@ function NavigationBar() {
         setOpen(!open)
     }
 
+    const closeMobileNav = () => {
+        setOpen(false);
+    };
+
     return (
         <nav className={`navAbs ${scrolled ? 'fixedBar' : 'navAbs'}`}>
-            {/* <div className="logoContainer">
-                <Link href="/">Policella Homes Logo</Link>
-            </div> */}
                     <ul className='navigationContainer' >
                         <li>
-                            <Link href="/">Home</Link>
+                            <Link href="/"
+                                className={router.pathname == "/" ? "active" : ""}
+                            >Home
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/AboutUs">About Us</Link>
+                            <Link href="/AboutUs"
+                                className={router.pathname == "/AboutUs" ? "active" : ""}
+                            >About Us</Link>
                         </li>
                         <li>
-                            <Link href="/Model-Homes">Model Homes</Link>
+                            <Link href="/Model-Homes"
+                                className={router.pathname == "/Model-Homes" ? "active" : ""}
+                            >Model Homes</Link>
                         </li>
                         <li>
-                            <Link href="/Developments">Developments</Link>
+                            <Link href="/Developments"
+                                className={router.pathname == "/Developments" ? "active" : ""}
+                            >Developments</Link>
                         </li>
                         <li>
-                            <Link href="/Gallery">Gallery</Link>
+                            <Link href="/Gallery"
+                                className={router.pathname == "/Gallery" ? "active" : ""}
+                            >Gallery</Link>
                         </li>
                         <li>
-                            <Link href="/ContactUs" className="contactButton">Contact Us</Link>
+                            <Link href="/ContactUs"
+                                className={router.pathname == "/ContactUs" ? "active" : ""} 
+                            >Contact Us</Link>
                         </li>
                     </ul>
             <div className="mobileMenuContainer">
@@ -67,25 +87,60 @@ function NavigationBar() {
                             left: '0'
                         }}>
                         <li>
-                            <Link href="/">Home</Link>
+                            <Link 
+                                href="/" 
+                                onClick={closeMobileNav} 
+                                className={router.pathname == "/" ? "active" : ""
+                                }>
+                                Home
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/AboutUs">About Us</Link>
+                            <Link 
+                                href="/AboutUs" 
+                                onClick={closeMobileNav} 
+                                className={router.pathname == "/AboutUs" ? "active" : ""
+                                }>
+                                About Us
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/Model-Homes">Model Homes</Link>
+                            <Link 
+                                href="/Model-Homes" 
+                                onClick={closeMobileNav} 
+                                className={router.pathname == "/Model-Homes" ? "active" : ""
+                                }>
+                                Model Homes
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/Developments">Developments</Link>
+                            <Link 
+                                href="/Developments" 
+                                onClick={closeMobileNav} 
+                                className={router.pathname == "/Developments" ? "active" : ""
+                                }>
+                                Developments
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/Gallery">Gallery</Link>
+                            <Link 
+                                href="/Gallery" 
+                                onClick={closeMobileNav} 
+                                className={router.pathname == "/Gallery" ? "active" : ""
+                                }>
+                                Gallery
+                            </Link>
                         </li>
                         <li>
-                            <Link href="/ContactUs" className="contactButton">Contact Us</Link>
+                            <Link 
+                                href="/ContactUs" 
+                                onClick={closeMobileNav} 
+                                className={router.pathname == "/ContactUs" ? "active" : ""
+                                }>
+                                Contact Us
+                            </Link>
                         </li>
                     </ul>
-
         </nav>
     )
 }

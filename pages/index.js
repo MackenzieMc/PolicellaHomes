@@ -27,9 +27,6 @@ export default function Home(props) {
         <Preamble />
         <DivOne />
         <ModelHomes {...homes}/>
-        <div className="wrapper">
-          <hr />
-        </div>
         <Developments {...development}/>
         <DivTwo />
         <About />

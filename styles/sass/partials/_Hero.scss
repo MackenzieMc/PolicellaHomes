@@ -254,3 +254,69 @@
         line-height: 30px;
     }
 }
+
+.heroText {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .headerTextContainer {
+            width: 50%;
+            height: 130%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $solidWhite;
+            border-radius: 0 0 25px 0;
+            .fontContainer {
+                    text-align: center;
+                    width: 80%;
+                    h1 {
+                        color: $solidWhite;
+                        font-size: 40px;
+                        font-family: $fontPrimary;
+                        margin-bottom: 30px;
+                        line-height: 45px;
+                        letter-spacing: normal;
+                        color: $primary;
+                    }
+            
+                    p {
+                        font-family: $fontSecondary;
+                        font-weight: 300;
+                        font-size: 16px;
+                        color: $tertiary;
+                        margin-top: 0px;
+                        letter-spacing: 1px;
+                    }
+                    .linkContainer {
+                        width: 100%; 
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 80px; 
+                        a {
+                            padding: 10px 30px; 
+                            text-transform: uppercase;
+                            font-size: 14px; 
+                            color: $solidWhite;
+                            background-color: $primary;
+                            margin-right: 30px; 
+                            border-radius: 25px;
+                            letter-spacing: 1px;
+                        }
+                        a:nth-child(2) {
+                            background-color: $quaternary;
+                            color: $solidBlack;
+                            margin-right: 0px; 
+                        }
+                    }
+            
+                }
+        }
+        .headerImageContainer {
+            position: relative;
+            height: 100%; 
+            width: 60%; 
+        }
+}

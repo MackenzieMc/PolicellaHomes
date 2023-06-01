@@ -9,11 +9,10 @@
 
 .contactTitleContainer {
     p {
-        font-family: 'Lora', serif;
         font-size: 17px;
         letter-spacing: 0.50px;
         line-height: 30px;
-        color: #424242;
+        color: $tertiary;
     }
 }
 
@@ -31,13 +30,15 @@
         display: flex;
         flex-direction: column;
         h3 {
-            text-transform: uppercase;
+            color: $primary; 
+            letter-spacing: 1px;
             font-size: 18px;
             margin-bottom: 30px;
+            font-weight: normal;
         }
         label {
-            font-family: "Lora", sans-serif;
-            color:#424242;
+            font-family: $fontSecondary;
+            color:$tertiary;
         }
         input {
             margin: 15px 0px; 
@@ -80,8 +81,8 @@
             cursor: pointer;
             color: #FFFF; 
             padding: 10px 16px; 
-            font-weight: bold;
-            border-radius: 4px;
+            border-radius: 25px;
+            font-family: $fontSecondary;
         }
 
         .subjectInput {
@@ -96,13 +97,8 @@
 .contactHeaderBackground {
         .headerImageContainer {
             position: relative;
-            width: 100%;
+            width: 60%;
             height: 100%;
-        }
-    
-        h2{
-            position: absolute;
-            z-index: 50;
         }
 }
 
@@ -112,6 +108,7 @@
     .mapContainer {
         width: 50%;
         position: relative;
+        border-radius: 0 25px 0 0;
         
     }
     .contactInfoContainer {

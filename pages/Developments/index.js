@@ -20,14 +20,21 @@ function Developments (props) {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText developmentHeader'>
+                <div className="headerTextContainer">
+                    <div className="fontContainer">
+                        <h2>Our Developments</h2>
+                        <p>Explore our portfolio of thoughtfully designed neighborhoods, each offering a unique sense of belonging.</p>
+                    </div>
+                </div>
                 <div className="headerImageContainer">
                     <Image
                         src={DevelopmentHeaderCover}
                         fill
-                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
+                        loading='eager'
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}
+                        alt='a row of homes'
                     />
                 </div>
-                <h2>Our Developments</h2>
             </header>
             <section className='breadSection'>
                 <div className="wrapper">
@@ -44,7 +51,7 @@ function Developments (props) {
                                         <Link href={`/Developments/${data.id}`}>
                                             <div className="developmentImgContainer">
                                                 <div className="sceneryPictureContainer">
-                                                    <Image src={`${basePath}${data.imageOne}`} alt="" fill />
+                                                    <Image src={`${basePath}${data.imageOne}`} alt={data.imageAlt} fill/>
                                                 </div>
                                             </div>
                                             <div className="developmentTextContainer">

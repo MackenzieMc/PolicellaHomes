@@ -33,15 +33,11 @@ function DevelopmentDetail({ DevelopmentsData }) {
             googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
         })
 
-        console.log(DevelopmentsData);
-
-
         if(!isLoaded) return <div>Loading..</div>;
 
         const basePath = '/images/'
 
-        console.log(DevelopmentsData[0].south);
-
+        // Defining bounds for image overlay
         const bounds = {
             north: DevelopmentsData[0].north,
             south: DevelopmentsData[0].south,

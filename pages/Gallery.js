@@ -19,15 +19,21 @@ function Gallery (props) {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText galleryHeader'>
-                    <div className="headerImageContainer">
-                        <Image 
-                            src={GalleryHeaderImage}
-                            fill
-                            loading='eager'
-                            style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
-                        />
+                <div className="headerTextContainer">
+                    <div className="fontContainer">
+                        <h2>Our Gallery</h2>
+                        <p>Take a visual tour of our portfolio and see the real-life charm of our projects.</p>
                     </div>
-                    <h2>Our Gallery</h2>
+                </div>
+                <div className="headerImageContainer">
+                    <Image
+                        src={GalleryHeaderImage}
+                        alt="A kitchen that has been staged"
+                        fill
+                        loading='eager'
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}
+                    />
+                </div>
             </header>
             <main>
                 <section>

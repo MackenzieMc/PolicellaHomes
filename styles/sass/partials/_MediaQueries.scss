@@ -1,4 +1,40 @@
+@media screen and (max-width: 1200px) {
+    // Model Homes Card
+    .modelHomesCard {
+        .modelInformationBar {
+            .modelInfoTextContainer {
+                p {
+                    font-size: 12px; 
+                }
+            } 
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    
+
+    // Base Styles
+    .headerText {
+        height: 100vh; 
+        flex-direction: column;
+        .headerTextContainer {
+            width: 100%; 
+            .fontContainer {
+                h2 {
+                    margin-top: 0; 
+                    font-size: 36px; 
+                }
+                p {
+                    font-size: 18px; 
+                }
+            }
+        }
+        .headerImageContainer {
+            width: 100%; 
+        }
+    }
 
     // Navigation
 
@@ -11,6 +47,48 @@
             display: none;
         }
         
+    }
+
+    // Hero Component 
+    .heroText {
+        flex-direction: column-reverse;
+        height: auto;
+        .headerTextContainer {
+            width: 80%; 
+            padding: 60px 0; 
+            h1 {
+                font-size: 48px;
+            }
+            p {
+                font-size: 19px;
+            }
+        }
+        .headerImageContainer {
+            width: 100%; 
+            height: 70vh;
+        }
+    }
+
+    // Preamble Component
+
+    .preambleTitleTextContainer {
+        margin-top: 10%;
+    }
+    .preambleTextContainer {
+        flex-direction: column;
+        .preambleMainTextContainer {
+            width: 100%; 
+            margin-bottom: 60px; 
+            padding-top: 30px; 
+            a {
+                margin: auto; 
+                margin-top: 30px; 
+            }
+
+        }
+        .checkOutContainer {
+            justify-content: center;
+        }
     }
 
     // About Component 
@@ -45,6 +123,32 @@
         }
     }
 
+    // Development Component 
+    .developmentSection {
+        flex-direction: column;
+            
+            .mainTitleTextContainer {
+                    width: 100%;
+                    align-items: center;
+                    margin-bottom: 60px;
+        
+                    h2 {
+                        width: 50%;
+                    }
+                }
+        
+                .seeMoreContainer {
+                    margin-top: 30px;
+                }
+    }
+    .developmentsCardsContainer {
+        flex-wrap: wrap;
+        .developmentCard {
+            width: calc(50% - 30px);
+            margin-top: 30px; 
+        }
+    }
+
     // Development Page
     .developmentPageContainer {
         gap: 40px; 
@@ -66,7 +170,22 @@
     }
 
     // Model Home Component
+    .sectionTitleTextContainer {
+        flex-direction: column;
+        .mainTitleTextContainer {
+            width: 100%; 
+            align-items: center;
+            margin-bottom: 60px; 
+            h2 {
+                width: 50%; 
+            }
+        }
+        .seeMoreContainer {
+            margin-top: 30px; 
+        }
+    }
     .modelHomesContainer {
+        width: 100%; 
         .modelHomesCard {
             width: calc(50% - 30px)
         }

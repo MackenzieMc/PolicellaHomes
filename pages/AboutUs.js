@@ -14,17 +14,22 @@ function AboutUs () {
                 <meta name="description" content="Learn more about who we are here at Policella Homes!" />
                 <meta name="viewport" content="width=device-width" />
             </Head>
-            <header className="aboutUsHeader headerText brightnessImage">
+            <header className="aboutUsHeader headerText">
+                <div className="headerTextContainer">
+                    <div className="fontContainer">
+                        <h2>Our History</h2>
+                        <p>Rooted in a legacy of excellence, we have been building homes that stand the test of time since 1984.</p>
+                    </div>
+                </div>
                 <div className="headerImageContainer">
-
-                    <Image 
+                    <Image
                         src={AboutHeaderImage}
+                        alt="A man working on the framing of a house"
                         fill
                         loading='eager'
                         style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
                     />
                 </div>
-                <h2>About Us</h2>
             </header>
             <section>
                 <div className="wrapper">

@@ -4,7 +4,7 @@
 }
 
 main {
-    background-color: #f7f4e8;
+    background-color: $secondary;
 }
 
 .wrapper {
@@ -13,34 +13,58 @@ main {
     margin: 0 auto; 
 }
 
+.aboutWrapper {
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 section {
     padding: 5% 0; 
-    background-color: #f7f4e8;
+    background-color: $secondary;
+}
+
+span {
+    font-family: $fontPrimary;
 }
 
 h1 {
-    color: #FFFF; 
+    color: $solidWhite; 
+}
+
+h2 {
+    font-family: $fontPrimary;
 }
 
 h3 {
-    font-family: 'Lato', sans-serif;
+    font-family: $fontPrimary;
     font-size: 21px;
 }
 
 p {
+    font-family: $fontSecondary;
     font-size: 18px;
 }
 
 a {
+    font-family: $fontSecondary;
     text-decoration: none;
-    color: #284646;
+    color: $primary;
     font-size: 18px;
+}
+
+iframe {
+    border-radius: 0 25px 0 0;
+}
+
+.lightGray {
+    color: $lightGray;
 }
 
 hr {
     color: #424242;
     opacity: 0.1;
-    background-color: #f7f4e8;
+    background-color: $secondary;
 }
 
 svg {
@@ -57,27 +81,40 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    h2 {
-        color: #FFFF;
-        text-transform: uppercase;
-        font-size: 58px;
-        font-family: 'Roboto',sans-serif;
-        font-weight: bold;
-        margin: 5px 0px;
-        letter-spacing: 2px;
-    }
-    p {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 24px;
-        color: #FFFF;
-        margin-top: 0px; 
+    .headerTextContainer {
+        width: 50%;
+        height: 130%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $solidWhite;
+        border-radius: 0 0 25px 0;
+        .fontContainer {
+            text-align: center;
+            width: 80%; 
+            h2 {
+                color: $solidWhite;
+                font-size: 40px;
+                font-family: $fontPrimary;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+                color: $primary;
+            }
+            p {
+                font-family: $fontSecondary;
+                font-weight: 300;
+                font-size: 18px;
+                color: $tertiary;
+                margin-top: 0px; 
+            }
+
+        }
     }
 }
 
 .oddBackground {
-    background-color: #FFFF;
+    background-color: $solidWhite;
 }
 
 .sectionTitleTextContainer {
@@ -96,7 +133,7 @@ svg {
             border-bottom: 1px solid #ff7161;
         
             a {
-                color: #284646;
+                color: $primary;
             }
         
         }
@@ -118,7 +155,7 @@ svg {
     position: static;
     display: flex;
     justify-content: flex-start;
-    padding: 5% 0 0 0;
+    padding: 7.5% 0 0 0;
     .breadList {
         list-style: none;
         padding: 0;
@@ -128,9 +165,9 @@ svg {
         li {
             margin-right: 10px; 
             a {
-                font-family: 'Heebo', serif;
+                font-family: $fontSecondary;
                 text-transform: uppercase;
-                letter-spacing: 0.8px;
+                letter-spacing: normal;
                 font-size: 16px;
             }
         }
@@ -154,7 +191,7 @@ svg {
     li {
         margin-right: 10px;
         a {
-            font-family: 'Heebo', serif;
+            font-family: $fontSecondary;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 16px;
@@ -175,7 +212,7 @@ svg {
 .bannerContainer {
     display: flex;
     justify-content: center;
-    background-color: #284646;
+    background-color: $primary;
     padding: 20px 0px;
     
 }
@@ -190,7 +227,7 @@ svg {
         flex-direction: column;
         h3 {
             font-family: "Laro", sans-serif;
-            color: #284646;
+            color: $primary;
             letter-spacing: 1px;
             font-size: 72px;
             margin-bottom: 0px;
@@ -198,12 +235,12 @@ svg {
         p {
             font-family: "Heebo", sans-serif;
             font-size: 24px;
-            color: #284646;
+            color: $primary;
             margin-bottom: 60px; 
         }
         a {
             padding: 10px 30px;
-            background-color: #284646;
+            background-color: $primary;
             color: #FFF; 
             align-items: center;
             margin-top: 30px; 

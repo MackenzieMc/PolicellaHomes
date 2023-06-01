@@ -1,26 +1,63 @@
 
 
+.preambleTitleTextContainer {
+    text-align: center;
+    margin-top: 10%; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-family: $fontSecondary;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-family: $fontPrimary;
+        font-size: 36px; 
+        width: 50%; 
+        margin-top: 0px; 
+        color: $primary;
+    }
+}
 .preambleTextContainer {
     display: flex;
     justify-content: space-between;
     .preambleMainTextContainer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 60%;
+        padding-top: 70px; 
+        width: 50%;
+        margin-right: 40px;
+
     }
     .checkOutContainer {
         display: flex;
-        flex-direction: column;
-        .checkOutImageContainer {
-            position: relative;
-            height: 250px;
-            width: 250px; 
-        }
-        a {
-            align-self: start;
-        }
+        .imageGroupContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; 
+            justify-content: center;
+            margin-right: 15px; 
+            .imageContainer {
+                position: relative;
+                height: 200px;
+                width: 250px; 
+                img {
+                    border-radius: 0 25px 25px 25px; 
+                }
+            }
+            .imageContainerLong {
+                position: relative;
+                height: 350px; 
+                width: 250px; 
+                img {
+                    border-radius: 0 25px 25px 25px;
+                }
 
+
+            }
+        }
         p {
             font-size: 12px;
             letter-spacing: 2.5px;
@@ -39,21 +76,24 @@
         margin-bottom: 0px;
     }
     p {
-        font-family: 'Lora', serif;
+        font-family: $fontSecondary;
         font-size: 17px;
         letter-spacing: 0.50px;
         line-height: 30px; 
-        color: #424242;
+        color: $solidBlack;
+        margin: 0 0 10px 0; 
     }
     a {
-        margin-top: 10px;
-        padding: 10px 24px;
-        border: 1px solid #284646;
-        background-color: transparent;
-        color: #284646;
-        text-transform: uppercase; 
+        padding: 10px 25px;
+        text-transform: uppercase;
         font-size: 14px;
+        color: $solidWhite;
+        background-color: $primary;
+        margin-right: auto;
+        border-radius: 25px;
+        margin-top: 30px; 
     }
+        
     a:hover {
         color: #FFF;
         background-color: #284646;

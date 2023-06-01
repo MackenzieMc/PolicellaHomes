@@ -1,6 +1,6 @@
 .navAbs {
     padding: 10px 15px;
-    position: absolute;
+    position: relative;
     top: 0; 
     width: 100%; 
     display: flex; 
@@ -17,14 +17,30 @@
         list-style: none;
         li {
             a {
-                font-family: 'Heebo', sans-serif;
-                color: #fff;
+                color: $lightGray;
                 text-decoration: none;
                 margin-left: 50px; 
                 font-size: 14px;
                 text-transform: uppercase;
-                letter-spacing: 2.6px;
+                letter-spacing: 1px;
                 line-height: 13px;
+                display: inline-block;
+                position: relative;
+                font-weight: 500;
+            }
+            a:hover {
+                color: $solidBlack;
+                &::after {
+                        content: '';
+                        position: absolute;
+                        height: 6px;
+                        width: 100%;
+                        bottom: 0;
+                        color: $solidBlack;
+                    }
+            }
+            .active {
+                color: $solidBlack;
             }
         }
     }
@@ -32,12 +48,12 @@
 
 .fixedBar {
     position: fixed;
-    background-color: #284646;
+    background-color: $solidWhite;
     padding-top: 10px;
     .navigationContainer {
         li {
             a {
-                color: #FFF;
+                color: $lightGray;
             }
         }
     }
@@ -74,13 +90,21 @@
             list-style: none;
             margin-top: 30px;
             a {
-                color: #FFF;
-                font-family: "Heebo";
+                color: #a5a5a5;
+                font-size: 14px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
+                
+            }
+            .active {
+                color: #FFFF;
+            }
+            a:hover {
+                color: #FFF; 
             }
         }
     }
+
 
 }
 
@@ -95,7 +119,7 @@
     .iconButton {
         background-color: transparent;
         border: none;
-        color: #FFF;
+        color: $primary;
 
         svg {
             path {
@@ -105,3 +129,4 @@
         }
     }
 }
+

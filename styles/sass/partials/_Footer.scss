@@ -66,7 +66,6 @@ footer {
     width: 50%; 
     text-align: right;
     p {
-        font-family: "Heebo", sans-serif;
         color: #e5e5e5;
         letter-spacing: 1px;
         font-size: 14px;
@@ -75,8 +74,9 @@ footer {
 
 address {
     font-style: normal;
+    font-family: $fontPrimary;
     p, a, span {
-        font-family: "Lora", sans-serif;
+        font-family: $fontSecondary; 
         font-size: 14px;
         letter-spacing: 1px;
         color: #e5e5e5;

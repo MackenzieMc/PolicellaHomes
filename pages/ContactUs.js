@@ -12,15 +12,21 @@ export default function ContactUs () {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText contactHeaderBackground'>
+                <div className="headerTextContainer">
+                    <div className="fontContainer">
+                        <h2>Any questions?</h2>
+                        <p>Reach out to our team here, we will be in contact within 24-48 business hours!</p>
+                    </div>
+                </div>
                 <div className="headerImageContainer">
                     <Image
                         src={ContactImageHeader}
+                        alt="A house covered with greenery"
                         fill
                         loading='eager'
                         style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }} 
                     />
                 </div>
-                <h2>General Inquiries</h2>
             </header>
             <section className="contactSection">
                 <div className="wrapper">

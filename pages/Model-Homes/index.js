@@ -19,14 +19,21 @@ export default function ModelHomesPage(props) {
                 <meta name="viewport" content="width=device-width" />
             </Head>
             <header className='headerText modelHomesBackground'>
-                <div className="headerImageContainer">
-                    <Image src={ModelHomeCover}
-                        fill={true}
-                        priority={true}
-                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}  
-                        />
+                <div className="headerTextContainer">
+                    <div className="fontContainer">
+                        <h2>Model Homes</h2>
+                        <p>Get a glimpse of our craftsmanship, where affordability meets quality and style.</p>
+                    </div>
                 </div>
-                <h2>Model Homes</h2>
+                <div className="headerImageContainer">
+                    <Image
+                        src={ModelHomeCover}
+                        alt="Model home"
+                        fill
+                        loading='eager'
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}
+                    />
+                </div>
             </header>
             <main>
                 <section className='breadSection'>

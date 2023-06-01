@@ -3,20 +3,37 @@ import Image from "next/image"
 import preambleImage from '../public/images/preamble.jpg'
 function Preamble () {
     return (
-        <section>
-            <div className="wrapper">
+        <section className="preamble">
+            <div className=" preambleSection aboutWrapper">
+                <div className="preambleTitleTextContainer">
+                    <p>Who we are</p>
+                    <h2>Crafting quality homes <span className="greenText">tailored to perfection</span></h2>
+                </div>
                 <div className="preambleTextContainer">
                     <div className="preambleMainTextContainer">
-                        <h3>Building custom homes and lots in the Niagara region since 1984.</h3>
-                        <p>Policella Homes, founded by Vince Policella Sr. in 1984, is a family business known for delivering honest and quality custom builds. With over 400 homes constructed, we collaborate with clients to design and construct homes that are practical and reflect your personal style, delivered on time and within budget.</p>
+                        <p>Founded by Vince Policella Sr. in 1984, Policella Homes is a family business known for delivering honest and quality custom builds.</p>
+                        <p>Crafting homes that reflect your unique lifestyle. Collaborating closely to bring your vision to life. From concept to completion, we prioritize every detail. Trust us to turn your dream into a reality.</p>
+                        <p className="lightGray">With Policella Homes, you can trust that your future home will be crafted with utmost care and attention to detail, ensuring a seamless and enjoyable building experience. Contact us now and let's turn your dream into a reality.</p>
+                        <Link href='/AboutUs'>Learn more</Link>
                     </div>
                     <div className="checkOutContainer">
-                        <div className="checkOutImageContainer">
-                            <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                        <div className="imageGroupContainer">
+                            <div className="imageContainer">
+                                <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                            </div>
+                            <div className="imageContainer">
+                                <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                            </div>
                         </div>
-                        <p>Finely crafted, custom built</p>
-                        <p>Let us make your dream home a reality.</p>
-                        <Link href={'/Gallery'}>View our gallery</Link>
+
+                        <div className="imageGroupContainer">
+                            <div className="imageContainer">
+                                <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                            </div>
+                            <div className="imageContainerLong">
+                                <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

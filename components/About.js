@@ -9,15 +9,11 @@ function About () {
         <section>
             <div className="wrapper aboutUsWrapper">
                 <div className="aboutContainer">
-                    <div className="aboutImgContainer">
-                        <Image src={AboutUsImage} fill contain="true" alt="Test" priority/>
-                    </div>
+                    <p>Here to help</p>
+                    <h2>Have any questions?</h2>
                     <div className="aboutTextContainer">
-                        <h3>Meet the Policellas</h3>
-                        <p>Vince Policella Sr., a skilled mason from Italy, founded Policella Homes in Canada in 1984. His son, Vince Jr., joined the family business in 2001. Policella Homes is known for its honest and quality custom builds, with over 400 homes constructed. We work closely with our clients to design and build homes that meet their individual needs and personal style.</p>
-                        <div>
-                            <Link className="aboutUsLinkContainer" href='/AboutUs'>Learn more about us! <AiOutlineArrowRight /></Link>
-                        </div>
+                        <p>We're here to assist you every step of the way in your homebuilding journey. Whether you have questions, want to learn more about our services, or are ready to start building your dream home, we're just a phone call or email away. Contact us today and let's begin the conversation. Our friendly team is ready to provide you with the information and guidance you need to make informed decisions. Reach out to us using the contact details below.</p>
+                        <Link href='/ContactUs'>Contact Us</Link>
                     </div>
                 </div>
             </div>

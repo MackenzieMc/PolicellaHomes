@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato:wght@300;400&family=Roboto:wght@700&family=Heebo:wght@300;400;600&family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Montserrat:wght@400;500;600&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -236,7 +236,7 @@ html {
 }
 
 main {
-  background-color: #f7f4e8;
+  background-color: #f6f6f4;
 }
 
 .wrapper {
@@ -245,34 +245,58 @@ main {
   margin: 0 auto;
 }
 
+.aboutWrapper {
+  width: 80%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 section {
   padding: 5% 0;
-  background-color: #f7f4e8;
+  background-color: #f6f6f4;
+}
+
+span {
+  font-family: "DM Serif Text", serif;
 }
 
 h1 {
   color: white;
 }
 
+h2 {
+  font-family: "DM Serif Text", serif;
+}
+
 h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "DM Serif Text", serif;
   font-size: 21px;
 }
 
 p {
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 
 a {
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   color: #284646;
   font-size: 18px;
 }
 
+iframe {
+  border-radius: 0 25px 0 0;
+}
+
+.lightGray {
+  color: #807a73;
+}
+
 hr {
   color: #424242;
   opacity: 0.1;
-  background-color: #f7f4e8;
+  background-color: #f6f6f4;
 }
 
 svg {
@@ -289,22 +313,34 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.headerText .headerTextContainer {
+  width: 50%;
+  height: 130%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 25px 0;
 }
-.headerText h2 {
+.headerText .headerTextContainer .fontContainer {
+  text-align: center;
+  width: 80%;
+}
+.headerText .headerTextContainer .fontContainer h2 {
   color: white;
-  text-transform: uppercase;
-  font-size: 58px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  margin: 5px 0px;
-  letter-spacing: 2px;
+  font-size: 40px;
+  font-family: "DM Serif Text", serif;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: #284646;
 }
-.headerText p {
-  font-family: "Lato", sans-serif;
+.headerText .headerTextContainer .fontContainer p {
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 24px;
-  color: white;
+  font-size: 18px;
+  color: #424242;
   margin-top: 0px;
 }
 
@@ -342,7 +378,7 @@ svg {
   position: static;
   display: flex;
   justify-content: flex-start;
-  padding: 5% 0 0 0;
+  padding: 7.5% 0 0 0;
 }
 .breadContainer .breadList {
   list-style: none;
@@ -355,9 +391,9 @@ svg {
   margin-right: 10px;
 }
 .breadContainer .breadList li a {
-  font-family: "Heebo", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.8px;
+  letter-spacing: normal;
   font-size: 16px;
 }
 .breadContainer .breadList li::after {
@@ -379,7 +415,7 @@ svg {
   margin-right: 10px;
 }
 .modelBreadList li a {
-  font-family: "Heebo", serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 16px;
@@ -440,7 +476,7 @@ svg {
 
 .navAbs {
   padding: 10px 15px;
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   display: flex;
@@ -458,23 +494,39 @@ svg {
   list-style: none;
 }
 .navAbs .navigationContainer li a {
-  font-family: "Heebo", sans-serif;
-  color: #fff;
+  color: #807a73;
   text-decoration: none;
   margin-left: 50px;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 2.6px;
+  letter-spacing: 1px;
   line-height: 13px;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+}
+.navAbs .navigationContainer li a:hover {
+  color: #000;
+}
+.navAbs .navigationContainer li a:hover::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  bottom: 0;
+  color: #000;
+}
+.navAbs .navigationContainer li .active {
+  color: #000;
 }
 
 .fixedBar {
   position: fixed;
-  background-color: #284646;
+  background-color: white;
   padding-top: 10px;
 }
 .fixedBar .navigationContainer li a {
-  color: #FFF;
+  color: #807a73;
 }
 
 .mobileMenuContainer, .mobile {
@@ -509,10 +561,16 @@ svg {
   margin-top: 30px;
 }
 .navAbs .mobileNavContainer li a {
-  color: #FFF;
-  font-family: "Heebo";
+  color: #a5a5a5;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.navAbs .mobileNavContainer li .active {
+  color: white;
+}
+.navAbs .mobileNavContainer li a:hover {
+  color: #FFF;
 }
 
 .mobileMenuContainer {
@@ -526,10 +584,31 @@ svg {
 .mobileMenuContainer .iconButton {
   background-color: transparent;
   border: none;
-  color: #FFF;
+  color: #284646;
 }
 .mobileMenuContainer .iconButton svg path {
   stroke: #FFF;
+}
+
+.preambleTitleTextContainer {
+  text-align: center;
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preambleTitleTextContainer p {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.preambleTitleTextContainer h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 36px;
+  width: 50%;
+  margin-top: 0px;
+  color: #284646;
 }
 
 .preambleTextContainer {
@@ -539,20 +618,35 @@ svg {
 .preambleTextContainer .preambleMainTextContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 60%;
+  padding-top: 70px;
+  width: 50%;
+  margin-right: 40px;
 }
 .preambleTextContainer .checkOutContainer {
   display: flex;
-  flex-direction: column;
 }
-.preambleTextContainer .checkOutContainer .checkOutImageContainer {
+.preambleTextContainer .checkOutContainer .imageGroupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-right: 15px;
+}
+.preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainer {
   position: relative;
-  height: 250px;
+  height: 200px;
   width: 250px;
 }
-.preambleTextContainer .checkOutContainer a {
-  align-self: start;
+.preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainer img {
+  border-radius: 0 25px 25px 25px;
+}
+.preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainerLong {
+  position: relative;
+  height: 350px;
+  width: 250px;
+}
+.preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainerLong img {
+  border-radius: 0 25px 25px 25px;
 }
 .preambleTextContainer .checkOutContainer p {
   font-size: 12px;
@@ -571,20 +665,22 @@ svg {
   margin-bottom: 0px;
 }
 .preambleTextContainer p {
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 30px;
-  color: #424242;
+  color: #000;
+  margin: 0 0 10px 0;
 }
 .preambleTextContainer a {
-  margin-top: 10px;
-  padding: 10px 24px;
-  border: 1px solid #284646;
-  background-color: transparent;
-  color: #284646;
+  padding: 10px 25px;
   text-transform: uppercase;
   font-size: 14px;
+  color: white;
+  background-color: #284646;
+  margin-right: auto;
+  border-radius: 25px;
+  margin-top: 30px;
 }
 .preambleTextContainer a:hover {
   color: #FFF;
@@ -847,37 +943,107 @@ svg {
   line-height: 30px;
 }
 
+.heroText {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroText .headerTextContainer {
+  width: 50%;
+  height: 130%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 0 0 25px 0;
+}
+.heroText .headerTextContainer .fontContainer {
+  text-align: center;
+  width: 80%;
+}
+.heroText .headerTextContainer .fontContainer h1 {
+  color: white;
+  font-size: 40px;
+  font-family: "DM Serif Text", serif;
+  margin-bottom: 30px;
+  line-height: 45px;
+  letter-spacing: normal;
+  color: #284646;
+}
+.heroText .headerTextContainer .fontContainer p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #424242;
+  margin-top: 0px;
+  letter-spacing: 1px;
+}
+.heroText .headerTextContainer .fontContainer .linkContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.heroText .headerTextContainer .fontContainer .linkContainer a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background-color: #284646;
+  margin-right: 30px;
+  border-radius: 25px;
+  letter-spacing: 1px;
+}
+.heroText .headerTextContainer .fontContainer .linkContainer a:nth-child(2) {
+  background-color: #E5E5CF;
+  color: #000;
+  margin-right: 0px;
+}
+.heroText .headerImageContainer {
+  position: relative;
+  height: 100%;
+  width: 60%;
+}
+
 .modelHomesTextContainer h2 {
   margin-bottom: 5px;
 }
 
+.sectionTitleTextContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .sectionTitleTextContainer .mainTitleTextContainer {
-  text-align: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 .sectionTitleTextContainer .mainTitleTextContainer h2 {
-  font-family: "Laro", serif;
+  font-family: "DM Serif Text", serif;
   font-size: 42px;
   letter-spacing: 1px;
   color: #284646;
   margin: 10px 0px 20px 0px;
-  text-transform: uppercase;
 }
 .sectionTitleTextContainer .mainTitleTextContainer p {
-  font-family: "Heebo", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #424242;
   letter-spacing: 1px;
 }
-.sectionTitleTextContainer .subTextContainer {
-  justify-content: flex-end;
+.sectionTitleTextContainer .seeMoreContainer {
+  margin-top: 50px;
 }
-.sectionTitleTextContainer .subTextContainer .seeMoreContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom: 1px solid #ff7161;
-}
-.sectionTitleTextContainer .subTextContainer .seeMoreContainer a {
-  color: #284646;
+.sectionTitleTextContainer .seeMoreContainer a {
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background-color: #284646;
+  border-radius: 25px;
 }
 .sectionTitleTextContainer p {
   margin-top: 0;
@@ -888,15 +1054,17 @@ svg {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 70%;
 }
 
 .modelHomesCard {
-  width: calc(25% - 30px);
+  width: calc(33.3333333333% - 30px);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   margin-bottom: 40px;
+  border-radius: 0 25px 0 0;
 }
 .modelHomesCard .modelHomesImgContainer {
   position: relative;
@@ -909,9 +1077,9 @@ svg {
   padding: 15px;
   text-transform: uppercase;
   background-color: white;
+  height: 100%;
 }
 .modelHomesCard .modelHomesCardTextContainer h3 {
-  font-family: "Heebo", sans-serif;
   margin-top: 0px;
   font-size: 14px;
   color: #0a0a0a;
@@ -919,7 +1087,7 @@ svg {
 }
 .modelHomesCard .modelHomesCardTextContainer p {
   margin-top: 0px;
-  font-size: 14px;
+  font-size: 10px;
   color: #0a0a0a;
 }
 .modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer {
@@ -931,8 +1099,8 @@ svg {
   justify-self: flex-end;
   margin-top: 0px;
 }
-.modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
-  font-size: 12px;
+.modelHomesCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation p {
+  font-size: 10px;
   background-color: #284646;
   mix-blend-mode: multiply;
   padding: 2px 8px;
@@ -946,9 +1114,8 @@ svg {
 .modelHomesCard .modelInformationBar p {
   margin-bottom: 0px;
 }
-.modelHomesCard .modelInformationBar .iconAndTextContainer {
+.modelHomesCard .modelInformationBar .modelInfoTextContainer {
   margin-right: 5px;
-  font-size: 14px;
 }
 .modelHomesCard .moreDetails {
   text-align: center;
@@ -974,6 +1141,7 @@ svg {
   overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   margin-bottom: 40px;
+  border-radius: 0 25px 0 0;
 }
 .modelHomesPageCard .modelHomesImgContainer {
   position: relative;
@@ -988,7 +1156,6 @@ svg {
   background-color: white;
 }
 .modelHomesPageCard .modelHomesCardTextContainer h3 {
-  font-family: "Heebo", sans-serif;
   margin-top: 0px;
   font-size: 14px;
   color: #0a0a0a;
@@ -1009,7 +1176,8 @@ svg {
   margin-top: 0px;
 }
 .modelHomesPageCard .modelHomesCardTextContainer .modelHomeNameAndLocationContainer .modelNameLocation span {
-  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
   background-color: #284646;
   mix-blend-mode: multiply;
   padding: 2px 8px;
@@ -1044,12 +1212,8 @@ svg {
 
 .modelHomesBackground .headerImageContainer {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
-}
-.modelHomesBackground h2 {
-  position: absolute;
-  z-index: 50;
 }
 
 .modelHomeContainer {
@@ -1063,7 +1227,7 @@ svg {
   margin-right: 30px;
 }
 .modelHomeContainer .modelHomeNameAndFeaturesContainer h2 {
-  font-family: "Lora", sans-serif;
+  font-family: "DM Serif Text", serif;
   text-transform: uppercase;
   margin-top: 0;
   color: #424242;
@@ -1071,7 +1235,7 @@ svg {
   font-size: 32px;
 }
 .modelHomeContainer .modelHomeNameAndFeaturesContainer p {
-  font-family: "Lora", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 30px;
@@ -1085,19 +1249,17 @@ svg {
   padding: 5% 0;
 }
 .modelHomeContainer .modelHomeNameAndFeaturesContainer .featuresListAndLocationContainer h3 {
-  font-family: "Heebo", serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 .modelHomeContainer .modelHomeNameAndFeaturesContainer .featuresListAndLocationContainer p {
-  font-family: "Heebo", serif;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 .modelHomeContainer .modelHomeNameAndFeaturesContainer .featuresListAndLocationContainer ul li {
-  font-family: "Heebo", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -1125,6 +1287,7 @@ svg {
 }
 .contactTextContainer a {
   width: 100%;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-top: 30px;
   margin: auto;
@@ -1135,6 +1298,7 @@ svg {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 14px;
+  border-radius: 25px;
 }
 
 .modelHomeFeaturesContainer {
@@ -1147,9 +1311,51 @@ svg {
   position: relative;
   height: 500px;
 }
+.modelHomeImageContainer img {
+  border-radius: 0 25px 0 0;
+}
 
 .modelHomeSection {
   padding-top: 0;
+}
+
+.developmentSection {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+}
+.developmentSection .mainTitleTextContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.developmentSection .mainTitleTextContainer h2 {
+  font-family: "DM Serif Text", serif;
+  font-size: 42px;
+  letter-spacing: 1px;
+  color: #284646;
+  margin: 10px 0px 20px 0px;
+}
+.developmentSection .mainTitleTextContainer p {
+  color: #424242;
+  letter-spacing: 1px;
+}
+.developmentSection .seeMoreContainer {
+  margin-top: 50px;
+}
+.developmentSection .seeMoreContainer a {
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background-color: #284646;
+  border-radius: 25px;
+}
+.developmentSection p {
+  margin-top: 0;
+  font-size: 16px;
 }
 
 .developmentTitleTextContainer {
@@ -1185,6 +1391,7 @@ svg {
   overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   background-color: #fff;
+  border-radius: 25px 0 0 0;
 }
 .developmentsCardsContainer .developmentCard .developmentImgContainer {
   position: relative;
@@ -1198,14 +1405,14 @@ svg {
   text-transform: uppercase;
 }
 .developmentsCardsContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
-  font-family: "Heebo", sans-serif;
+  margin-right: 10px;
   margin-top: 0px;
   font-size: 14px;
   color: #0a0a0a;
   letter-spacing: 1px;
 }
 .developmentsCardsContainer .developmentCard .developmentTextContainer .developmentLocationTextContainer p {
-  font-size: 12px;
+  font-size: 10px;
   background-color: #284646;
   mix-blend-mode: multiply;
   padding: 2px 8px;
@@ -1230,12 +1437,8 @@ svg {
 
 .developmentHeader .headerImageContainer {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
-}
-.developmentHeader h2 {
-  position: absolute;
-  z-index: 50;
 }
 
 .developmentPageContainer {
@@ -1250,7 +1453,8 @@ svg {
   overflow: hidden;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
   margin-bottom: 40px;
-  background-color: #fff;
+  background-color: white;
+  border-radius: 0 25px 0 0;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer {
   padding: 15px;
@@ -1264,7 +1468,7 @@ svg {
   letter-spacing: 1px;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer .developmentLocationTextContainer p {
-  font-size: 12px;
+  font-size: 10px;
   background-color: #284646;
   mix-blend-mode: multiply;
   padding: 2px 8px;
@@ -1293,7 +1497,6 @@ svg {
   margin-right: 30px;
 }
 .IDContentContainer .IDInfoContainer h2 {
-  font-family: "Lora", sans-serif;
   text-transform: uppercase;
   margin-top: 0;
   color: #424242;
@@ -1301,7 +1504,6 @@ svg {
   font-size: 32px;
 }
 .IDContentContainer .IDInfoContainer p {
-  font-family: "Lora", sans-serif;
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 30px;
@@ -1343,6 +1545,7 @@ svg {
 .IDContentContainer .IDMapContainer .mapContainer {
   width: 100%;
   height: 500px;
+  border-radius: 0 25px 0 0;
 }
 .IDContentContainer .IDMapContainer p {
   margin-bottom: 0;
@@ -1354,42 +1557,45 @@ svg {
 
 .aboutUsHeader .headerImageContainer {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
 }
-.aboutUsHeader h2 {
-  position: absolute;
-  z-index: 50;
-}
 
-.aboutContainer {
-  display: flex;
-  justify-content: center;
+.aboutContainer p {
+  text-align: center;
+  text-transform: uppercase;
 }
-.aboutContainer .aboutImgContainer {
-  width: 30%;
-  position: relative;
-  margin-right: 10px;
-}
-.aboutContainer .aboutImgContainer img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.aboutContainer h2 {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 36px;
+  color: #284646;
+  letter-spacing: normal;
 }
 .aboutContainer .aboutTextContainer {
-  width: 50%;
-}
-.aboutContainer .aboutTextContainer h3 {
-  font-family: "Heebo", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .aboutContainer .aboutTextContainer p {
-  font-family: "Lora", serif;
-  font-size: 17px;
-  letter-spacing: 0.5px;
+  font-size: 18px;
+  letter-spacing: normal;
   line-height: 30px;
-  color: #424242;
+  color: #000;
+  text-transform: none;
+}
+.aboutContainer .aboutTextContainer a {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background-color: #284646;
+  margin-top: 30px;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  align-self: center;
 }
 
 .aboutUsLinkContainer {
@@ -1414,24 +1620,25 @@ svg {
   padding: 2% 0% 2% 0%;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer h3 {
-  font-family: "Heebo", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
+  font-size: 24px;
+  letter-spacing: normal;
   margin-top: 0px;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryTextContainer p {
-  font-family: "Lora", serif;
-  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 30px;
-  color: #424242;
+  color: #284646;
   padding-right: 4%;
 }
 .aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer {
   position: relative;
   height: 400px;
   width: 90%;
+}
+.aboutSectionsContainer .ourStoryContainer .ourStoryImgContainer img {
+  border-radius: 0 25px 25px 25px;
 }
 .aboutSectionsContainer .qualityContainer {
   display: flex;
@@ -1443,16 +1650,14 @@ svg {
   padding: 2% 0% 2% 0%;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer h3 {
-  font-family: "Heebo", sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
+  font-size: 24px;
+  letter-spacing: normal;
   padding-left: 4%;
   margin-top: 0px;
 }
 .aboutSectionsContainer .qualityContainer .qualityTextContainer p {
-  font-family: "Lora", serif;
-  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 30px;
   color: #424242;
@@ -1462,6 +1667,9 @@ svg {
   height: 400px;
   position: relative;
   width: 90%;
+}
+.aboutSectionsContainer .qualityContainer .qualityImgContainer img {
+  border-radius: 0 25px 25px 25px;
 }
 
 .aboutUsTextAndImageContainer {
@@ -1483,7 +1691,6 @@ svg {
 }
 
 .contactTitleContainer p {
-  font-family: "Lora", serif;
   font-size: 17px;
   letter-spacing: 0.5px;
   line-height: 30px;
@@ -1506,12 +1713,14 @@ svg {
   flex-direction: column;
 }
 .formContainer form h3 {
-  text-transform: uppercase;
+  color: #284646;
+  letter-spacing: 1px;
   font-size: 18px;
   margin-bottom: 30px;
+  font-weight: normal;
 }
 .formContainer form label {
-  font-family: "Lora", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #424242;
 }
 .formContainer form input {
@@ -1555,8 +1764,8 @@ svg {
   cursor: pointer;
   color: white;
   padding: 10px 16px;
-  font-weight: bold;
-  border-radius: 4px;
+  border-radius: 25px;
+  font-family: "Montserrat", sans-serif;
 }
 .formContainer form .subjectInput {
   width: 45%;
@@ -1567,12 +1776,8 @@ svg {
 
 .contactHeaderBackground .headerImageContainer {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
-}
-.contactHeaderBackground h2 {
-  position: absolute;
-  z-index: 50;
 }
 
 .mapAndContactInfoContainer {
@@ -1582,6 +1787,7 @@ svg {
 .mapAndContactInfoContainer .mapContainer {
   width: 50%;
   position: relative;
+  border-radius: 0 25px 0 0;
 }
 .mapAndContactInfoContainer .contactInfoContainer {
   width: 50%;
@@ -1600,12 +1806,8 @@ svg {
 
 .galleryHeader .headerImageContainer {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
-}
-.galleryHeader h2 {
-  position: absolute;
-  z-index: 50;
 }
 
 .tabsMainContainer {
@@ -1718,7 +1920,6 @@ footer .footerLinksContainer .footerNavigationContainer li a {
   text-align: right;
 }
 .footerCertificationContainer p {
-  font-family: "Heebo", sans-serif;
   color: #e5e5e5;
   letter-spacing: 1px;
   font-size: 14px;
@@ -1726,20 +1927,79 @@ footer .footerLinksContainer .footerNavigationContainer li a {
 
 address {
   font-style: normal;
+  font-family: "DM Serif Text", serif;
 }
 address p, address a, address span {
-  font-family: "Lora", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   color: #e5e5e5;
 }
 
+@media screen and (max-width: 1200px) {
+  .modelHomesCard .modelInformationBar .modelInfoTextContainer p {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .headerText {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .headerText .headerTextContainer {
+    width: 100%;
+  }
+  .headerText .headerTextContainer .fontContainer h2 {
+    margin-top: 0;
+    font-size: 36px;
+  }
+  .headerText .headerTextContainer .fontContainer p {
+    font-size: 18px;
+  }
+  .headerText .headerImageContainer {
+    width: 100%;
+  }
   .mobileMenuContainer {
     display: inline;
   }
   .navAbs .navigationContainer {
     display: none;
+  }
+  .heroText {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .heroText .headerTextContainer {
+    width: 80%;
+    padding: 60px 0;
+  }
+  .heroText .headerTextContainer h1 {
+    font-size: 48px;
+  }
+  .heroText .headerTextContainer p {
+    font-size: 19px;
+  }
+  .heroText .headerImageContainer {
+    width: 100%;
+    height: 70vh;
+  }
+  .preambleTitleTextContainer {
+    margin-top: 10%;
+  }
+  .preambleTextContainer {
+    flex-direction: column;
+  }
+  .preambleTextContainer .preambleMainTextContainer {
+    width: 100%;
+    margin-bottom: 60px;
+    padding-top: 30px;
+  }
+  .preambleTextContainer .preambleMainTextContainer a {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .preambleTextContainer .checkOutContainer {
+    justify-content: center;
   }
   .aboutContainer {
     flex-direction: column;
@@ -1769,6 +2029,27 @@ address p, address a, address span {
   .aboutSectionsContainer .qualityContainer .qualityTextContainer, .aboutSectionsContainer .qualityContainer .qualityImgContainer {
     width: 100%;
   }
+  .developmentSection {
+    flex-direction: column;
+  }
+  .developmentSection .mainTitleTextContainer {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .developmentSection .mainTitleTextContainer h2 {
+    width: 50%;
+  }
+  .developmentSection .seeMoreContainer {
+    margin-top: 30px;
+  }
+  .developmentsCardsContainer {
+    flex-wrap: wrap;
+  }
+  .developmentsCardsContainer .developmentCard {
+    width: calc(50% - 30px);
+    margin-top: 30px;
+  }
   .developmentPageContainer {
     gap: 40px;
   }
@@ -1784,6 +2065,23 @@ address p, address a, address span {
   .IDContentContainer .IDMapContainer {
     width: 100%;
     margin-top: 26px;
+  }
+  .sectionTitleTextContainer {
+    flex-direction: column;
+  }
+  .sectionTitleTextContainer .mainTitleTextContainer {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .sectionTitleTextContainer .mainTitleTextContainer h2 {
+    width: 50%;
+  }
+  .sectionTitleTextContainer .seeMoreContainer {
+    margin-top: 30px;
+  }
+  .modelHomesContainer {
+    width: 100%;
   }
   .modelHomesContainer .modelHomesCard {
     width: calc(50% - 30px);
