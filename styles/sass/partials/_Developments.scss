@@ -87,7 +87,9 @@
 
             .developmentTitleTextContainer {
 
+
                 h3 {
+                    font-family: $fontPrimary;
                     margin-right: 10px; 
                     margin-top: 0px;
                     font-size: 14px;
@@ -160,7 +162,7 @@
                 .developmentTitleTextContainer {
         
                     h3 {
-                        font-family: "Heebo", sans-serif;
+                        font-family: $fontPrimary;
                         margin-top: 0px;
                         font-size: 14px;
                         color: #0a0a0a;

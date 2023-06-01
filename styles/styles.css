@@ -1405,6 +1405,7 @@ svg {
   text-transform: uppercase;
 }
 .developmentsCardsContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
+  font-family: "DM Serif Text", serif;
   margin-right: 10px;
   margin-top: 0px;
   font-size: 14px;
@@ -1461,7 +1462,7 @@ svg {
   text-transform: uppercase;
 }
 .developmentPageContainer .developmentCard .developmentTextContainer .developmentTitleTextContainer h3 {
-  font-family: "Heebo", sans-serif;
+  font-family: "DM Serif Text", serif;
   margin-top: 0px;
   font-size: 14px;
   color: #0a0a0a;
