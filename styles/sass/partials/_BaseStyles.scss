@@ -155,7 +155,7 @@ svg {
     position: static;
     display: flex;
     justify-content: flex-start;
-    padding: 7.5% 0 0 0;
+    padding: 5% 0 0 0;
     .breadList {
         list-style: none;
         padding: 0;
@@ -206,15 +206,6 @@ svg {
         li:nth-child(2)::after {
             content: ''
         }
-}
-
-// Banner 
-.bannerContainer {
-    display: flex;
-    justify-content: center;
-    background-color: $primary;
-    padding: 20px 0px;
-    
 }
 
 // 404 Page

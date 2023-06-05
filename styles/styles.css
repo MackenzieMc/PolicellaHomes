@@ -378,7 +378,7 @@ svg {
   position: static;
   display: flex;
   justify-content: flex-start;
-  padding: 7.5% 0 0 0;
+  padding: 5% 0 0 0;
 }
 .breadContainer .breadList {
   list-style: none;
@@ -426,13 +426,6 @@ svg {
 }
 .modelBreadList li:nth-child(2)::after {
   content: "";
-}
-
-.bannerContainer {
-  display: flex;
-  justify-content: center;
-  background-color: #284646;
-  padding: 20px 0px;
 }
 
 .errorContainer {
@@ -690,6 +683,35 @@ svg {
 .imageBreakContainer {
   position: relative;
   height: 400px;
+}
+
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #284646;
+  padding: 10px 0px;
+  position: relative;
+}
+.bannerContainer .bannerTextContainer {
+  width: 100%;
+}
+.bannerContainer .bannerTextContainer p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+.bannerContainer .bannerIconContainer {
+  position: absolute;
+  right: 10px;
+  top: 24px;
+}
+.bannerContainer .bannerIconContainer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.bannerContainer .bannerIconContainer button svg path {
+  stroke: white;
 }
 
 .embla {
@@ -1489,7 +1511,6 @@ svg {
 
 .IDContentContainer {
   display: flex;
-  margin-top: 30px;
 }
 .IDContentContainer .IDInfoContainer {
   width: 30%;

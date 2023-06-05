@@ -7,6 +7,7 @@ import About from '../components/About'
 import DivOne from '../components/DivOne'
 import DivTwo from '../components/DivTwo'
 import homes from '../public/data/model_homes_data.json'
+import Banner from '../components/Banner'
 
 
 export default function Home(props) {
@@ -22,6 +23,7 @@ export default function Home(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Banner />
       <Hero />
       <main>
         <Preamble />

@@ -16,7 +16,7 @@ function NavigationBar() {
     
     useEffect(() => {
         function handleScroll() {
-            const isTop = window.scrollY < 50;
+            const isTop = window.scrollY < 500;
             setScrolled(!isTop);
         }
         
@@ -83,7 +83,7 @@ function NavigationBar() {
                     
                         style={{
                             transform: open ? 'translateX(0)' : 'translateX(-100%)',
-                            transition: 'transform 0.3s ease-in-out',
+                            transition: 'transform 0.7s ease-in-out',
                             left: '0'
                         }}>
                         <li>
