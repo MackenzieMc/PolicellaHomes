@@ -9,13 +9,21 @@
     background-color: transparent;
     z-index: 1000;
     transition: all 0.4s ease-in-out;
-    .logoContainer {
-        margin-right: auto;
-    }
     .navigationContainer {
         display: flex; 
         list-style: none;
+        width: 100%; 
+        margin: 0px; 
+        .logoContainer {
+            margin-right: auto;
+            .logoImageContainer {
+                position: relative;
+                width: 90px; 
+                height: 75px;
+            }
+        }
         li {
+            align-self: center;
             a {
                 color: $lightGray;
                 text-decoration: none;
@@ -84,7 +92,7 @@
         margin-top: 0px;
         padding-top: 10%; 
         padding-left: 20px;
-        background-color: #284646;
+        background-color: $primary;
         transition: left 0.3s ease-in-out;
         li {
             list-style: none;

@@ -123,6 +123,15 @@
         }
     }
 
+    // Embla Button
+    .embla__button--next {
+        right: 5rem; 
+    }
+    .embla__button--prev {
+        left: 5rem;
+    }
+
+
     // Development Component 
     .developmentSection {
         flex-direction: column;
@@ -231,6 +240,16 @@
 
 @media screen and (max-width: 480px) {
 
+    // Banner
+
+    .bannerContainer .bannerTextContainer {
+        width: 80%;
+        p {
+            font-size: 10px; 
+        }
+    } 
+        
+
 
     // Navigation
 
@@ -284,6 +303,15 @@
             }
         }
     }
+
+    // Embla Button
+    .embla__button--next {
+        right: 1rem; 
+    }
+    .embla__button--prev {
+        left: 1rem;
+    }
+
     // Model Home Component
     .modelHomesContainer {
         flex-direction: column;

@@ -3,7 +3,7 @@
     --slide-spacing: 1rem;
     --slide-size: 100%;
     --slide-height: 19rem;
-    height: 100vh; 
+    overflow: hidden;
 }
 
 .embla__viewport {
@@ -22,7 +22,8 @@
     min-width: 0;
     padding-left: var(--slide-spacing);
     position: relative;
-    height: 100vh; 
+    display: flex;
+    justify-content: center; 
 }
 
 .embla__slide__img {
@@ -95,25 +96,24 @@
 
 .embla__button {
     z-index: 1;
-    color: #FFFF;
+    color: $solidBlack;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     width: 4rem;
     height: 4rem;
-    fill: #FFFF; 
+    fill: $solidBlack; 
 }
 
 .embla__button--prev {
-    left: 1.6rem;
+    left: 20rem;
 }
 
 .embla__button--next {
-    right: 1.6rem;
+    right: 20rem;
     color: #FFFF;
 }
 

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react';
 import Breadcrumbs from 'nextjs-breadcrumbs2';
 import Head from 'next/head';
-import ModelHomeCover from '../../public/images/modelHomebackground.jpg'
+import ModelHomeCover from '../../public/images/ModelHomeCover.jpg'
 
 export default function ModelHomesPage(props) {
     
@@ -63,7 +63,7 @@ export default function ModelHomesPage(props) {
                                                             <p><span>{data.city}</span></p>
                                                         </div>
                                                     </div>
-                                                    <div className="modelInformationBar">
+                                                    {/* <div className="modelInformationBar">
                                                         <div className="iconAndTextContainer">
                                                             <div className="modelInfoTextContainer">
                                                                 <p>{data.bedroom} Bed |</p>
@@ -84,7 +84,7 @@ export default function ModelHomesPage(props) {
                                                                 <p>{data.square} sq. ft.</p>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 </Link>
                                             </div>

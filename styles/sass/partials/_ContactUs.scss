@@ -59,7 +59,7 @@
         }
         .nameContainer {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             .firstNameContainer, .lastNameContainer {
                 display: flex;
                 flex-direction: column;
@@ -77,12 +77,16 @@
             }
         }
         .buttonSubmit {
-            background-color: #284646;
+            background-color: $primary;
             cursor: pointer;
             color: #FFFF; 
             padding: 10px 16px; 
             border-radius: 25px;
             font-family: $fontSecondary;
+        }
+        .buttonSubmit:disabled {
+            background-color: $tertiary;
+            cursor: not-allowed;
         }
 
         .subjectInput {

@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import PhotoAlbum from "react-photo-album";
+import photos from '../public/data/photos';
+import NextJsImage from '../components/NextJsImage';
 import GalleryHeaderImage from '../public/images/galleryHeader.jpg'
 
 function Gallery (props) {
 
     const galleryPhoto = props.galleryImages
 
-    const basePath = '/galleryImages/'
-
-    console.log(props)
-
+    // const basePath = '/galleryImages/'
     return (
         <>
             <Head>
@@ -43,19 +43,32 @@ function Gallery (props) {
                                     <button className="galleryButton">All</button>
                                     <button className="galleryButton">Exterior</button>
                                     <button className="galleryButton">Interior</button>
-                                    <button className="galleryButton">Kitchen</button>
-                                    <button className="galleryButton">Bathroom</button>
                                 </div>
                             </div>
 
                         <div className="galleryItemsContainer">
-                        {
+                        {/* {
                             galleryPhoto.map( data => 
                                     <div className="galleryImageContainer">
                                         <Image src={`${basePath}${data.imagePath}`} alt="" fill objectFit="cover" priority />
                                     </div>
                             )
-                        }
+                        } */}
+
+                            <PhotoAlbum
+                                photos={photos}
+                                layout="rows"
+                                renderPhoto={NextJsImage}
+                                defaultContainerWidth={1200}
+                                sizes={{
+                                    size: "calc(100vw - 40px)",
+                                    sizes: [
+                                        { viewport: "(max-width: 299px)", size: "calc(100vw - 10px)" },
+                                        { viewport: "(max-width: 599px)", size: "calc(100vw - 20px)" },
+                                        { viewport: "(max-width: 1199px)", size: "calc(100vw - 30px)" },
+                                    ],
+                                }}
+                            />
                         </div>   
                     </div>
                 </section>

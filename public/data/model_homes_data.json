@@ -1,22 +1,11 @@
 {
     
     "modelHomes" : [
-        
+
         {
-            "image": "sycamore4.jpg",
-            "id": "4-Sycamore-Road",
-            "address": "Lot 4 Sycamore",
-            "city": "Welland, ON",
-            "description": "Experience comfort and luxury in this meticulously crafted 2-bedroom home with 1320 square feet, featuring 9' ceilings, a cloud white kitchen with granite counters, gas fireplaces, a master suite with walk-in closet and ensuite, a fully finished lower level, and an elegant stone, brick, and stucco exterior with a covered deck. Don't miss the opportunity to make this your dream home.",
-            "bedroom": 2,
-            "square": 1320,
-            "garage": 1,
-            "bathroom": 2
-        },    
-        {
-            "image": "44Austin.jpg",
-            "id": "44-Austin",
-            "address": "44 Austin Road",
+            "image": "38Austin.jpg",
+            "id": "38-Austin",
+            "address": "38 Austin Road",
             "city": "Welland, ON",
             "description": "Discover the perfect blend of comfort and style in this charming 2-bedroom bungalow. With an open concept layout, cloud white kitchen, gas fireplaces, and a fully finished basement, this meticulously crafted home offers a delightful living experience.",
             "bedroom": 2,
@@ -24,24 +13,49 @@
             "garage": 1,
             "bathroom": 3
         },
-       { 
-            "image": "hero3.jpg",
-            "id": "701-Gaiser-Road",
-            "address": "701 Gaiser Road",
+        {
+            "image": "32Austin.jpg",
+            "id": "32-Austin",
+            "address": "32 Austin Road",
             "city": "Welland, ON",
+            "description": "Discover the perfect blend of comfort and style in this charming 2-bedroom bungalow. With an open concept layout, cloud white kitchen, gas fireplaces, and a fully finished basement, this meticulously crafted home offers a delightful living experience.",
             "bedroom": 2,
-            "square": 1510,
+            "square": 1190,
             "garage": 1,
             "bathroom": 3
         },
-       {
-            "image": "591Gaiser.jpg",
-            "id": "591-Gaiser-Road", 
-            "address": "591 Gaiser Road",
+
+        {
+            "image": "sycamore4.jpg",
+            "id": "42-Marie-Road",
+            "address": "Lot 42 Marie Road",
             "city": "Welland, ON",
-            "description": "Embrace the allure of this charming 2-bedroom bungalow, featuring a fully finished basement and a cloud white kitchen with a granite countertop. Enjoy the cozy ambiance of the gas fireplace in the great room, along with the convenience of main floor laundry and a rear covered deck. This exquisite home offers timeless elegance and comfort.",
+            "description": "Experience comfort and luxury in this meticulously crafted 2-bedroom bungalow with 1300 square feet, featuring 9' ceilings, a cloud white kitchen with granite counters, gas fireplaces, a master suite with walk-in closet and ensuite, a fully finished lower level, and an elegant decorative double front door entry system.",
             "bedroom": 2,
             "square": 1300,
+            "garage": 1,
+            "bathroom": 2
+        },
+        
+        {
+            "image": "sycamore4.jpg",
+            "id": "4-Sycamore-Road",
+            "address": "Lot 4 Sycamore",
+            "city": "Welland, ON",
+            "description": "Experience comfort and luxury in this meticulously crafted 2-bedroom home with 1320 square feet, featuring 9' ceilings, a cloud white kitchen with granite counters, gas fireplaces, a master suite with walk-in closet and ensuite, a fully finished lower level, and an elegant stone, brick, board and batton exterior with a covered deck. Don't miss the opportunity to make this your dream home.",
+            "bedroom": 2,
+            "square": 1320,
+            "garage": 1,
+            "bathroom": 2
+        },    
+        {
+            "image": "44AustinRoad.jpg",
+            "id": "44-Austin",
+            "address": "44 Austin Road",
+            "city": "Welland, ON",
+            "description": "Discover the perfect blend of comfort and style in this charming 2-bedroom bungalow. With an open concept layout, cloud white kitchen, gas fireplaces, and a fully finished basement, this meticulously crafted home offers a delightful living experience.",
+            "bedroom": 2,
+            "square": 1190,
             "garage": 1,
             "bathroom": 3
         }

@@ -8,27 +8,31 @@
 .sectionTitleTextContainer {
     display: flex;
     width: 100%; 
-    justify-content: space-between;
+    flex-direction: column;
     .mainTitleTextContainer {
-        width: 30%; 
+        width: 100%; 
         display: flex;
         flex-direction: column;
-        text-align: left;
+        text-align: center;
+        align-items: center;
         h2 {
             font-family: $fontPrimary;
-            font-size: 42px;
+            font-size: 36px;
             letter-spacing: 1px;
             color: #284646;
-            margin: 10px 0px 20px 0px; 
+            width: 50%; 
+            margin-top: 0px; 
         }
         p {
             font-family: $fontSecondary;
-            color: #424242;
-            letter-spacing: 1px
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            
         }
     }
         .seeMoreContainer {
-            margin-top: 50px; 
+            margin-top: 75px; 
+            align-self: center;
             a {
                 padding: 10px 25px;
                 text-transform: uppercase;
@@ -51,6 +55,46 @@
     width: 70%; 
 }
 
+.cardContainer {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+.homesCard {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cardImageContainer {
+        position: relative;
+        width: 100%; 
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        border-radius: 0 25px 25px 25px;
+    }
+    .textContainer {
+        margin-top: 30px; 
+        h3 {
+            text-transform: uppercase;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: $tertiary;
+        }
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            
+        }
+        .locationText {
+            color: $tertiary; 
+            font-size: 14px;
+        }
+    }
+}
 
 
 .modelHomesCard {
@@ -128,14 +172,6 @@
     .moreDetails {
         text-align: center;
         margin-bottom: 20px;
-
-        a {
-            border: 1px solid #ff7161;
-            color: #ff7161;
-            padding: 8px 20px;
-            border-radius: 12px;
-
-        }
     }
 }
 
@@ -324,7 +360,7 @@
         margin: auto; 
         cursor: pointer;
         padding: 10px 30px;
-        background-color: #284646;
+        background-color: $primary;
         color: #FFF;
         letter-spacing: 1px;
         text-transform: uppercase;

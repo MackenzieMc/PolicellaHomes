@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import tarionLogo from '../public/images/TarionLogo.png'
+import NHBALogo from '../public/images/ohba-logo.png'
 
 function Footer () {
     return (
@@ -50,12 +51,15 @@ function Footer () {
                             </nav>
                         </div>
                     <div className="footerCertificationContainer">
+                        <div className="footerCertificationTextContainer">
+                            {/* <h3>Certifications</h3> */}
+                        </div>
                         <div className="footerCertification">
-                            <div className="footerCertificationText">
-                                <p>Ontario New Home Warranty Program Certified.</p>
-                            </div>
                             <Link href={'https://www.tarion.com/'}className="footerCertificationImage">
                                 <Image src={tarionLogo} height={50} width={50} alt="Test"/>
+                            </Link>
+                            <Link href={'https://nhba.ca/'} className="footerCertificationImageTwo">
+                                <Image src={NHBALogo} height={50} width={125} alt="Test"/>
                             </Link>
                         </div>
                     </div>

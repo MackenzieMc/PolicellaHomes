@@ -1,8 +1,10 @@
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
-import { useRouter } from "next/router";
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { useRouter } from "next/router"
+import { RxHamburgerMenu } from 'react-icons/rx'
 import { GrClose } from 'react-icons/gr'
+import Logo from '../public/images/policellahomeslogo.png'
 
 
 
@@ -38,6 +40,11 @@ function NavigationBar() {
     return (
         <nav className={`navAbs ${scrolled ? 'fixedBar' : 'navAbs'}`}>
                     <ul className='navigationContainer' >
+                        <li className="logoContainer">
+                                <div className="logoImageContainer">
+                                    <Image src={Logo} fill objectFit="contain"  alt="Test" priority />
+                                </div>
+                        </li>
                         <li>
                             <Link href="/"
                                 className={router.pathname == "/" ? "active" : ""}

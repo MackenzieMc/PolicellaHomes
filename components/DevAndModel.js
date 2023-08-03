@@ -55,7 +55,9 @@ function DevAndModel (props) {
                 </div>
 
 
-            
+            <div className="modelHomeComponentContainer">
+                
+            </div>
 
             </div>
 

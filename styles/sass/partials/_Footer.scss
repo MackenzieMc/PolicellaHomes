@@ -1,7 +1,7 @@
 footer {
     font-family: 'Lora', serif;
     color: #FFFF; 
-    background-color: #284646;
+    background-color: $primary;
     .footerTextandLogoContainer {
         display: flex;
         width: 100%; 
@@ -17,7 +17,7 @@ footer {
             justify-content: flex-start;
             padding: 0px; 
             border-bottom: none;
-            background-color: #284646;
+            background-color: $primary;
         }
         .footerNavigationContainer {
             display: flex;
@@ -63,8 +63,20 @@ footer {
 
 .footerCertificationContainer {
     padding: 5% 0 2% 0; 
-    width: 50%; 
+    width: 40%; 
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    h3 {
+        font-family: $fontSecondary;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+    .footerCertificationImageTwo {
+        margin-left: 30px; 
+    }
     p {
         color: #e5e5e5;
         letter-spacing: 1px;
