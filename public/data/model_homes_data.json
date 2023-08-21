@@ -3,7 +3,7 @@
     "modelHomes" : [
 
         {
-            "image": "38Austin.jpg",
+            "image": "38AustinNew.jpg",
             "id": "38-Austin",
             "address": "38 Austin Road",
             "city": "Welland, ON",
@@ -14,7 +14,7 @@
             "bathroom": 3
         },
         {
-            "image": "32Austin.jpg",
+            "image": "32AustinNew.jpg",
             "id": "32-Austin",
             "address": "32 Austin Road",
             "city": "Welland, ON",
@@ -26,7 +26,7 @@
         },
 
         {
-            "image": "sycamore4.jpg",
+            "image": "42Marie.jpg",
             "id": "42-Marie-Road",
             "address": "Lot 42 Marie Road",
             "city": "Welland, ON",

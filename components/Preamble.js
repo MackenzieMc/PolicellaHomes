@@ -2,6 +2,9 @@ import Link from "next/link"
 import Image from "next/image"
 import pr1 from '../public/images/Preamble1.jpg'
 import pr2 from '../public/images/Preamble2.jpg'
+import pr3 from '../public/images/preamble3.jpg'
+import pr4 from '../public/images/preamble4.jpg'
+
 import preambleImage from '../public/images/preamble.jpg'
 function Preamble () {
     return (
@@ -24,13 +27,13 @@ function Preamble () {
                                 <Image src={pr1} fill contain="true" alt="Test" priority style={{ objectFit: "cover" }} />
                             </div>
                             <div className="imageContainer">
-                                <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                                <Image src={pr3} fill contain="true" alt="Test" priority />
                             </div>
                         </div>
 
                         <div className="imageGroupContainer">
                             <div className="imageContainer">
-                                <Image src={preambleImage} fill contain="true" alt="Test" priority />
+                                <Image src={pr4} fill contain="true" alt="Test" priority />
                             </div>
                             <div className="imageContainerLong">
                                 <Image src={pr2} fill contain="true" alt="Test" priority />

@@ -1,5 +1,35 @@
 {
     "developments" : [
+
+        {
+            "id": "Saffron-Estates",
+            "name": "Saffron Estates",
+            "location": "Pelham, ON",
+            "imageOne": "SaffronEstates.jpg",
+            "description": "This community features a range of single-family homes and townhouses, with a mix of modern and traditional architectural styles. The homes are built on large lots with plenty of green space and tree-lined streets, providing residents with a peaceful and picturesque setting. Saffron Estates is situated close to a variety of amenities, including schools, parks, shopping centers, and restaurants.",
+            "lat": 43.037214747515485,
+            "long": -79.27177754553124,
+            "north": 43.0074981,
+            "east": -79.2809011,
+            "south": 43.005555,
+            "west": -79.282802
+        },
+
+
+        {
+            "id": "Murdoch-Estates",
+            "name": "Murdoch Estates",
+            "location": "Welland, ON", 
+            "imageOne": "MurdochEstates.jpg",
+            "description": "This community features a range of single-family homes and townhouses, with a mix of modern and traditional architectural styles. The homes are built on large lots with plenty of green space and tree-lined streets, providing residents with a peaceful and picturesque setting. Murdoch Estates is situated close to a variety of amenities, including schools, parks, shopping centers, and restaurants.",
+            "lat": 42.989731,
+            "long": -79.290092,
+            "north": 43.0074981,
+            "east": -79.2809011,
+            "south": 43.005555,
+            "west": -79.282802
+
+        }, 
         {
             "id" : "Valleyway-Estates",
             "name": "Valleyway Estates",
@@ -19,7 +49,7 @@
             "id": "Spearow-Meadows-Estates",
             "name": "Spearow Meadows Estates",
             "location": "Welland, ON",
-            "imageOne": "slakes1.jpeg",
+            "imageOne": "slakes.jpeg",
             "imageAlt": "A green golf course with a road",
             "imageMap": "sparrowmap.png",
             "description": "The community of Spearow Meadows Estates features a range of well-designed and spacious homes, catering to various family sizes and lifestyles. The homes are thoughtfully crafted, showcasing modern architecture and high-quality construction. The neighborhood offers a range of outdoor recreational opportunities. Residents can enjoy scenic walking trails, parks, and green spaces, perfect for leisurely strolls or engaging in outdoor activities. The surrounding natural beauty adds to the charm and appeal of this development.",

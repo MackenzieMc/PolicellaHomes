@@ -1,5 +1,4 @@
 import Link from "next/link"
-import AboutUsImage from '../public/images/AboutUsSectionPhoto.jpg';
 import Image from "next/image"
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
