@@ -4,6 +4,8 @@ import pr1 from '../public/images/Preamble1.jpg'
 import pr2 from '../public/images/Preamble2.jpg'
 import pr3 from '../public/images/preamble3.jpg'
 import pr4 from '../public/images/preamble4.jpg'
+
+
 function Preamble () {
     return (
         <section className="preamble">
