@@ -4,8 +4,6 @@ import Preamble from '../components/Preamble'
 import ModelHomes from '../components/ModelHomes'
 import Developments from '../components/Developments'
 import About from '../components/About'
-import DivOne from '../components/DivOne'
-import DivTwo from '../components/DivTwo'
 import homes from '../public/data/model_homes_data.json'
 import Banner from '../components/Banner'
 
@@ -27,10 +25,8 @@ export default function Home(props) {
       <Hero />
       <main>
         <Preamble />
-        <DivOne />
         <ModelHomes {...homes}/>
         <Developments {...development}/>
-        <DivTwo />
         <About />
       </main>
     </>

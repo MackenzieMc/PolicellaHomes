@@ -11,7 +11,8 @@
             "bedroom": 2,
             "square": 1190,
             "garage": 1,
-            "bathroom": 3
+            "bathroom": 3,
+            "sold": false
         },
         {
             "image": "32AustinNew.jpg",
@@ -22,7 +23,8 @@
             "bedroom": 2,
             "square": 1190,
             "garage": 1,
-            "bathroom": 3
+            "bathroom": 3,
+            "sold": false
         },
 
         {
@@ -34,7 +36,8 @@
             "bedroom": 2,
             "square": 1300,
             "garage": 1,
-            "bathroom": 2
+            "bathroom": 2,
+            "sold": false
         },
         
         {
@@ -46,7 +49,8 @@
             "bedroom": 2,
             "square": 1320,
             "garage": 1,
-            "bathroom": 2
+            "bathroom": 2,
+            "sold": false
         },    
         {
             "image": "44AustinRoad.jpg",
@@ -57,7 +61,8 @@
             "bedroom": 2,
             "square": 1190,
             "garage": 1,
-            "bathroom": 3
+            "bathroom": 3,
+            "sold": true
         }
     ]
 }

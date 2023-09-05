@@ -1388,6 +1388,20 @@ svg {
   padding-top: 0;
 }
 
+.soldContainer {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.soldContainer span {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
 .developmentSection {
   display: flex;
   flex-direction: row-reverse;

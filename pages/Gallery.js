@@ -1,11 +1,16 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import PhotoAlbum from "react-photo-album";
-import photos from '../public/data/photos';
+import photos from '../public/data/photos.js';
 import NextJsImage from '../components/NextJsImage';
 import GalleryHeaderImage from '../public/images/galleryHeader.jpg'
 
 function Gallery (props) {
+
+    // const images = imagesData.galleryImages.map((image) => ({
+    //     src: `/galleryImages/${image.imagePath}`,
+    //     alt: image.altText,
+    // }));
 
     const galleryPhoto = props.galleryImages
 

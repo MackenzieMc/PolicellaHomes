@@ -53,6 +53,11 @@ export default function ModelHomesPage(props) {
                                                     alt="" 
                                                     fill  
                                                     priority/>
+                                                    {data.sold ?
+                                                    <div className="soldContainer">
+                                                        <span>Sold</span> 
+                                                    </div>
+                                                        : null }
                                                 </div>
                                                 <div className="modelHomesCardTextContainer">
                                                     <div className="modelHomeNameAndLocationContainer">

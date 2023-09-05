@@ -387,3 +387,17 @@
 .modelHomeSection {
     padding-top: 0;
 }
+
+.soldContainer {
+    position: absolute;
+    top: 20px; 
+    left: 0px; 
+    span {
+        padding: 5px 10px;
+        background-color: red;
+        color: $solidWhite;
+        font-family: $fontSecondary;
+        font-size: 14px; 
+        letter-spacing: 1px;
+    }
+}
