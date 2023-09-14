@@ -295,21 +295,36 @@
             }
         }
         .checkOutContainer {
-            .checkOutImageContainer {
+            width: 100%; 
+            .checkOutContainer {
                 width: 100%; 
-                img {
-                    object-fit: cover;
+                .imageGroupContainer {
+                    .imageContainer {
+                        height: 100px; 
+                        width: 150px; 
+                    }
                 }
             }
         }
     }
+    .preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainer {
+            height: 100px; 
+            width: 150px; 
+    }
+    .preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainerLong {
+            height: 200px; 
+            width: 150px; 
+    }
 
-    // Embla Button
+    // Embla
     .embla__button--next {
         right: 1rem; 
     }
     .embla__button--prev {
         left: 1rem;
+    }
+    .cardImageContainer {
+        overflow: clip;
     }
 
     // Model Home Component
@@ -470,3 +485,4 @@
         }
     } 
 }
+

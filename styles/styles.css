@@ -2266,18 +2266,32 @@ address p, address a, address span {
   .preambleTextContainer .preambleMainTextContainer p {
     font-size: 17px;
   }
-  .preambleTextContainer .checkOutContainer .checkOutImageContainer {
+  .preambleTextContainer .checkOutContainer {
     width: 100%;
   }
-  .preambleTextContainer .checkOutContainer .checkOutImageContainer img {
-    -o-object-fit: cover;
-       object-fit: cover;
+  .preambleTextContainer .checkOutContainer .checkOutContainer {
+    width: 100%;
+  }
+  .preambleTextContainer .checkOutContainer .checkOutContainer .imageGroupContainer .imageContainer {
+    height: 100px;
+    width: 150px;
+  }
+  .preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainer {
+    height: 100px;
+    width: 150px;
+  }
+  .preambleTextContainer .checkOutContainer .imageGroupContainer .imageContainerLong {
+    height: 200px;
+    width: 150px;
   }
   .embla__button--next {
     right: 1rem;
   }
   .embla__button--prev {
     left: 1rem;
+  }
+  .cardImageContainer {
+    overflow: clip;
   }
   .modelHomesContainer {
     flex-direction: column;

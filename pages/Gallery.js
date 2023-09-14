@@ -7,14 +7,9 @@ import GalleryHeaderImage from '../public/images/galleryHeader.jpg'
 
 function Gallery (props) {
 
-    // const images = imagesData.galleryImages.map((image) => ({
-    //     src: `/galleryImages/${image.imagePath}`,
-    //     alt: image.altText,
-    // }));
 
     const galleryPhoto = props.galleryImages
 
-    // const basePath = '/galleryImages/'
     return (
         <>
             <Head>
