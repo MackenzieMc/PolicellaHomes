@@ -1926,9 +1926,7 @@ svg {
 }
 
 .galleryImageContainer {
-  width: calc(25% - 30px);
   position: relative;
-  height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0px 30px 30px 0px;
@@ -2257,6 +2255,9 @@ address p, address a, address span {
   .sectionTitleTextContainer .mainTitleTextContainer p {
     font-size: 14px;
   }
+  .preambleTitleTextContainer h2 {
+    width: 100%;
+  }
   .preambleTextContainer {
     flex-direction: column;
   }
@@ -2325,12 +2326,21 @@ address p, address a, address span {
   .modelHomeContainer .modelHomeImageContainer img {
     height: auto;
   }
+  .sectionTitleTextContainer {
+    margin-top: 60px;
+  }
+  .sectionTitleTextContainer .mainTitleTextContainer {
+    margin-bottom: 0px;
+  }
   .developmentsCardsContainer {
     flex-direction: column;
   }
   .developmentsCardsContainer .developmentCard {
     width: 100%;
     margin-bottom: 40px;
+  }
+  .sectionTitleTextContainer .mainTitleTextContainer h2 {
+    width: 100%;
   }
   .developmentPageContainer {
     flex-direction: column;

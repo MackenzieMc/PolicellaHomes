@@ -1,14 +1,37 @@
-import Image from 'next/image'
-import Head from 'next/head'
+import { useState } from 'react';
+import Image from 'next/image';
+import Head from 'next/head';
 import PhotoAlbum from "react-photo-album";
 import photos from '../public/data/photos.js';
 import NextJsImage from '../components/NextJsImage';
-import GalleryHeaderImage from '../public/images/galleryHeader.jpg'
+import GalleryHeaderImage from '../public/images/galleryHeader.jpg';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-function Gallery (props) {
+function Gallery(props) {
+    const [index, setIndex] = useState(-1);
+    const [selectedFilter, setSelectedFilter] = useState('all');
 
+    const galleryPhoto = photos;
 
-    const galleryPhoto = props.galleryImages
+    const filteredPhotos = galleryPhoto.filter((photo) => {
+
+        console.log(photo);
+        if (selectedFilter === 'all') {
+            return true;
+        } else {
+            return photo.alt === selectedFilter;
+        }
+    });
+
+    const handleFilterClick = (filter) => {
+        setSelectedFilter(filter);
+    };
 
     return (
         <>
@@ -38,26 +61,16 @@ function Gallery (props) {
             <main>
                 <section>
                     <div className="wrapper">
-                            <div className="tabsMainContainer">
-                                <div className="tabsContainer">
-                                    <button className="galleryButton">All</button>
-                                    <button className="galleryButton">Exterior</button>
-                                    <button className="galleryButton">Interior</button>
-                                </div>
-                            </div>
-
-                        <div className="galleryItemsContainer">
-                        {/* {
-                            galleryPhoto.map( data => 
-                                    <div className="galleryImageContainer">
-                                        <Image src={`${basePath}${data.imagePath}`} alt="" fill objectFit="cover" priority />
-                                    </div>
-                            )
-                        } */}
-
+                        <div className="tabsContainer">
+                            <button className="galleryButton" onClick={() => handleFilterClick('all')}>All</button>
+                            <button className="galleryButton" onClick={() => handleFilterClick('exterior')}>Exterior</button>
+                            <button className="galleryButton" onClick={() => handleFilterClick('interior')}>Interior</button>
+                        </div>
+                        <div className="galleryImageContainer">
                             <PhotoAlbum
-                                photos={photos}
+                                photos={filteredPhotos} // Use filteredPhotos here
                                 layout="rows"
+                                columns={3}
                                 renderPhoto={NextJsImage}
                                 defaultContainerWidth={1200}
                                 sizes={{
@@ -68,29 +81,21 @@ function Gallery (props) {
                                         { viewport: "(max-width: 1199px)", size: "calc(100vw - 30px)" },
                                     ],
                                 }}
+                                onClick={({ index }) => setIndex(index)}
                             />
-                        </div>   
+                        </div>
+                        <Lightbox
+                            slides={filteredPhotos} // Use filteredPhotos here
+                            open={index >= 0}
+                            index={index}
+                            close={() => setIndex(-1)}
+                            plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+                        />
                     </div>
                 </section>
             </main>
         </>
-    )
+    );
 }
 
-
-
-export default Gallery
-
-// Fetching data from the JSON file
-import fsPromises from 'fs/promises'
-import path from 'path'
-export async function getStaticProps() {
-    const filePath = path.join(process.cwd(), '/public/data/gallery_photos.json');
-    const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
-
-
-    return {
-        props: objectData
-    }
-}
+export default Gallery;

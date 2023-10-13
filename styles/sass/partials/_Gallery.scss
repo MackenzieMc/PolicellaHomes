@@ -35,9 +35,7 @@
     flex-wrap: wrap;
 }
 .galleryImageContainer {
-    width: calc((100% / 4) - 30px);
     position: relative;
-    height: 250px;
     object-fit: contain;
     margin: 0px 30px 30px 0px
 }

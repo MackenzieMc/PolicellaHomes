@@ -286,6 +286,11 @@
     }
 
     // Preamble Component
+    .preambleTitleTextContainer {
+        h2 {
+            width: 100%;
+        }
+    }
     .preambleTextContainer {
         flex-direction: column;
         .preambleMainTextContainer {
@@ -366,6 +371,14 @@
         }
     }
 
+    .sectionTitleTextContainer {
+        margin-top: 60px; 
+        .mainTitleTextContainer {
+            margin-bottom: 0px; 
+        }
+    }
+
+
     // Development Component 
     .developmentsCardsContainer {
         flex-direction: column;
@@ -373,6 +386,10 @@
             width: 100%; 
             margin-bottom: 40px; 
         }
+    }
+
+    .sectionTitleTextContainer .mainTitleTextContainer h2 {
+        width: 100%; 
     }
 
     // Development Page
