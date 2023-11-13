@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import pr1 from '../public/images/Preamble1.jpg'
-import pr2 from '../public/images/Preamble2.jpg'
+import pr1 from '../public/images/preamble6.JPG'
+import pr2 from '../public/images/preamble3.JPG'
 import pr3 from '../public/images/divOne.jpg'
 import pr4 from '../public/images/aboutOne.jpg'
 
