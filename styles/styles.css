@@ -1902,6 +1902,13 @@ svg {
   justify-content: center;
 }
 
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .tabsContainer {
   display: flex;
   justify-content: space-evenly;
