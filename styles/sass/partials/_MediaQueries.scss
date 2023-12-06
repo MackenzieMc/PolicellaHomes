@@ -11,6 +11,31 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    // Preamble Component
+
+    .preambleTitleTextContainer {
+        margin-top: 10%;
+        width: 100%; 
+    }
+    .preambleTextContainer {
+        flex-direction: column;
+        .preambleMainTextContainer {
+            width: 100%; 
+            margin-bottom: 60px; 
+            padding-top: 30px; 
+            a {
+                margin: auto; 
+                margin-top: 30px; 
+            }
+
+        }
+        .checkOutContainer {
+            justify-content: center;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     
@@ -73,6 +98,7 @@
 
     .preambleTitleTextContainer {
         margin-top: 10%;
+        width: 100%; 
     }
     .preambleTextContainer {
         flex-direction: column;
@@ -142,7 +168,7 @@
                     margin-bottom: 60px;
         
                     h2 {
-                        width: 50%;
+                        width: 75%;
                     }
                 }
         
@@ -372,7 +398,7 @@
     }
 
     .sectionTitleTextContainer {
-        margin-top: 60px; 
+        margin: 60px 0px; 
         .mainTitleTextContainer {
             margin-bottom: 0px; 
         }

@@ -2050,6 +2050,27 @@ address p, address a, address span {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .preambleTitleTextContainer {
+    margin-top: 10%;
+    width: 100%;
+  }
+  .preambleTextContainer {
+    flex-direction: column;
+  }
+  .preambleTextContainer .preambleMainTextContainer {
+    width: 100%;
+    margin-bottom: 60px;
+    padding-top: 30px;
+  }
+  .preambleTextContainer .preambleMainTextContainer a {
+    margin: auto;
+    margin-top: 30px;
+  }
+  .preambleTextContainer .checkOutContainer {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .headerText {
     height: 100vh;
@@ -2094,6 +2115,7 @@ address p, address a, address span {
   }
   .preambleTitleTextContainer {
     margin-top: 10%;
+    width: 100%;
   }
   .preambleTextContainer {
     flex-direction: column;
@@ -2153,7 +2175,7 @@ address p, address a, address span {
     margin-bottom: 60px;
   }
   .developmentSection .mainTitleTextContainer h2 {
-    width: 50%;
+    width: 75%;
   }
   .developmentSection .seeMoreContainer {
     margin-top: 30px;
@@ -2334,7 +2356,7 @@ address p, address a, address span {
     height: auto;
   }
   .sectionTitleTextContainer {
-    margin-top: 60px;
+    margin: 60px 0px;
   }
   .sectionTitleTextContainer .mainTitleTextContainer {
     margin-bottom: 0px;
