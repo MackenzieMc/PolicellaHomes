@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import Logo from '../public/images/policellahomeslogo.png'
 import tarionLogo from '../public/images/TarionLogo.png'
 import NHBALogo from '../public/images/ohba-logo.png'
 
@@ -9,9 +10,6 @@ function Footer () {
             <div className="wrapper">
                 <div className="footerTextandLogoContainer">
                     <div className="footerTextContainer">
-                        <div className="footerLogoContainer">
-
-                        </div>
                         <h4>Where old world craftsmanship meets modern day design.</h4>
 
                         <address>
@@ -50,9 +48,10 @@ function Footer () {
                                 </ul>
                             </nav>
                         </div>
+
                     <div className="footerCertificationContainer">
-                        <div className="footerCertificationTextContainer">
-                            {/* <h3>Certifications</h3> */}
+                        <div className="footerLogoContainer">
+                            <Image src={Logo} height={150} objectFit="contain" alt="Test" priority />
                         </div>
                         <div className="footerCertification">
                             <Link href={'https://www.tarion.com/'}className="footerCertificationImage">

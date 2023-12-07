@@ -18,7 +18,7 @@ function AboutUs () {
                 <div className="headerTextContainer">
                     <div className="fontContainer">
                         <h2>Our History</h2>
-                        <p>Rooted in a legacy of excellence, we have been building homes that stand the test of time since 1984.</p>
+                        <p>Rooted in a legacy of excellence, Policella Homes has been building homes that stand the test of time since 1984.</p>
                     </div>
                 </div>
                 <div className="headerImageContainer">

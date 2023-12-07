@@ -729,6 +729,7 @@ svg {
   --slide-size: 100%;
   --slide-height: 19rem;
   overflow: hidden;
+  position: relative;
 }
 
 .embla__viewport {
@@ -832,14 +833,15 @@ svg {
   width: 4rem;
   height: 4rem;
   fill: #000;
+  top: 45%;
 }
 
 .embla__button--prev {
-  left: 20rem;
+  left: 5rem;
 }
 
 .embla__button--next {
-  right: 20rem;
+  right: 5rem;
   color: white;
 }
 
@@ -995,7 +997,7 @@ svg {
   text-align: center;
   width: 80%;
 }
-.heroText .headerTextContainer .fontContainer h1 {
+.heroText .headerTextContainer .fontContainer h1, .heroText .headerTextContainer .fontContainer h2 {
   color: white;
   font-size: 40px;
   font-family: "DM Serif Text", serif;
@@ -1003,6 +1005,10 @@ svg {
   line-height: 45px;
   letter-spacing: normal;
   color: #0D2818;
+}
+.heroText .headerTextContainer .fontContainer h1 {
+  margin-top: 0px;
+  font-size: 48px;
 }
 .heroText .headerTextContainer .fontContainer p {
   font-family: "Montserrat", sans-serif;
@@ -1069,7 +1075,7 @@ svg {
   text-transform: uppercase;
 }
 .sectionTitleTextContainer .seeMoreContainer {
-  margin-top: 75px;
+  margin-top: 25px;
   align-self: center;
 }
 .sectionTitleTextContainer .seeMoreContainer a {
@@ -1122,6 +1128,7 @@ svg {
   font-size: 30px;
   letter-spacing: 1px;
   color: #424242;
+  margin: 0 0 10px 0;
 }
 .homesCard .textContainer p {
   text-align: center;
@@ -2043,6 +2050,10 @@ address p, address a, address span {
   font-size: 14px;
   letter-spacing: 1px;
   color: #e5e5e5;
+}
+
+.footerLogoContainer {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {

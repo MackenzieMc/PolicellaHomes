@@ -61,13 +61,13 @@ export default function ModelHomes(props) {
                             <div className="embla__viewport" ref={emblaRef}>
                                 <div className="embla__container">
                                     {
-                                        Object.values(homes).splice(0,3).map(data => 
+                                        Object.values(homes).map(data => 
                                             
                                             <div className="embla__slide">
                                                 <div className="homesCard">
                                                     <div className="cardImageContainer">
                                                         <Image src={`${basePath}${data.image}`} alt="" objectFit="contain" priority sizes="(max-width: 768px) 100vw" width={600} height={350}
-                                                        style={{borderRadius:'0px 25px 25px 25px'}}
+                                                        // style={{borderRadius:'0px 25px 25px 25px'}}
                                                         
                                                         />
                                                     </div>
@@ -90,7 +90,7 @@ export default function ModelHomes(props) {
 
                     </div>
                     <div className="seeMoreContainer">
-                        <Link href="/Model-Homes">View more homes</Link>
+                        <Link href="/Model-Homes">Model Home Details</Link>
                     </div>
                 </div>
 

@@ -31,7 +31,7 @@
         }
     }
         .seeMoreContainer {
-            margin-top: 75px; 
+            margin-top: 25px; 
             align-self: center;
             a {
                 padding: 10px 25px;
@@ -83,6 +83,7 @@
             font-size: 30px;
             letter-spacing: 1px;
             color: $tertiary;
+            margin: 0 0 10px 0; 
         }
         p {
             text-align: center;

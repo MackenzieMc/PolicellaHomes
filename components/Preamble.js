@@ -18,7 +18,7 @@ function Preamble () {
                     <div className="preambleMainTextContainer">
                         <p>Founded by Vince Policella Sr. in 1984, Policella Homes is a family business known for delivering honest and quality custom homes.</p>
                         <p>Crafting homes that reflect your unique lifestyle. Collaborating closely to bring your vision to life. From concept to completion, we prioritize every detail. Trust us to turn your dream into a reality.</p>
-                        <p className="lightGray">With Policella Homes, you can trust that your future home will be crafted with utmost care and attention to detail, ensuring a seamless and enjoyable building experience. Contact us now and let's turn your dream into a reality.</p>
+                        <p className="lightGray">With Policella Homes, you can trust that your future home will be crafted with utmost care and attention to detail, ensuring a seamless and enjoyable building experience. Contact us now and let us turn your dream into a reality.</p>
                         <Link href='/AboutUs'>Learn more</Link>
                     </div>
                     <div className="checkOutContainer">

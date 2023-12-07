@@ -12,7 +12,7 @@ import {
 function Developments (props) {
 
     const { slides, options } = props
-    const [emblaRef, emblaApi] = useEmblaCarousel(options)
+    const [emblaRef, emblaApi] = useEmblaCarousel({loop: true})
     const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
     const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
     const [selectedIndex, setSelectedIndex] = useState(0)
@@ -48,11 +48,11 @@ function Developments (props) {
     const basePath = '/images/'
 
     return (
-        <section className="sectionBackground">
+        <section>
             <div className="aboutWrapper">
                 <div className="sectionTitleTextContainer">
                     <div className="mainTitleTextContainer">
-                        <p>Check out our recent developments</p>
+                        <p>Here is what we are working on</p>
                         <h2>Explore our available housing lots and developments</h2>
                     </div>
 
@@ -67,7 +67,7 @@ function Developments (props) {
                                                 <div className="homesCard">
                                                     <div className="cardImageContainer">
                                                         <Image src={`${basePath}${data.imageOne}`} alt="" objectFit="contain" priority sizes="(max-width: 768px) 100vw" width={600} height={350}
-                                                            style={{ borderRadius: '0px 25px 25px 25px' }}
+                                                            // style={{ borderRadius: '0px 25px 25px 25px' }}
 
                                                         />
                                                     </div>

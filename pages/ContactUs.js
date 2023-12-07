@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import FriendlyCaptcha from '../components/FriendlyCaptcha';
 import { useForm, ValidationError } from '@formspree/react';
-import ContactImageHeader from '../public/images/contactUsbackground.jpg'
+import ContactImageHeader from '../public/images/mainHero.jpg'
 
 export default function ContactUs () {
     const [captchaSolved, setCaptchaSolved] = useState(false);
@@ -34,7 +34,7 @@ export default function ContactUs () {
             <header className='headerText contactHeaderBackground'>
                 <div className="headerTextContainer">
                     <div className="fontContainer">
-                        <h2>Any questions?</h2>
+                        <h2>Contact Us</h2>
                         <p>Reach out to our team here, we will be in contact within 24-48 business hours!</p>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ export default function ContactUs () {
                     <div className="formAndTextContainer">
                         <div className="formContainer">
                         <div className="contactTitleContainer">
-                            <p>Complete the form below and we will be in touch in a timely manner. Alternatively, contact me personally at vincepolicella@cogeco.ca</p>
+                            <p>Complete the form below and we will be in touch in a timely manner. Alternatively, contact me personally at vincepolicella@cogeco.ca or 905-892-9897.</p>
                         </div>
                             {state.succeeded && <p>Thanks for joining!</p>}
                             <form 

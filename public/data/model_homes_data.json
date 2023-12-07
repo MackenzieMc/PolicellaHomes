@@ -48,7 +48,7 @@
             "description": "Experience comfort and luxury in this meticulously crafted 2-bedroom home with 1320 square feet, featuring 9' ceilings, a cloud white kitchen with granite counters, gas fireplaces, a master suite with walk-in closet and ensuite, a fully finished lower level, and an elegant stone, brick, board and batton exterior with a covered deck. Don't miss the opportunity to make this your dream home.",
             "bedroom": 2,
             "square": 1320,
-            "garage": 1,
+            "garage": 1.5,
             "bathroom": 2,
             "sold": false
         },    

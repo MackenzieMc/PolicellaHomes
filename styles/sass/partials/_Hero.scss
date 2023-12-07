@@ -4,6 +4,7 @@
     --slide-size: 100%;
     --slide-height: 19rem;
     overflow: hidden;
+    position: relative;
 }
 
 .embla__viewport {
@@ -106,14 +107,15 @@
     width: 4rem;
     height: 4rem;
     fill: $solidBlack; 
+    top: 45%; 
 }
 
 .embla__button--prev {
-    left: 20rem;
+    left: 5rem;
 }
 
 .embla__button--next {
-    right: 20rem;
+    right: 5rem;
     color: #FFFF;
 }
 
@@ -272,7 +274,7 @@
             .fontContainer {
                     text-align: center;
                     width: 80%;
-                    h1 {
+                    h1, h2 {
                         color: $solidWhite;
                         font-size: 40px;
                         font-family: $fontPrimary;
@@ -280,6 +282,11 @@
                         line-height: 45px;
                         letter-spacing: normal;
                         color: $primary;
+                    }
+
+                    h1 {
+                        margin-top: 0px; 
+                        font-size: 48px;
                     }
             
                     p {

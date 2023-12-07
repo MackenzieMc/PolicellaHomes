@@ -18,8 +18,9 @@ const Hero = (props) => {
         <div className="heroText">
                 <div className="headerTextContainer">
                     <div className="fontContainer">
+                        <h1>Policella Homes</h1>
                         <p>Niagara's trusted home builder.</p>
-                        <h1>Where old world craftsmanship meets modern day design</h1>
+                        <h2>Where old world craftsmanship meets modern day design</h2>
                         <p>Over 400 homes crafted with care, bringing your unique vision to life.</p>
                         <div className="linkContainer">
                             <Link href='/Model-Homes'>Find a home</Link>
