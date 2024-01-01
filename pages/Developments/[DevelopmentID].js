@@ -30,7 +30,7 @@ export const getStaticPaths = async () => {
 function DevelopmentDetail({ DevelopmentsData }) {
 
     const { isLoaded } = useLoadScript({ 
-            googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+        googleMapsApiKey: 'AIzaSyDeU74dpqR3GvijtMv1wbfJolyn_mHiE38',
         })
 
         if(!isLoaded) return <div>Loading..</div>;
