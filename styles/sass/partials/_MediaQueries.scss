@@ -12,6 +12,30 @@
 }
 
 @media screen and (max-width: 1000px) {
+    
+    // Navigation Component
+
+    .navAbs {
+            padding-left: 0px;
+    
+            .navigationContainer {
+                padding-left: 20px;
+    
+                li:not(.logoContainer) {
+                    display: none;
+                }
+            }
+    
+            .mobileNavContainer {
+                width: 60vw;
+            }
+    
+        }
+    
+    .mobileMenuContainer {
+        display: inline;
+    }
+    
     // Preamble Component
 
     .preambleTitleTextContainer {
@@ -69,7 +93,9 @@
 
     .navAbs {
         .navigationContainer {
-            display: none;
+            li:not(.logoContainer) {
+                display: none;
+            }
         }
         
     }
@@ -280,13 +306,29 @@
     // Navigation
 
     .navAbs {
+        padding-left: 0px; 
         .navigationContainer {
-            display: none;
+            padding-left: 20px; 
+            li:not(.logoContainer) {
+                display: none;
+            }
         }
         .mobileNavContainer {
             width: 60vw; 
         }
         
+    }
+
+    .heroText {
+        .headerTextContainer {
+            .fontContainer {
+                .linkContainer {
+                    a {
+                        padding: 5px 15px;
+                    }
+                }
+            }
+        }
     }
 
     // Base Styles 
@@ -349,9 +391,15 @@
 
     // Embla
     .embla__button--next {
+        width: 2rem;
+        height: 3rem; 
+        top: 95%;
         right: 1rem; 
     }
     .embla__button--prev {
+        width: 2rem; 
+        height: 2rem; 
+        top: 95%;
         left: 1rem;
     }
     .cardImageContainer {
@@ -392,7 +440,8 @@
             height: 300px; 
             margin-top: 30px; 
             img {
-                height: auto; 
+                object-fit: contain !important;
+                height: auto !important; 
             }
         }
     }

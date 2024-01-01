@@ -41,6 +41,10 @@ function NavigationBar() {
         <nav className={`navAbs ${scrolled ? 'fixedBar' : 'navAbs'}`}>
                     <ul className='navigationContainer' >
                         <li className="logoContainer">
+                                <div className="navTextContainer">
+                                    <p>Policella</p>
+                                    <p>Homes</p>
+                                </div>
                                 <div className="logoImageContainer">
                                     <Image src={Logo} fill objectFit="contain"  alt="Test" priority />
                                 </div>
@@ -89,9 +93,9 @@ function NavigationBar() {
                     <ul className={open ? `mobileNavContainer open` : 'mobileNavContainer'}
                     
                         style={{
-                            transform: open ? 'translateX(0)' : 'translateX(-100%)',
+                            transform: open ? 'translateX(0)' : 'translateX(100%)',
                             transition: 'transform 0.7s ease-in-out',
-                            left: '0'
+                            right: '0'
                         }}>
                         <li>
                             <Link 

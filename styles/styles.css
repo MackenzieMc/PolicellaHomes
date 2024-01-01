@@ -487,11 +487,20 @@ svg {
 }
 .navAbs .navigationContainer .logoContainer {
   margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.navAbs .navigationContainer .logoContainer .navTextContainer p {
+  font-family: "DM Serif Text", serif;
+  color: #0D2818;
+  margin: 0px 15px 3px 0px;
+  text-align: center;
 }
 .navAbs .navigationContainer .logoContainer .logoImageContainer {
   position: relative;
   width: 90px;
   height: 75px;
+  margin-top: 5px;
 }
 .navAbs .navigationContainer li {
   align-self: center;
@@ -541,7 +550,7 @@ svg {
 }
 
 .open {
-  left: 0;
+  right: 0;
   /* Slide-in menu position */
 }
 
@@ -549,7 +558,7 @@ svg {
   display: inline;
   position: fixed;
   top: 0px;
-  left: -300px;
+  right: -300px;
   /* Off-canvas initially hidden position */
   width: 40vw;
   height: 100vh;
@@ -558,6 +567,7 @@ svg {
   padding-left: 20px;
   background-color: #0D2818;
   transition: left 0.3s ease-in-out;
+  text-align: center;
 }
 .navAbs .mobileNavContainer li {
   list-style: none;
@@ -580,7 +590,7 @@ svg {
   font-size: 32px;
   padding: 5px 0;
   cursor: pointer;
-  margin-right: auto;
+  margin-left: auto;
   position: relative;
   z-index: 5000;
 }
@@ -2062,6 +2072,21 @@ address p, address a, address span {
   }
 }
 @media screen and (max-width: 1000px) {
+  .navAbs {
+    padding-left: 0px;
+  }
+  .navAbs .navigationContainer {
+    padding-left: 20px;
+  }
+  .navAbs .navigationContainer li:not(.logoContainer) {
+    display: none;
+  }
+  .navAbs .mobileNavContainer {
+    width: 60vw;
+  }
+  .mobileMenuContainer {
+    display: inline;
+  }
   .preambleTitleTextContainer {
     margin-top: 10%;
     width: 100%;
@@ -2103,7 +2128,7 @@ address p, address a, address span {
   .mobileMenuContainer {
     display: inline;
   }
-  .navAbs .navigationContainer {
+  .navAbs .navigationContainer li:not(.logoContainer) {
     display: none;
   }
   .heroText {
@@ -2274,11 +2299,20 @@ address p, address a, address span {
   .bannerContainer .bannerTextContainer p {
     font-size: 10px;
   }
+  .navAbs {
+    padding-left: 0px;
+  }
   .navAbs .navigationContainer {
+    padding-left: 20px;
+  }
+  .navAbs .navigationContainer li:not(.logoContainer) {
     display: none;
   }
   .navAbs .mobileNavContainer {
     width: 60vw;
+  }
+  .heroText .headerTextContainer .fontContainer .linkContainer a {
+    padding: 5px 15px;
   }
   .headerText {
     text-align: center;
@@ -2326,9 +2360,15 @@ address p, address a, address span {
     width: 150px;
   }
   .embla__button--next {
+    width: 2rem;
+    height: 3rem;
+    top: 95%;
     right: 1rem;
   }
   .embla__button--prev {
+    width: 2rem;
+    height: 2rem;
+    top: 95%;
     left: 1rem;
   }
   .cardImageContainer {
@@ -2364,7 +2404,9 @@ address p, address a, address span {
     margin-top: 30px;
   }
   .modelHomeContainer .modelHomeImageContainer img {
-    height: auto;
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+    height: auto !important;
   }
   .sectionTitleTextContainer {
     margin: 60px 0px;

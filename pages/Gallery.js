@@ -69,22 +69,24 @@ function Gallery(props) {
                             </div>
                         </div>
                         <div className="galleryImageContainer">
-                            <PhotoAlbum
-                                photos={filteredPhotos} // Use filteredPhotos here
-                                layout="rows"
-                                columns={3}
-                                renderPhoto={NextJsImage}
-                                defaultContainerWidth={1200}
-                                sizes={{
-                                    size: "calc(100vw - 40px)",
-                                    sizes: [
-                                        { viewport: "(max-width: 299px)", size: "calc(100vw - 10px)" },
-                                        { viewport: "(max-width: 599px)", size: "calc(100vw - 20px)" },
-                                        { viewport: "(max-width: 1199px)", size: "calc(100vw - 30px)" },
-                                    ],
-                                }}
-                                onClick={({ index }) => setIndex(index)}
-                            />
+                            <div className="photoContainer">
+                                <PhotoAlbum
+                                    photos={filteredPhotos} // Use filteredPhotos here
+                                    layout="rows"
+                                    columns={3}
+                                    renderPhoto={NextJsImage}
+                                    defaultContainerWidth={1200}
+                                    sizes={{
+                                        size: "calc(100vw - 40px)",
+                                        sizes: [
+                                            { viewport: "(max-width: 299px)", size: "calc(100vw - 10px)" },
+                                            { viewport: "(max-width: 599px)", size: "calc(100vw - 20px)" },
+                                            { viewport: "(max-width: 1199px)", size: "calc(100vw - 30px)" },
+                                        ],
+                                    }}
+                                    onClick={({ index }) => setIndex(index)}
+                                />
+                            </div>
                         </div>
                         <Lightbox
                             slides={filteredPhotos} // Use filteredPhotos here

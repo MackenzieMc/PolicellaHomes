@@ -9,7 +9,7 @@ const galleryPath = function (id, width, height, alt) {
 
 
 const galleryPhotos = [
-    { id: "interior1", width: 1200, height: 721 , alt: "interior"},
+    { id: "interior1", width: 1000, height: 1200 , alt: "interior"},
     { id: "exterior2", width: 1080, height: 720, alt: "interior" },
     { id: "kitchen1", width: 1080, height: 721, alt: "interior" },
     { id: "exterior3", width: 1080, height: 720, alt: "exterior" },
