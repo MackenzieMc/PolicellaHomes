@@ -111,11 +111,13 @@
 }
 
 .embla__button--prev {
-    left: 5rem;
+    position: absolute;
+    left: 3rem;
 }
 
 .embla__button--next {
-    right: 5rem;
+    position: absolute;
+    right: 3rem;
     color: #FFFF;
 }
 

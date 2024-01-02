@@ -847,11 +847,13 @@ svg {
 }
 
 .embla__button--prev {
-  left: 5rem;
+  position: absolute;
+  left: 3rem;
 }
 
 .embla__button--next {
-  right: 5rem;
+  position: absolute;
+  right: 3rem;
   color: white;
 }
 
@@ -1399,6 +1401,7 @@ svg {
 }
 .modelHomeImageContainer img {
   border-radius: 0 25px 0 0;
+  height: auto !important;
 }
 
 .modelHomeSection {
@@ -2087,6 +2090,18 @@ address p, address a, address span {
   .mobileMenuContainer {
     display: inline;
   }
+  .embla__button--next {
+    width: 3rem;
+    height: 3rem;
+    top: 95%;
+    right: 5rem;
+  }
+  .embla__button--prev {
+    width: 3rem;
+    height: 3rem;
+    top: 95%;
+    left: 5rem;
+  }
   .preambleTitleTextContainer {
     margin-top: 10%;
     width: 100%;
@@ -2310,6 +2325,10 @@ address p, address a, address span {
   }
   .navAbs .mobileNavContainer {
     width: 60vw;
+  }
+  .heroText .headerImageContainer img {
+    -o-object-position: center;
+       object-position: center;
   }
   .heroText .headerTextContainer .fontContainer .linkContainer a {
     padding: 5px 15px;

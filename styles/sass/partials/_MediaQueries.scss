@@ -35,6 +35,20 @@
     .mobileMenuContainer {
         display: inline;
     }
+
+    // Embla
+    .embla__button--next {
+        width: 3rem;
+        height: 3rem; 
+        top: 95%;
+        right: 5rem; 
+    }
+    .embla__button--prev {
+        width: 3rem; 
+        height: 3rem; 
+        top: 95%;
+        left: 5rem;
+    }
     
     // Preamble Component
 
@@ -320,6 +334,11 @@
     }
 
     .heroText {
+        .headerImageContainer {
+            img {
+                object-position: center;
+            }
+        }
         .headerTextContainer {
             .fontContainer {
                 .linkContainer {
