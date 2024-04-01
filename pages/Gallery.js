@@ -4,7 +4,7 @@ import Head from 'next/head';
 import PhotoAlbum from "react-photo-album";
 import photos from '../public/data/photos.js';
 import NextJsImage from '../components/NextJsImage';
-import GalleryHeaderImage from '../public/images/GalleryKitchenHead.jpg';
+import GalleryHeaderImage from '../public/images/gallerykitchenheader.jpg';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
