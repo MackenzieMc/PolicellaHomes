@@ -379,8 +379,9 @@
 .modelHomeImageContainer {
     width: 70%; 
     position: relative;
-    height: 500px; 
+    height: auto; 
     img {
+        position: static !important;
         border-radius: 0 25px 0 0;
         height: auto !important; 
     }

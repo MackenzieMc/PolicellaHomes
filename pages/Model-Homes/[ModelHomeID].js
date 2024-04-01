@@ -87,7 +87,7 @@ function ModelHomeDetail ({ ModelHome }) {
                                             </div>
                                     </div>                    
                                     <div className="modelHomeImageContainer">
-                                        <Image src={`${basePath}${data.image}`} alt="" fill objectFit="cover" priority />
+                                        <Image src={`${basePath}${data.image}`} alt="" fill priority/>
                                     </div>
                                     </> 
                                 )

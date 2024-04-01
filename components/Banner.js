@@ -5,7 +5,7 @@ function Banner() {
     const [close, setClose] = useState(false);
     const [messages, setMessages] = useState([
         "Saffron Meadows, Fonthill - 22 Lots located on Port Robinson & Rice Road",
-        "Murdoch Estates, Welland - 64 Units singles/towns located on Weber & Murdoch Road",
+        "Murdoch Estates, Welland - 64 Units singles/towns located on Webber & Murdoch Road",
         // Add more messages as needed
     ]);
     const [currentMessageIndex, setCurrentMessageIndex] = useState(0);

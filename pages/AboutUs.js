@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Head from "next/head"
-import aboutOne from '../public/images/aboutOne.jpg'
+import aboutOne from '../public/images/casalciprano.jpg'
 import aboutQuality from '../public/images/AboutQuality.jpg'
 import AboutHeaderImage from '../public/images/AboutUsHead.jpg'
 
@@ -46,7 +46,7 @@ function AboutUs () {
                         <div className="qualityContainer">
                             <div className="qualityTextContainer">
                                 <h3>Quality Craftsmanship</h3>
-                                <p>Policella Homes has the reputation of being an honest and quality custom builder.  With over 400 homes built, we understand that every family has individual needs in a home which is why we work with each client to custom design a layout that will meet the personal needs of the home-buyer.  You, as the home-buyer, will be involved with every step of the process to ensure the custom kitchen design, electrical layout and overall design meets the practical needs of your family. We understand the importance of delivering a home on time and within budget.  With hundreds of flooring, lighting and paint options within our standard budget, the finished product will truly reflect your personal style.</p>
+                                <p>Policella Homes has the reputation of being an honest and quality custom builder.  With over 40 years of experience, we understand that every family has individual needs in a home which is why we work with each client to custom design a layout that will meet the personal needs of the home-buyer.  You, as the home-buyer, will be involved with every step of the process to ensure the custom kitchen design, electrical layout and overall design meets the practical needs of your family. We understand the importance of delivering a home on time and within budget.  With hundreds of flooring, lighting and paint options within our standard budget, the finished product will truly reflect your personal style.</p>
                             </div>
                             <div className="qualityImgContainer">
                                 <Image src={aboutQuality} fill contain="true" alt="Test" sizes='100vw' priority/>

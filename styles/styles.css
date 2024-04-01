@@ -1397,9 +1397,10 @@ svg {
 .modelHomeImageContainer {
   width: 70%;
   position: relative;
-  height: 500px;
+  height: auto;
 }
 .modelHomeImageContainer img {
+  position: static !important;
   border-radius: 0 25px 0 0;
   height: auto !important;
 }
@@ -2290,7 +2291,7 @@ address p, address a, address span {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-    height: 400px;
+    height: auto;
     margin-top: 30px;
   }
   .modelHomeContainer .modelHomeImageContainer img {

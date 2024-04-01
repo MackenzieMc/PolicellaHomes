@@ -61,7 +61,7 @@ function Developments (props) {
                             <div className="embla__viewport" ref={emblaRef}>
                                 <div className="embla__container">
                                     {
-                                        Object.values(developments).splice(0, 3).map(data =>
+                                        Object.values(developments).splice(0, 2).map(data =>
 
                                             <div className="embla__slide">
                                                 <div className="homesCard">

@@ -4,7 +4,7 @@ import Head from 'next/head';
 import PhotoAlbum from "react-photo-album";
 import photos from '../public/data/photos.js';
 import NextJsImage from '../components/NextJsImage';
-import GalleryHeaderImage from '../public/images/galleryHeader.jpg';
+import GalleryHeaderImage from '../public/images/GalleryKitchenHead.JPG';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
@@ -54,7 +54,7 @@ function Gallery(props) {
                         alt="A kitchen that has been staged"
                         fill
                         loading='eager'
-                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", position: "absolute" }}
                     />
                 </div>
             </header>

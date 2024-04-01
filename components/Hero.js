@@ -21,7 +21,7 @@ const Hero = (props) => {
                         <h1>Policella Homes</h1>
                         <p>Niagara's trusted home builder.</p>
                         <h2>Where old world craftsmanship meets modern day design</h2>
-                        <p>Over 400 homes crafted with care, bringing your unique vision to life.</p>
+                        <p>Over 30 years of building quality custom homes in the Niagara Region.</p>
                         <div className="linkContainer">
                             <Link href='/Model-Homes'>Find a home</Link>
                             <Link href='/AboutUs'>Our history</Link>

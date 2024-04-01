@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Breadcrumbs from 'nextjs-breadcrumbs2';
 import Head from 'next/head';
-import DevelopmentHeaderCover from '../../public/images/DevelopmentHeaderPhoto.jpg'
+import DevelopmentHeaderCover from '../../public/images/NewDevelopmentHeader.jpg'
 
 
 function Developments (props) {
@@ -29,9 +29,8 @@ function Developments (props) {
                 <div className="headerImageContainer">
                     <Image
                         src={DevelopmentHeaderCover}
-                        fill
                         loading='eager'
-                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", }}
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)",  }}
                         alt='a row of homes'
                     />
                 </div>
@@ -52,6 +51,11 @@ function Developments (props) {
                                             <div className="developmentImgContainer">
                                                 <div className="sceneryPictureContainer">
                                                     <Image src={`${basePath}${data.imageOne}`} alt={data.imageAlt} fill/>
+                                                    {data.sold ?
+                                                        <div className="soldContainer">
+                                                            <span>Sold Out</span>
+                                                        </div>
+                                                        : null}
                                                 </div>
                                             </div>
                                             <div className="developmentTextContainer">

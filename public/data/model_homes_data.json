@@ -4,6 +4,32 @@
 
         {
             "image": "38AustinNew.jpg",
+            "id": "38-Marie",
+            "address": "38 Marie Road",
+            "city": "Fonthill, ON",
+            "description": "Discover the perfect blend of comfort and style in this charming 2-bedroom bungalow. With an open concept layout, cloud white kitchen, gas fireplaces, and a fully finished basement, this meticulously crafted home offers a delightful living experience.",
+            "bedroom": 2,
+            "square": 1190,
+            "garage": 1,
+            "bathroom": 3,
+            "sold": false
+        },
+
+        {
+            "image": "45AustinRd.jpg",
+            "id": "45-Austin",
+            "address": "45 Austin Road",
+            "city": "Welland, ON",
+            "description": "This freshly completed two-story townhouse boasts spacious rooms and no condo fees, offering the ultimate freedom. Step into the sunlit kitchen and explore three bedrooms upstairs, including a luxurious ensuite. With fully sodded lawns and a double-car paved driveway, seize the opportunity for upscale living in this vibrant neighborhood - schedule your private viewing today!",
+            "bedroom": 3,
+            "square": 1187,
+            "garage": 1,
+            "bathroom": 3,
+            "sold": false
+        },
+
+        {
+            "image": "38AustinNew.jpg",
             "id": "38-Austin",
             "address": "38 Austin Road",
             "city": "Welland, ON",
