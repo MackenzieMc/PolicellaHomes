@@ -1,6 +1,10 @@
 {
     "galleryImages" : [
         {
+            "imagePath": "90Adah.jpg",
+            "altText": "exterior"
+        },
+        {
             "imagePath": "bath1.jpg", 
             "altText": "bathroom"
         },
