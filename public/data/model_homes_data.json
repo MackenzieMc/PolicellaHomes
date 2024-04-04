@@ -3,15 +3,15 @@
     "modelHomes" : [
 
         {
-            "image": "38AustinNew.jpg",
-            "id": "38-Marie",
-            "address": "38 Marie Road",
+            "image": "Lot43Marie.jpg",
+            "id": "43-Marie",
+            "address": "43 Marie Road",
             "city": "Fonthill, ON",
-            "description": "Discover the perfect blend of comfort and style in this charming 2-bedroom bungalow. With an open concept layout, cloud white kitchen, gas fireplaces, and a fully finished basement, this meticulously crafted home offers a delightful living experience.",
+            "description": "This 2-bedroom, 2-bath home features granite countertops in the kitchen and ensuite, a tile shower, and main floor laundry. With a fully finished basement, covered concrete patio, and all-brick, stone, and stucco exterior, it's the perfect blend of style and functionality.",
             "bedroom": 2,
-            "square": 1190,
+            "square": 1300,
             "garage": 1,
-            "bathroom": 3,
+            "bathroom": 2,
             "sold": false
         },
 
