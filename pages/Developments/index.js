@@ -30,7 +30,7 @@ function Developments (props) {
                     <Image
                         src={DevelopmentHeaderCover}
                         loading='eager'
-                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)",  }}
+                        style={{ objectFit: "cover", zIndex: "10", height: "100%", width: "100%", filter: "brightness(80%)", position: "absolute" }}
                         alt='a row of homes'
                     />
                 </div>
