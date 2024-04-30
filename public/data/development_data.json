@@ -6,13 +6,14 @@
             "name": "Saffron Estates",
             "location": "Pelham, ON",
             "imageOne": "SaffronEstates.png",
+            "imageMap": "saffron_siteplan.png",
             "description": "This community features a range of single-family homes and townhouses, with a mix of modern and traditional architectural styles. The homes are built on large lots with plenty of green space and tree-lined streets, providing residents with a peaceful and picturesque setting. Saffron Estates is situated close to a variety of amenities, including schools, parks, shopping centers, and restaurants.",
-            "lat": 43.037214747515485,
-            "long": -79.27177754553124,
-            "north": 43.0074981,
-            "east": -79.2809011,
-            "south": 43.005555,
-            "west": -79.282802
+            "lat": 43.03687538589164,
+            "long": -79.27651595220904,
+            "north": 43.036841546663915,
+            "east": -79.2751993789963,
+            "south": 43.036130918571295,
+            "west": -79.27737707803674
         },
 
 
