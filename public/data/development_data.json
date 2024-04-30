@@ -21,13 +21,14 @@
             "name": "Murdoch Estates",
             "location": "Welland, ON", 
             "imageOne": "MurdochLogo.png",
+            "imageMap": "murdoch_siteplan.png",
             "description": "This community features a range of single-family homes and townhouses, with a mix of modern and traditional architectural styles. The homes are built on large lots with plenty of green space and tree-lined streets, providing residents with a peaceful and picturesque setting. Murdoch Estates is situated close to a variety of amenities, including schools, parks, shopping centers, and restaurants.",
             "lat": 42.989731,
             "long": -79.290092,
-            "north": 43.0074981,
-            "east": -79.2809011,
-            "south": 43.005555,
-            "west": -79.282802
+            "north": 42.990466,
+            "east": -79.28850,
+            "south": 42.988085,
+            "west": -79.291983
 
         }, 
         {
