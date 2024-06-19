@@ -2,7 +2,7 @@ import Image from "next/image"
 import Head from "next/head"
 import aboutOne from '../public/images/casalciprano.jpg'
 import aboutQuality from '../public/images/AboutQuality.jpg'
-import AboutHeaderImage from '../public/images/AboutUsHead.jpg'
+import AboutHeaderImage from '../public/images/casalciprano.jpg'
 
 function AboutUs () {
 
@@ -37,7 +37,9 @@ function AboutUs () {
                         <div className="ourStoryContainer">
                             <div className="ourStoryTextContainer">
                                 <h3>Our Story</h3>
-                                <p>Vince Policella Sr. was born in a small village in Italy and was trained as a skilled mason.  Shortly after immigrating to Canada in 1964, he began a family and started his own business. In 1984, after 15 successful years in masonry, Vince Sr. followed his dream and the business evolved into Policella Homes.  In 2001, Vince’s son completed an Honours Business degree from Brock University, joined the family business and a successful partnership was created. Vince Sr. and Vince Jr. have the ability to combine the old-world traditions of quality craftmanship and passion for excellence with new modern designs and stylish finishes.</p>
+                                <p>Vince Policella Sr. was born in a small village in Italy and was trained as a skilled mason.  Shortly after immigrating to Canada in 1964, he began a family and started his own business. In 1984, after 15 successful years in masonry, Vince Sr. followed his dream and the business evolved into Policella Homes.</p> 
+                                
+                                <p>In 2001, Vince’s son completed an Honours Business degree from Brock University, joined the family business and a successful partnership was created. Vince Sr. and Vince Jr. have the ability to combine the old-world traditions of quality craftmanship and passion for excellence with new modern designs and stylish finishes.</p>
                             </div>
                             <div className="ourStoryImgContainer">
                                 <Image src={aboutOne} fill contain="true" alt="Test" sizes='100vw' priority/>

@@ -63,7 +63,7 @@ function Gallery(props) {
                     <div className="wrapper">
                         <div className="buttonWrapper">
                             <div className="tabsContainer">
-                                <button className="galleryButton" onClick={() => handleFilterClick('all')}>All</button>
+                                <button className="galleryButton gBall" onClick={() => handleFilterClick('all')}>All</button>
                                 <button className="galleryButton" onClick={() => handleFilterClick('exterior')}>Exterior</button>
                                 <button className="galleryButton" onClick={() => handleFilterClick('interior')}>Interior</button>
                             </div>

@@ -33,7 +33,7 @@ const galleryPhotos = [
     { id: "exterior7", width: 1080, height: 810, alt: "exterior" },
     { id: "interior11", width: 1080, height: 800, alt: "interior" },
     { id: "interior12", width: 900, height: 1200, alt: "interior" },
-    { id: "exterior8", width: 1200, height: 810, alt: "exterior" },
+    { id: "exterior8", width: 1080, height: 720, alt: "exterior" },
     { id: "kitchen6", width: 1080, height: 720, alt: "interior" },
     { id: "interior13", width: 1080, height: 720, alt: "interior" },
     { id: "interior14", width: 1080, height: 720, alt: "interior" },
@@ -45,6 +45,19 @@ const galleryPhotos = [
     { id: "interior19", width: 1080, height: 720, alt: "interior" },
     { id: "exterior9", width: 1200, height: 720, alt: "exterior" },
     { id: "exterior10", width: 1200, height: 720, alt: "exterior" },
+    { id: "exterior20", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior21", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior22", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior23", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior24", width: 1080, height: 810, alt: "exterior" },
+    { id: "exterior25", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior26", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior27", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior28", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior29", width: 1080, height: 810, alt: "exterior" },
+    { id: "exterior30", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior31", width: 1080, height: 720, alt: "exterior" },
+    { id: "exterior32", width: 1080, height: 720, alt: "exterior" },
 ];
 
 const photos = galleryPhotos.map((photo) => ({
