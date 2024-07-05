@@ -51,13 +51,16 @@ const galleryPhotos = [
     { id: "exterior23", width: 1080, height: 720, alt: "exterior" },
     { id: "exterior24", width: 1080, height: 810, alt: "exterior" },
     { id: "exterior25", width: 1080, height: 720, alt: "exterior" },
+    { id: "interior23", width: 1080, height: 720, alt: "interior" },
     { id: "exterior26", width: 1080, height: 720, alt: "exterior" },
     { id: "exterior27", width: 1080, height: 720, alt: "exterior" },
     { id: "exterior28", width: 1080, height: 720, alt: "exterior" },
+    { id: "interrior21", width: 1080, height: 720, alt: "interior" },
     { id: "exterior29", width: 1080, height: 810, alt: "exterior" },
     { id: "exterior30", width: 1080, height: 720, alt: "exterior" },
     { id: "exterior31", width: 1080, height: 720, alt: "exterior" },
     { id: "exterior32", width: 1080, height: 720, alt: "exterior" },
+    { id: "interior22", width: 1080, height: 720, alt: "interior" },
 ];
 
 const photos = galleryPhotos.map((photo) => ({

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Head from "next/head"
-import aboutOne from '../public/images/casalciprano.jpg'
+import aboutOne from '../public/images/vincefamily.jpg'
 import aboutQuality from '../public/images/AboutQuality.jpg'
 import AboutHeaderImage from '../public/images/casalciprano.jpg'
 
@@ -42,7 +42,7 @@ function AboutUs () {
                                 <p>In 2001, Vince’s son completed an Honours Business degree from Brock University, joined the family business and a successful partnership was created. Vince Sr. and Vince Jr. have the ability to combine the old-world traditions of quality craftmanship and passion for excellence with new modern designs and stylish finishes.</p>
                             </div>
                             <div className="ourStoryImgContainer">
-                                <Image src={aboutOne} fill contain="true" alt="Test" sizes='100vw' priority/>
+                                <Image src={aboutOne}  contain="true" alt="Test" sizes='100vw' priority/>
                             </div>
                         </div>
                         <div className="qualityContainer">
