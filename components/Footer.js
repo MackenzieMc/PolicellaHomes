@@ -1,5 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Logo from '../public/images/policellahomeslogo.png'
 import tarionLogo from '../public/images/TarionLogo.png'
 import NHBALogo from '../public/images/ohba-logo.png'
@@ -23,6 +25,14 @@ function Footer () {
                             <p>Phone: <a href="tel: +1(905)-892-9897">905-892-9897</a></p>
                             <p>E-mail: <a href="mailto:vincepolicella@cogeco.ca">vincepolicella@cogeco.ca</a></p>
                         </address>
+                        <div className="socialLinks">
+                            <Link href={'https://facebook.com/people/Policella-Homes/61553342220892/'}>
+                                <FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff", width: '20px', marginRight: '10px' }} />
+                            </Link>
+                            <Link href={'https://www.instagram.com/policellahomes/'}>
+                                <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffffff", width: '20px'}} />
+                            </Link>
+                        </div>
                     </div>
                         <div className="footerLinksContainer">
                             <nav>
