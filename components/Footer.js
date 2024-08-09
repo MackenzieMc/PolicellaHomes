@@ -26,7 +26,7 @@ function Footer () {
                             <p>E-mail: <a href="mailto:vincepolicella@cogeco.ca">vincepolicella@cogeco.ca</a></p>
                         </address>
                         <div className="socialLinks">
-                            <Link href={'https://facebook.com/people/Policella-Homes/61553342220892/'}>
+                            <Link href={'https://www.facebook.com/profile.php?id=61561675853154'}>
                                 <FontAwesomeIcon icon={faFacebook} style={{ color: "#ffffff", width: '20px', marginRight: '10px' }} />
                             </Link>
                             <Link href={'https://www.instagram.com/policellahomes/'}>
